@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  cursor: grab;
+}
+
+.background {
+  background-image: url("background.jpg");
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.5) inset;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .vignette {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5) inset;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*------------------------------------------------------------ Overlays*/
+
+.overlay-blocoB {
+  background-image: url(overlay_blocoB.png);
+  background-repeat: no-repeat;
+  width: 317px;
+  height: 266px;
+  left: 582px;
+  top: 468px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.overlay-blocoD {
+  background-image: url(overlay_blocoB.png);
+  background-repeat: no-repeat;
+  width: 317px;
+  height: 266px;
+  left: 804px;
+  top: 462px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.overlay-blocoB:hover {
+  opacity: 1;
+}
+
+.overlay-blocoD:hover {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------ Pins*/
+
+.pin-container-blocoB {
+  left: 710px;
+  top: 500px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pin-container-blocoD {
+  left: 940px;
+  top: 500px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pin {
+  background-color: white;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: transparent;
+}
+
+.pin-active {
+  width: 120px;
+  color: #707070;
+}
+
+.pin-stick {
+  background-color: white;
+  width: 2px;
+  height: 32px;
+  position: absolute;
+  left: 15px;
+}
+
+.pin-text {
+  text-align: center;
+}
+
+/*------------------------------------------------------------ Top Menu*/
+
+.topmenu-container {
+  position: absolute;
+  top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.topmenu {
+  width: 480px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topmenu .logo {
+  width: 15%;
+  margin: 16px;
+}
+
+.topmenu .logo-name {
+  width: 85%;
+}
+
+.topmenu .divider {
+  width: 2px;
+  height: 80%;
+  background-color: #898579;
+}
+
+.topmenu .ic-menu {
+  width: 32px;
+  height: 32px;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .topmenu {
+    width: 90%;
+  }
+}
+
+/*------------------------------------------------------------ Bottom Menu*/
+
+.bottommenu-container {
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottommenu {
+  width: 480px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottommenu .logo {
+  width: 80px;
+  margin: 16px;
+}
+
+.bottommenu .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.bottommenu .title-top {
+  font-size: 11pt;
+}
+
+.bottommenu .title-bottom {
+  font-size: 10pt;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottommenu {
+    width: 90%;
+  }
+}
+
+/*------------------------------------------------------------ Modal Content*/
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  padding-top: 134px;
+  bottom: 0;
+  padding-bottom: 120px;
+  width: 100%;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+}
+
+.modal-container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 720px;
+  background-color: white;
+  border-radius: 16px;
+  flex-direction: column;
+  height: 0;
+  transition: 0.5s;
+  display: flex;
+}
+
+.modal.active {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 90%;
+  }
+}
+
+.modal.header {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal.ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal.content {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}

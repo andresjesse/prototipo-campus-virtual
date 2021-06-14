@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="text/javascript" src="dragscroll.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="dragscroll main-container">
+      <div class="background">
+        <div id="overlay-blocoB" class="overlay-blocoB"></div>
+        <div id="overlay-blocoD" class="overlay-blocoD"></div>
+
+        <div class="pin-container-blocoB">
+          <div id="pin-blocoB" class="pin">
+            <div class="pin-text">Bloco B</div>
+          </div>
+          <div class="pin-stick"></div>
+        </div>
+
+        <div class="pin-container-blocoD">
+          <div id="pin-blocoD" class="pin">
+            <div class="pin-text">Bloco D</div>
+          </div>
+          <div class="pin-stick"></div>
+        </div>
+      </div>
+
+      <div class="vignette"></div>
+
+      <div class="topmenu-container">
+        <div class="topmenu shadow">
+          <img src="logo.png" class="logo" />
+          <a href="https://www.even3.com.br/bct2021/"
+            ><img src="logo-name.png" class="logo-name"
+          /></a>
+          <div class="divider"></div>
+          <img id="topmenu-options" src="ic-menu.png" class="ic-menu" />
+        </div>
+      </div>
+
+      <div class="bottommenu-container">
+        <div class="bottommenu shadow">
+          <img src="utfprlogo.png" class="logo" />
+          <div class="title-container">
+            <div class="title-top">
+              Universidade Tecnológica Federal do Paraná UTFPR
+            </div>
+            <div class="title-bottom">Câmpus Virtual - Guarapuava</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container">
+      <div id="modal" class="modal shadow">
+        <div class="modal header">
+          <img id="modal-close" src="ic-close.png" class="modal ic-close" />
+        </div>
+
+        <div id="modal-content-main" class="modal content">
+          <p>[[Link para Inscrição/Login do Participante]]</p>
+          <p>[[Link para Programação Do Evento]]</p>
+          <p>[[Informações Gerais]]</p>
+        </div>
+
+        <div id="modal-content-blocoB" class="modal content">
+          <p>[[Bloco B]]</p>
+          <p>[[Laborátios de Informática B1, B2, e B3]]</p>
+          <p>[[Link para Programação Deste Ambiente]]</p>
+        </div>
+
+        <div id="modal-content-blocoD" class="modal content">
+          <p>[[Bloco D]]</p>
+          <p>[[Laborátios X e Y, Biblioteca]]</p>
+          <p>[[Link para Programação Deste Ambiente]]</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
