@@ -5,35 +5,21 @@ import TopMenu from "../../components/topmenu";
 import Footer from "../../components/footer";
 
 import "./styles.css";
-import Modal from "../../components/modal";
-
-import { ModalContext } from "../../components/modal";
+import Modal, { ModalContainer } from "../../components/modal";
 
 export default function Home(props) {
-  const [modalVisible, setModalVisible] = React.useState(false);
-  const [modalContent, setModalContent] = React.useState(null);
-
-  const modal = {
-    show: (content) => {
-      setModalContent(content);
-      setModalVisible(true);
-    },
-    hide: () => {
-      setModalVisible(false);
-    },
-  };
-
   return (
-    <ModalContext.Provider value={modal}>
+    <ModalContainer>
       <Map />
 
       <div className="components-overlay">
         <TopMenu />
 
-        {modalVisible && <Modal>{modalContent}</Modal>}
+        {/* {modalVisible && <Modal>{modalContent}</Modal>} */}
+        <Modal />
 
         <Footer />
       </div>
-    </ModalContext.Provider>
+    </ModalContainer>
   );
 }

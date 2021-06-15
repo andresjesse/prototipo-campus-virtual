@@ -7,6 +7,7 @@
   display: flex;
   height: 70%;
   pointer-events: auto;
+  opacity: 1;
 }
 
 .modal.header {
