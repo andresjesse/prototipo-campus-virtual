@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function (props) {
+export default function About(props) {
   return <div>about</div>;
 }

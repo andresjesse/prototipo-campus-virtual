@@ -1,0 +1,38 @@
+.modal {
+  width: 720px;
+  background-color: white;
+  border-radius: 16px;
+  flex-direction: column;
+  transition: 0.5s;
+  display: flex;
+  height: 70%;
+  pointer-events: auto;
+}
+
+.modal.header {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal.ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal.content {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 90%;
+    height: 65%;
+  }
+}

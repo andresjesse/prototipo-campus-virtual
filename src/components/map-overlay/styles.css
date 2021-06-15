@@ -1,0 +1,27 @@
+.map-overlay {
+  background-repeat: no-repeat;
+  width: 317px;
+  height: 266px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.map-overlay:hover {
+  opacity: 1;
+}
+
+/*---------------------------- Specific */
+
+.map-overlay.block-b {
+  background-image: url(./overlay-bloco-1.png);
+  left: 582px;
+  top: 468px;
+}
+
+.map-overlay.block-d {
+  background-image: url(./overlay-bloco-1.png);
+  left: 804px;
+  top: 462px;
+}

@@ -1,0 +1,40 @@
+.topmenu {
+  width: 480px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  pointer-events: auto;
+}
+
+.topmenu .logo {
+  width: 15%;
+  margin: 16px;
+}
+
+.topmenu .logo-name {
+  width: 85%;
+}
+
+.topmenu .divider {
+  width: 2px;
+  height: 80%;
+  background-color: #898579;
+}
+
+.topmenu .ic-menu {
+  width: 32px;
+  height: 32px;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .topmenu {
+    width: 90%;
+  }
+}

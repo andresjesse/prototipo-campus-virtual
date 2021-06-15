@@ -1,0 +1,47 @@
+.pin-container {
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pin {
+  background-color: white;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: transparent;
+}
+
+.pin.active {
+  width: 120px;
+  color: #707070;
+}
+
+.pin-stick {
+  background-color: white;
+  width: 2px;
+  height: 32px;
+  position: absolute;
+  left: 15px;
+}
+
+.pin-text {
+  text-align: center;
+}
+
+/*---------------------------- Specific */
+
+.pin-container.block-b {
+  left: 710px;
+  top: 500px;
+}
+
+.pin-container.block-d {
+  left: 940px;
+  top: 500px;
+}
