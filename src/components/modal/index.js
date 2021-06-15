@@ -21,6 +21,7 @@ export function ModalContainer(props) {
       setModalVisible(false);
     },
     isVisible: modalVisible,
+    content: modalContent,
   };
 
   return (
@@ -45,9 +46,9 @@ export default function Modal(props) {
           />
         </div>
 
-        <div className="modal content">{props.children}</div>
+        <div className="modal content">{modal.content}</div>
       </div>
     );
 
-  return <div />;
+  return <div className="modal hidden" />;
 }
