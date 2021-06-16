@@ -3,6 +3,7 @@ import React from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 import MapOverlay from "../map-overlay";
+import MapOverlayAnim from "../map-overlay-anim";
 import MapPin from "../map-pin";
 
 import { ModalContext } from "../modal";
@@ -47,6 +48,33 @@ export default function Map(props) {
       innerRef={container}
     >
       <div className="background">
+        <MapOverlayAnim
+          anim="walk1"
+          width={91}
+          height={98}
+          left={777}
+          top={669}
+          frames={69}
+        />
+
+        <MapOverlayAnim
+          anim="photo"
+          width={51}
+          height={56}
+          left={633}
+          top={918}
+          frames={130}
+        />
+
+        {/* <MapOverlayAnim
+          anim="photo"
+          width={36}
+          height={43}
+          left={635}
+          top={923}
+          frames={130}
+        /> */}
+
         <MapOverlay
           building="block-b"
           onMouseEnter={() => setHover("block-b")}
