@@ -10,12 +10,10 @@ export function ModalContainer(props) {
   const [modalVisible, setModalVisible] = React.useState(false);
   const [modalContent, setModalContent] = React.useState(null);
 
-  // {modalVisible && <Modal>{modalContent}</Modal>}
-
   const modal = {
     show: (content) => {
-      setModalContent(content);
       setModalVisible(true);
+      setModalContent(content);
     },
     hide: () => {
       setModalVisible(false);

@@ -34,6 +34,15 @@
   text-align: center;
 }
 
+.pin-letter {
+  position: absolute;
+  color: transparent;
+  transition: 0.5s;
+}
+.pin-letter.active {
+  color: #707070;
+}
+
 /*---------------------------- Specific */
 
 .pin-container.block-b {
@@ -44,4 +53,34 @@
 .pin-container.block-d {
   left: 940px;
   top: 500px;
+}
+
+.pin-container.block-f {
+  left: 1162px;
+  top: 500px;
+}
+
+.pin-container.block-a {
+  left: 964px;
+  top: 730px;
+}
+
+.pin-container.block-c {
+  left: 1192px;
+  top: 730px;
+}
+
+.pin-container.block-e {
+  left: 1420px;
+  top: 730px;
+}
+
+.pin-container.block-h {
+  left: 1470px;
+  top: 430px;
+}
+
+.pin-container.block-r {
+  left: 560px;
+  top: 690px;
 }

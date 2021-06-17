@@ -6,17 +6,10 @@ import icMenu from "./ic-menu.png";
 
 import "./styles.css";
 import { ModalContext } from "../modal";
+import modalContents from "../modal-contents";
 
 export default function TopMenu(props) {
   const modal = React.useContext(ModalContext);
-
-  const modalContent = () => (
-    <div>
-      <p>[[Link para Inscrição/Login do Participante]]</p>
-      <p>[[Link para Programação Do Evento]]</p>
-      <p>[[Informações Gerais]]</p>
-    </div>
-  );
 
   return (
     <div className="topmenu global-shadow">
@@ -34,7 +27,7 @@ export default function TopMenu(props) {
         src={icMenu}
         alt="icone do menu"
         className="ic-menu"
-        onClick={() => modal.show(modalContent)}
+        onClick={() => modal.show(modalContents["main-menu"])}
       />
     </div>
   );

@@ -1,7 +1,5 @@
 .map-overlay {
   background-repeat: no-repeat;
-  width: 317px;
-  height: 266px;
   position: absolute;
   cursor: pointer;
   transition: 0.5s;
@@ -16,12 +14,64 @@
 
 .map-overlay.block-b {
   background-image: url(./overlay-bloco-1.png);
+  width: 317px;
+  height: 266px;
   left: 582px;
   top: 468px;
 }
 
 .map-overlay.block-d {
   background-image: url(./overlay-bloco-1.png);
+  width: 317px;
+  height: 266px;
   left: 804px;
   top: 462px;
+}
+
+.map-overlay.block-f {
+  background-image: url(./overlay-bloco-1.png);
+  width: 317px;
+  height: 266px;
+  left: 1022px;
+  top: 454px;
+}
+
+.map-overlay.block-a {
+  background-image: url(./overlay-bloco-2.png);
+  width: 315px;
+  height: 276px;
+  left: 812px;
+  top: 662px;
+}
+
+.map-overlay.block-c {
+  background-image: url(./overlay-bloco-2.png);
+  width: 315px;
+  height: 276px;
+  left: 1034px;
+  top: 654px;
+}
+
+.map-overlay.block-e {
+  background-image: url(./overlay-bloco-2.png);
+  width: 315px;
+  height: 276px;
+  left: 1244px;
+  top: 644px;
+}
+
+.map-overlay.block-h {
+  background-image: url(./overlay-bloco-3.png);
+  width: 315px;
+  height: 310px;
+  left: 1336px;
+  top: 400px;
+}
+
+.map-overlay.block-r {
+  background-image: url(./overlay-bloco-4.png);
+  width: 566px;
+  height: 305px;
+  left: 210px;
+  top: 626px;
 }

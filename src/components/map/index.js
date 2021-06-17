@@ -9,6 +9,8 @@ import MapPin from "../map-pin";
 import { ModalContext } from "../modal";
 import Vignette from "../vignette";
 
+import modalContents from "../modal-contents";
+
 import "./styles.css";
 
 export default function Map(props) {
@@ -24,22 +26,6 @@ export default function Map(props) {
   }, []);
 
   const modal = React.useContext(ModalContext);
-
-  const modalContentBlocoB = () => (
-    <div>
-      <p>[[Bloco B]]</p>
-      <p>[[Laborátios de Informática B1, B2, e B3]]</p>
-      <p>[[Link para Programação Deste Ambiente]]</p>
-    </div>
-  );
-
-  const modalContentBlocoD = () => (
-    <div>
-      <p>[[Bloco D]]</p>
-      <p>[[Laborátios X e Y, Biblioteca]]</p>
-      <p>[[Link para Programação Deste Ambiente]]</p>
-    </div>
-  );
 
   return (
     <ScrollContainer
@@ -75,37 +61,113 @@ export default function Map(props) {
           frames={140}
         />
 
-        {/* <MapOverlayAnim
-          anim="photo"
-          width={36}
-          height={43}
-          left={635}
-          top={923}
-          frames={130}
-        /> */}
-
         <MapOverlay
           building="block-b"
           onMouseEnter={() => setHover("block-b")}
           onMouseLeave={() => setHover("")}
-          onClick={() => modal.show(modalContentBlocoB)}
+          onClick={() => modal.show(modalContents["block-b"])}
         />
         <MapOverlay
           building="block-d"
           onMouseEnter={() => setHover("block-d")}
           onMouseLeave={() => setHover("")}
-          onClick={() => modal.show(modalContentBlocoD)}
+          onClick={() => modal.show(modalContents["block-d"])}
+        />
+
+        <MapOverlay
+          building="block-f"
+          onMouseEnter={() => setHover("block-f")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-f"])}
+        />
+
+        <MapOverlay
+          building="block-a"
+          onMouseEnter={() => setHover("block-a")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-a"])}
+        />
+
+        <MapOverlay
+          building="block-c"
+          onMouseEnter={() => setHover("block-c")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-c"])}
+        />
+
+        <MapOverlay
+          building="block-e"
+          onMouseEnter={() => setHover("block-e")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-e"])}
+        />
+
+        <MapOverlay
+          building="block-h"
+          onMouseEnter={() => setHover("block-h")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-h"])}
+        />
+
+        <MapOverlay
+          building="block-r"
+          onMouseEnter={() => setHover("block-r")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["block-r"])}
         />
 
         <MapPin
+          letter="B"
           text="Bloco B"
           building="block-b"
           isActive={hover === "block-b"}
         />
         <MapPin
+          letter="D"
           text="Bloco D"
           building="block-d"
           isActive={hover === "block-d"}
+        />
+        <MapPin
+          letter="F"
+          text="Bloco F"
+          building="block-f"
+          isActive={hover === "block-f"}
+        />
+
+        <MapPin
+          letter="A"
+          text="Bloco A"
+          building="block-a"
+          isActive={hover === "block-a"}
+        />
+
+        <MapPin
+          letter="C"
+          text="Bloco C"
+          building="block-c"
+          isActive={hover === "block-c"}
+        />
+
+        <MapPin
+          letter="E"
+          text="Bloco E"
+          building="block-e"
+          isActive={hover === "block-e"}
+        />
+
+        <MapPin
+          letter="H"
+          text="Bloco H"
+          building="block-h"
+          isActive={hover === "block-h"}
+        />
+
+        <MapPin
+          letter="R"
+          text="Bloco R"
+          building="block-r"
+          isActive={hover === "block-r"}
         />
       </div>
 
