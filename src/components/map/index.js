@@ -63,7 +63,16 @@ export default function Map(props) {
           height={56}
           left={633}
           top={918}
-          frames={130}
+          frames={156}
+        />
+
+        <MapOverlayAnim
+          anim="basket"
+          width={46}
+          height={72}
+          left={1076}
+          top={178}
+          frames={140}
         />
 
         {/* <MapOverlayAnim
