@@ -75,3 +75,11 @@
   left: 210px;
   top: 626px;
 }
+
+.map-overlay.bus {
+  background-image: url(./overlay-bus.png);
+  width: 89px;
+  height: 65px;
+  left: 257px;
+  top: 451px;
+}

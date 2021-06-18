@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import ScrollContainer from "react-indiana-drag-scroll";
 
@@ -14,6 +15,8 @@ import modalContents from "../modal-contents";
 import "./styles.css";
 
 export default function Map(props) {
+  const history = useHistory();
+
   const container = React.useRef(null);
 
   const [hover, setHover] = React.useState("");
@@ -116,6 +119,13 @@ export default function Map(props) {
           onClick={() => modal.show(modalContents["block-r"])}
         />
 
+        <MapOverlay
+          building="bus"
+          onMouseEnter={() => setHover("bus")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => history.push("/citytour")}
+        />
+
         <MapPin
           letter="B"
           text="Bloco B"
@@ -168,6 +178,13 @@ export default function Map(props) {
           text="Bloco R"
           building="block-r"
           isActive={hover === "block-r"}
+        />
+
+        <MapPin
+          letter="*"
+          text="City Tour"
+          building="bus"
+          isActive={hover === "bus"}
         />
       </div>
 

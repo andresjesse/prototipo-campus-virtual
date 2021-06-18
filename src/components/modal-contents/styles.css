@@ -10,3 +10,23 @@
   font-size: 1.5em;
   color: #707070;
 }
+
+.modal-contents .times {
+  font-size: 1.2em;
+  color: grey;
+  grid-template-columns: 33% 33% 33%;
+  display: grid;
+}
+
+.modal-contents .seeOnEven3 {
+  background-color: #44b83f;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  height: 48px;
+  margin-top: 32px;
+  cursor: pointer;
+}

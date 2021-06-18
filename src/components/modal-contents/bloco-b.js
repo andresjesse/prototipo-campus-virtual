@@ -4,32 +4,59 @@ import api from "../../services/even3-api";
 
 import "./styles.css";
 
+const semana = [
+  "Domingo",
+  "Segunda-Feira",
+  "Terça-Feira",
+  "Quarta-Feira",
+  "Quinta-Feira",
+  "Sexta-Feira",
+  "Sábado",
+];
+
+const DivTime = (props) => {
+  const { timeData } = props;
+
+  const d = new Date(timeData.date);
+  let dformatted =
+    d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+
+  return (
+    <>
+      <div>{semana[d.getDay()]},</div>
+      <div>{dformatted}</div>
+      <div>
+        {timeData.start_time} - {timeData.end_time}
+      </div>
+    </>
+  );
+};
+
 export default function BlocoB(props) {
-  const [p1, setP1] = React.useState(<div>Carregando...</div>);
+  const [session, setSession] = React.useState(null);
 
   React.useEffect(() => {
-    //api.get("/api/v1/session/307837").then((result) => {
-    api.get("/api/v1/session").then((result) => {
-      let divP1 = [];
-      result.data.data.forEach((session) => {
-        divP1.push(<div key={session.id_session}>{session.title}</div>);
-      });
-
-      setP1(divP1);
+    api.get("/api/v1/session/297163").then((result) => {
+      setSession(result.data.data[0]);
     });
   }, []);
+
+  if (!session) return <div>Carregando...</div>;
 
   return (
     <div className="modal-contents">
       <h1>Bloco B</h1>
-      <h2>Ciência da Computação</h2>
+      <h2>{session.description}</h2>
 
-      {p1}
+      <div className="modal-contents times">
+        {session.times.map((timeData, index) => (
+          <DivTime key={index} timeData={timeData} />
+        ))}
+      </div>
 
-      <p>[[Link para Programação Deste Ambiente -- Ver no Even3]]</p>
-
-      <h2>Matemática/Probabilidade e Estatística</h2>
-      <p>[[Link para Programação Deste Ambiente]]</p>
+      <a href="https://www.even3.com.br/participante/sessions/">
+        <button className="modal-contents seeOnEven3">Ver no Even3</button>
+      </a>
     </div>
   );
 }
