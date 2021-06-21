@@ -24,11 +24,14 @@ export default function TopMenu(props) {
   return (
     <div className="topmenu global-shadow">
       <img src={logo} className="logo" alt="logo do evento" />
-      <img
-        src={layouts[props.layout].ln}
-        className="logo-name"
-        alt="logo com o nome do evento"
-      />
+
+      <a href={props?.link}>
+        <img
+          src={layouts[props.layout].ln}
+          className="logo-name"
+          alt="logo com o nome do evento"
+        />
+      </a>
 
       <div className="right-options">
         <div className="divider"></div>

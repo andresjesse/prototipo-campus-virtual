@@ -19,6 +19,7 @@ export default function Home(props) {
         <TopMenu
           layout="default"
           onClick={() => modal.show(modalContents["main-menu"])}
+          link={"https://www.even3.com.br/bct2021"}
         />
 
         <Modal />
