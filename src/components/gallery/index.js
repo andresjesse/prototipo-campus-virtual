@@ -1,6 +1,6 @@
 import React from "react";
 
-import icMenu from "./ic-menu.png";
+import icArrow from "../../assets/icons/ic-arrow.png";
 import icInstagram from "./ic-instagram.png";
 
 import "./styles.css";
@@ -13,8 +13,8 @@ export default function Gallery(props) {
   return (
     <div className="gallery-container global-shadow">
       <img
-        src={icMenu}
-        alt="icone do menu"
+        src={icArrow}
+        alt="icone flecha a esquerda"
         className="bt-left global-shadow"
         onClick={() => {
           if (currentPhoto > 0) setCurrentPhoto(currentPhoto - 1);
@@ -36,8 +36,8 @@ export default function Gallery(props) {
       </a>
 
       <img
-        src={icMenu}
-        alt="icone do menu"
+        src={icArrow}
+        alt="icone flecha a direita"
         className="bt-right global-shadow"
         onClick={() => setCurrentPhoto((currentPhoto + 1) % photos.length)}
       />

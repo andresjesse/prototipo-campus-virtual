@@ -1,35 +1,43 @@
 import React from "react";
 
 import logo from "./logo.png";
-import logoName from "./logo-name.png";
-import icMenu from "./ic-menu.png";
+import lnHome from "./lnHome.png";
+import lnCityTour from "./lnCityTour.png";
+
+import icMenu from "../../assets/icons/ic-menu.png";
+import icArrow from "../../assets/icons/ic-arrow.png";
 
 import "./styles.css";
-import { ModalContext } from "../modal";
-import modalContents from "../modal-contents";
+
+const layouts = {
+  default: {
+    icon: icMenu,
+    ln: lnHome,
+  },
+  citytour: {
+    icon: icArrow,
+    ln: lnCityTour,
+  },
+};
 
 export default function TopMenu(props) {
-  const modal = React.useContext(ModalContext);
-
   return (
     <div className="topmenu global-shadow">
       <img src={logo} className="logo" alt="logo do evento" />
-      <a href="https://www.even3.com.br/bct2021/">
-        <img
-          src={logoName}
-          className="logo-name"
-          alt="logo com o nome do evento"
-        />
-      </a>
+      <img
+        src={layouts[props.layout].ln}
+        className="logo-name"
+        alt="logo com o nome do evento"
+      />
 
       <div className="right-options">
         <div className="divider"></div>
 
         <img
-          src={icMenu}
+          src={layouts[props.layout].icon}
           alt="icone do menu"
           className="ic-menu"
-          onClick={() => modal.show(modalContents["main-menu"])}
+          onClick={props.onClick}
         />
       </div>
     </div>

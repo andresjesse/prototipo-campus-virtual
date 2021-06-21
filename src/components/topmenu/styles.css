@@ -31,9 +31,10 @@
 }
 
 .topmenu .divider {
-  width: 2px;
-  height: 80%;
-  background-color: #898579;
+  width: 4px;
+  border-radius: 2px;
+  height: 70%;
+  background-color: rgb(137 133 121 / 50%);
 }
 
 .topmenu .ic-menu {
