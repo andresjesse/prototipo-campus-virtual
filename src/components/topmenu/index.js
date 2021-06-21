@@ -21,14 +21,17 @@ export default function TopMenu(props) {
           alt="logo com o nome do evento"
         />
       </a>
-      <div className="divider"></div>
 
-      <img
-        src={icMenu}
-        alt="icone do menu"
-        className="ic-menu"
-        onClick={() => modal.show(modalContents["main-menu"])}
-      />
+      <div className="right-options">
+        <div className="divider"></div>
+
+        <img
+          src={icMenu}
+          alt="icone do menu"
+          className="ic-menu"
+          onClick={() => modal.show(modalContents["main-menu"])}
+        />
+      </div>
     </div>
   );
 }

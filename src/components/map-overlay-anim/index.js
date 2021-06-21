@@ -7,6 +7,7 @@ import "./styles.css";
 import walk1 from "./anim-walk1.png";
 import photo from "./anim-photo.png";
 import basket from "./anim-basket.png";
+import citytour from "./anim-citytour.png";
 
 const minTimeMillis = 2000;
 const maxTimeMillis = 5000;
@@ -15,6 +16,7 @@ const anims = {
   walk1,
   photo,
   basket,
+  citytour,
 };
 
 export default function MapOverlayAnim(props) {
