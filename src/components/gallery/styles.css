@@ -1,0 +1,106 @@
+.gallery-container {
+  width: 720px;
+  background-color: white;
+  border-radius: 16px;
+  flex-direction: column;
+  transition: 0.5s;
+  display: flex;
+  height: 70%;
+  pointer-events: auto;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery-container .photo-frame {
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.gallery-container .bt-left {
+  position: absolute;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 16px;
+  left: 32px;
+  cursor: pointer;
+}
+
+.gallery-container .title {
+  position: absolute;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  top: 32px;
+  font-weight: bold;
+}
+
+.gallery-container .description {
+  position: absolute;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  bottom: 32px;
+}
+
+.gallery-container .instagram {
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  bottom: 32px;
+  right: 32px;
+  align-items: center;
+  display: flex;
+  color: #707070;
+  font-weight: bold;
+}
+
+.instagram img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.gallery-container .bt-right {
+  position: absolute;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 16px;
+  right: 32px;
+  cursor: pointer;
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-container {
+    width: 90%;
+    height: 65%;
+  }
+
+  .gallery-container .bt-left {
+    width: 24px;
+    left: 16px;
+  }
+
+  .gallery-container .bt-right {
+    width: 24px;
+    right: 16px;
+  }
+}

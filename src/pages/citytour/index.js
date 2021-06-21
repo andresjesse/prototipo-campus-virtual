@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom";
 import Footer from "../../components/footer";
 import logo from "../../components/topmenu/logo.png";
 import icMenu from "./ic-menu.png";
-import icInstagram from "./ic-instagram.png";
 import logoName from "./city-tour.png";
 
 import "./styles.css";
@@ -12,6 +11,7 @@ import "./styles.css";
 import photo1 from "./photo1.jpg";
 import photo2 from "./photo2.jpg";
 import photo3 from "./photo3.jpg";
+import Gallery from "../../components/gallery";
 
 const photos = [
   {
@@ -37,8 +37,6 @@ const photos = [
 export default function CityTour(props) {
   const history = useHistory();
 
-  const [currentPhoto, setCurrentPhoto] = React.useState(0);
-
   return (
     <div className="city-tour">
       <div className="components-overlay">
@@ -63,43 +61,9 @@ export default function CityTour(props) {
             />
           </div>
         </div>
-        <div className="gallery-container global-shadow">
-          <img
-            src={icMenu}
-            alt="icone do menu"
-            className="bt-left global-shadow"
-            onClick={() => {
-              if (currentPhoto > 0) setCurrentPhoto(currentPhoto - 1);
-              else setCurrentPhoto(photos.length - 1);
-            }}
-          />
 
-          <div className="title global-shadow">
-            {photos[currentPhoto].title}
-          </div>
+        <Gallery photos={photos} />
 
-          <img
-            src={photos[currentPhoto].img}
-            className="photo-frame"
-            alt={photos[currentPhoto].title}
-          />
-
-          {/* <div className="description global-shadow">
-            {photos[currentPhoto].description}
-          </div> */}
-
-          <a href="#" className="instagram global-shadow">
-            <img src={icInstagram} alt="ícone do instagram" />
-            /Secretaria
-          </a>
-
-          <img
-            src={icMenu}
-            alt="icone do menu"
-            className="bt-right global-shadow"
-            onClick={() => setCurrentPhoto((currentPhoto + 1) % photos.length)}
-          />
-        </div>
         <Footer />
       </div>
     </div>
