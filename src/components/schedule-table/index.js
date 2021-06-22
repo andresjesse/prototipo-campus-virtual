@@ -1,5 +1,5 @@
 import React from "react";
-import { useTable, useFilters } from "react-table";
+import { useTable, useFilters, usePagination } from "react-table";
 
 import "./styles.css";
 
@@ -32,49 +32,109 @@ function Table({ columns, data }) {
     []
   );
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable(
-      {
-        columns,
-        data,
-        defaultColumn,
-        filterTypes,
-      },
-      useFilters
-    );
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    state: { pageIndex, pageSize },
+  } = useTable(
+    {
+      columns,
+      data,
+      defaultColumn,
+      filterTypes,
+      initialState: { pageSize: 10 },
+    },
+    useFilters,
+    usePagination
+  );
 
   // Render the UI for your table
   return (
-    <table
-      {...getTableProps()}
-      border={1}
-      style={{ borderCollapse: "collapse", width: "100%" }}
-    >
-      <thead>
-        {headerGroups.map((group) => (
-          <tr {...group.getHeaderGroupProps()}>
-            {group.headers.map((column) => (
-              <th {...column.getHeaderProps()}>
-                {column.render("Header")}
-                <div>{column.canFilter ? column.render("Filter") : null}</div>
-              </th>
-            ))}
-          </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map((row, i) => {
-          prepareRow(row);
-          return (
-            <tr {...row.getRowProps()}>
-              {row.cells.map((cell) => {
-                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
-              })}
+    <>
+      <table {...getTableProps()} border={1}>
+        <thead>
+          {headerGroups.map((group) => (
+            <tr {...group.getHeaderGroupProps()}>
+              {group.headers.map((column) => (
+                <th {...column.getHeaderProps()}>
+                  {column.render("Header")}
+                  <div>{column.canFilter ? column.render("Filter") : null}</div>
+                </th>
+              ))}
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
+          ))}
+        </thead>
+        <tbody {...getTableBodyProps()}>
+          {page.map((row, i) => {
+            prepareRow(row);
+            return (
+              <tr {...row.getRowProps()}>
+                {row.cells.map((cell) => {
+                  return (
+                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  );
+                })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <div className="pagination">
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {"<<"}
+        </button>{" "}
+        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+          {"<"}
+        </button>{" "}
+        <button onClick={() => nextPage()} disabled={!canNextPage}>
+          {">"}
+        </button>{" "}
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {">>"}
+        </button>{" "}
+        <span>
+          Página{" "}
+          <strong>
+            {pageIndex + 1} of {pageCount}
+          </strong>{" "}
+        </span>
+        <span>
+          | Ir para página:{" "}
+          <input
+            type="number"
+            defaultValue={pageIndex + 1}
+            onChange={(e) => {
+              const page = e.target.value ? Number(e.target.value) - 1 : 0;
+              gotoPage(page);
+            }}
+            style={{ width: "100px" }}
+          />
+        </span>{" "}
+        <select
+          value={pageSize}
+          onChange={(e) => {
+            setPageSize(Number(e.target.value));
+          }}
+        >
+          {[10, 20, 30, 40, 50].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              Mostrar {pageSize}
+            </option>
+          ))}
+        </select>
+      </div>
+    </>
   );
 }
 

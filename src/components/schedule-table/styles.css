@@ -6,7 +6,7 @@
   border-radius: 16px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   pointer-events: auto;
   overflow: auto;
@@ -24,6 +24,7 @@ table {
   margin: 16px;
   border-spacing: 0;
   border: 1px solid rgb(137 133 121 / 50%);
+  border-collapse: collapse;
 }
 
 th,
@@ -45,4 +46,8 @@ tr:last-child td {
 
 table input {
   width: 95%;
+}
+
+.pagination {
+  margin: 16px;
 }
