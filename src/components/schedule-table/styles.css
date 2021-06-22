@@ -19,6 +19,7 @@
 }
 
 table {
+  height: fit-content;
   border-radius: 8px;
   margin: 16px;
   border-spacing: 0;
@@ -40,4 +41,8 @@ td:last-child {
 
 tr:last-child td {
   border-bottom: 0;
+}
+
+table input {
+  width: 95%;
 }
