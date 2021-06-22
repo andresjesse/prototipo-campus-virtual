@@ -9,10 +9,35 @@
   flex-direction: row;
 
   pointer-events: auto;
+  overflow: auto;
 }
 
 .table-container .filters {
   display: flex;
   flex-direction: column;
   margin: 16px;
+}
+
+table {
+  border-radius: 8px;
+  margin: 16px;
+  border-spacing: 0;
+  border: 1px solid rgb(137 133 121 / 50%);
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(137 133 121 / 50%);
+  border-right: 1px solid rgb(137 133 121 / 50%);
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+tr:last-child td {
+  border-bottom: 0;
 }
