@@ -38,7 +38,11 @@ export default function CityTour(props) {
   return (
     <div className="city-tour">
       <div className="components-overlay">
-        <TopMenu layout="citytour" onClick={() => history.push("/")} />
+        <TopMenu
+          icon="arrow"
+          title="CITY TOUR"
+          onClick={() => history.push("/")}
+        />
 
         <Gallery photos={photos} />
 

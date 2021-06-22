@@ -11,43 +11,47 @@
 }
 
 .topmenu .logo {
-  width: 15%;
+  width: 64px;
+  height: 64px;
   margin: 16px;
 }
 
-.topmenu .logo-name {
-  max-width: 85%;
-  max-height: 28px;
+.topmenu .title {
+  flex-grow: 1;
+  font-size: 2em;
 }
 
 .topmenu .right-options {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 64px;
+  height: 64px;
+  margin: 16px;
+  position: relative;
 }
 
 .topmenu .divider {
-  width: 4px;
+  width: 2px;
   border-radius: 2px;
-  height: 70%;
+  height: 100%;
   background-color: rgb(137 133 121 / 50%);
+  position: absolute;
+  left: -16px;
 }
 
 .topmenu .ic-menu {
   width: 32px;
   height: 32px;
-  margin-left: 5%;
-  margin-right: 5%;
   cursor: pointer;
+  position: fixed;
+  margin: inherit;
 }
 
 @media only screen and (max-width: 600px) {
   .topmenu {
     width: 90%;
+  }
+
+  .topmenu .title {
+    font-size: 5vw;
   }
 
   .topmenu .divider {

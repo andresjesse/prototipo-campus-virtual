@@ -12,6 +12,8 @@ import citytour from "./anim-citytour.png";
 const minTimeMillis = 2000;
 const maxTimeMillis = 5000;
 
+const animFrameTimeMs = 50;
+
 const anims = {
   walk1,
   photo,
@@ -32,7 +34,7 @@ export default function MapOverlayAnim(props) {
       offsetTime =
         minTimeMillis + Math.random() * (maxTimeMillis - minTimeMillis);
 
-    const t = timer(tickAnimation, offsetTime + 75);
+    const t = timer(tickAnimation, offsetTime + animFrameTimeMs);
     return () => t.stop();
   });
 

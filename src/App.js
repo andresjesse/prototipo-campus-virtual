@@ -5,6 +5,7 @@ import { ModalContainer } from "./components/modal";
 
 import Home from "./pages/home";
 import CityTour from "./pages/citytour";
+import Schedule from "./pages/schedule";
 import About from "./pages/about";
 
 export default function App() {
@@ -17,6 +18,9 @@ export default function App() {
           </Route>
           <Route exact path="/citytour">
             <CityTour />
+          </Route>
+          <Route exact path="/schedule">
+            <Schedule />
           </Route>
           <Route path="/">
             <Home />
