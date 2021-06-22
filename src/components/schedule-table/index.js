@@ -5,38 +5,8 @@ import "./styles.css";
 
 import schedule from "../../services/schedule";
 
-// This is a custom filter UI for selecting
-// a unique option from a list
-function SelectColumnFilter({
-  column: { filterValue, setFilter, preFilteredRows, id },
-}) {
-  // Calculate the options for filtering
-  // using the preFilteredRows
-  const options = React.useMemo(() => {
-    const options = new Set();
-    preFilteredRows.forEach((row) => {
-      options.add(row.values[id]);
-    });
-    return [...options.values()];
-  }, [id, preFilteredRows]);
-
-  // Render a multi-select box
-  return (
-    <select
-      value={filterValue}
-      onChange={(e) => {
-        setFilter(e.target.value || undefined);
-      }}
-    >
-      <option value="">-</option>
-      {options.map((option, i) => (
-        <option key={i} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
-  );
-}
+import DefaultColumnFilter from "./DefaultColumnFilter";
+import SelectColumnFilter from "./SelectColumnFilter";
 
 function Table({ columns, data }) {
   const defaultColumn = React.useMemo(
@@ -45,22 +15,6 @@ function Table({ columns, data }) {
     }),
     []
   );
-
-  function DefaultColumnFilter({
-    column: { filterValue, preFilteredRows, setFilter },
-  }) {
-    const count = preFilteredRows.length;
-
-    return (
-      <input
-        value={filterValue || ""}
-        onChange={(e) => {
-          setFilter(e.target.value || undefined); // Set undefined to remove the filter entirely
-        }}
-        placeholder={`Buscar em ${count}...`}
-      />
-    );
-  }
 
   const filterTypes = React.useMemo(
     () => ({
@@ -78,22 +32,16 @@ function Table({ columns, data }) {
     []
   );
 
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    footerGroups,
-    rows,
-    prepareRow,
-  } = useTable(
-    {
-      columns,
-      data,
-      defaultColumn,
-      filterTypes,
-    },
-    useFilters
-  );
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable(
+      {
+        columns,
+        data,
+        defaultColumn,
+        filterTypes,
+      },
+      useFilters
+    );
 
   // Render the UI for your table
   return (
@@ -165,9 +113,6 @@ export default function ScheduleTable(props) {
     ],
     []
   );
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
 
   return (
     <div className="table-container global-shadow">
