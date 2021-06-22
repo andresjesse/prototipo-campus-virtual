@@ -1,5 +1,7 @@
 import React from "react";
 
+import externalURLs from "../../services/external-urls";
+
 import "./styles.css";
 
 export default function MainMenu(props) {
@@ -8,12 +10,20 @@ export default function MainMenu(props) {
       <h1>Menu Principal</h1>
 
       <h2>Geral</h2>
-      <a href="https://www.even3.com.br/participante/sessions/">
-        <p>Programação Completa do Evento</p>
+
+      <a href="/schedule">
+        <p>Agenda de Apresentações</p>
+      </a>
+
+      <a href={externalURLs["even3-base"]}>
+        <p>Programação Geral</p>
       </a>
 
       <h2>Área do Participante</h2>
-      <p>[[Link para Inscrição/Login do Participante]]</p>
+
+      <a href="/schedule">
+        <p>Agenda de Apresentações</p>
+      </a>
 
       <p>[[Link para Programação Do Evento]]</p>
       <p>[[Informações Gerais]]</p>

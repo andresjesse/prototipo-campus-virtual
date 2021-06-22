@@ -10,25 +10,49 @@ import "./styles.css";
 import photo1 from "./photo1.jpg";
 import photo2 from "./photo2.jpg";
 import photo3 from "./photo3.jpg";
+import photo4 from "./photo4.jpg";
+import photo5 from "./photo5.jpg";
+import photo6 from "./photo6.jpg";
+import photo7 from "./photo7.jpg";
+import photo8 from "./photo8.jpg";
+import photo9 from "./photo9.jpg";
 
 const photos = [
   {
     img: photo1,
-    title: "Lagoa das Lágrimas",
-    description:
-      "HTML file is a template. If you open it directly in the browser, you will see an empty page. ",
+    title: "Guarapuava",
   },
   {
     img: photo2,
-    title: "Parque do Lago",
-    description:
-      "HTML file is a template. If you open it directly in the browser, you will see an empty page. You can add webfonts, meta tags, or analytics to ",
+    title: "Lagoa das Lágrimas",
   },
   {
     img: photo3,
-    title: "Catedral",
-    description:
-      "HTML file is a template. If you open it directly in the browser, you will see an empty page. You can add webfonts, meta tags, or analytics to this file. The build step will place the bundled scripts into the <body> tag.",
+    title: "Parque do Lago",
+  },
+  {
+    img: photo4,
+    title: "Guarapuava",
+  },
+  {
+    img: photo5,
+    title: "Parque das Araucárias",
+  },
+  {
+    img: photo6,
+    title: "Parque das Araucárias",
+  },
+  {
+    img: photo7,
+    title: "Lagoa das Lágrimas",
+  },
+  {
+    img: photo8,
+    title: "Parque do Lago",
+  },
+  {
+    img: photo9,
+    title: "Salto São Francisco",
   },
 ];
 

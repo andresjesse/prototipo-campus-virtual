@@ -30,9 +30,14 @@ export default function Gallery(props) {
         alt={photos[currentPhoto].title}
       />
 
-      <a href="https://www.instagram.com" className="instagram global-shadow">
+      <div className="reference">Foto: Anderson Zacalusni</div>
+
+      <a
+        href="https://instagram.com/turismoeeventosgua?utm_medium=copy_link"
+        className="instagram"
+      >
         <img src={icInstagram} alt="ícone do instagram" />
-        /Secretaria
+        @turismoeeventosgua
       </a>
 
       <img
