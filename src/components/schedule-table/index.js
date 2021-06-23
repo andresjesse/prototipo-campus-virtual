@@ -4,9 +4,12 @@ import { useTable, useFilters, usePagination } from "react-table";
 import "./styles.css";
 
 import schedule from "../../services/schedule";
+import externalURLs from "../../services/external-urls";
 
 import DefaultColumnFilter from "./DefaultColumnFilter";
 import SelectColumnFilter from "./SelectColumnFilter";
+
+import icConference from '../../assets/icons/ic-google-meet.svg'
 
 function Table({ columns, data }) {
   const defaultColumn = React.useMemo(
@@ -150,6 +153,14 @@ export default function ScheduleTable(props) {
       {
         Header: "Título",
         accessor: "title",
+        Cell: cellInfo => (
+          <a href={
+            externalURLs[cellInfo.row.original.room]
+          }>
+            <img src={icConference} alt="icone conferencia" className="ic-conference"/>
+            {cellInfo.row.original.title}
+          </a>
+        )
       },
       {
         Header: "Data",

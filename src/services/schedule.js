@@ -6,6 +6,7 @@ const schedule = [
     hour: "13:30",
     area: "Engenharia Elétrica",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const schedule = [
     hour: "14:00",
     area: "Ciência da Computação",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const schedule = [
     hour: "14:00",
     area: "Engenharia Mecânica",
     event: "SEI",
+    room: "sala-1",
   },
 
   {
@@ -33,6 +36,7 @@ const schedule = [
     hour: "13:30",
     area: "Matemática",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const schedule = [
     hour: "15:00",
     area: "Ciência da Computação",
     event: "SEI",
+    room: "sala-1",
   },
   {
     id: 6,
@@ -51,6 +56,7 @@ const schedule = [
     hour: "17:00",
     area: "Engenharia Mecânica",
     event: "SICITE",
+    room: "sala-1",
   },
 
   {
@@ -60,6 +66,7 @@ const schedule = [
     hour: "13:30",
     area: "Engenharia Elétrica",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 2,
@@ -69,6 +76,7 @@ const schedule = [
     hour: "14:00",
     area: "Ciência da Computação",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 3,
@@ -78,6 +86,7 @@ const schedule = [
     hour: "14:00",
     area: "Engenharia Mecânica",
     event: "SEI",
+    room: "sala-1",
   },
 
   {
@@ -87,6 +96,7 @@ const schedule = [
     hour: "13:30",
     area: "Matemática",
     event: "SICITE",
+    room: "sala-1",
   },
   {
     id: 5,
@@ -96,6 +106,7 @@ const schedule = [
     hour: "15:00",
     area: "Ciência da Computação",
     event: "SEI",
+    room: "sala-1",
   },
   {
     id: 6,
@@ -105,6 +116,7 @@ const schedule = [
     hour: "17:00",
     area: "Engenharia Mecânica",
     event: "SICITE",
+    room: "sala-1",
   },
 ];
 

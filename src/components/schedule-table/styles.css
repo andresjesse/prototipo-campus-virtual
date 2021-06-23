@@ -51,3 +51,13 @@ table input {
 .pagination {
   margin: 16px;
 }
+
+
+table a {
+  color: blue
+}
+
+table .ic-conference {
+  height: 12px;
+  margin-right: 4px;
+}
