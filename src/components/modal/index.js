@@ -1,6 +1,6 @@
 import React from "react";
 
-import icClose from "./ic-close.png";
+import icClose from "../../assets/icons/ic-close.png";
 
 import "./styles.css";
 
