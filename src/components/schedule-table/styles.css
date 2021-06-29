@@ -53,10 +53,18 @@ table input {
 }
 
 table a {
-  color: blue;
+  color: #395b94;
+  text-decoration: none;
 }
 
 table .ic-conference {
   height: 12px;
   margin-right: 4px;
+}
+
+.table-container h2 {
+  font-size: 1.5em;
+  color: #707070;
+  align-self: center;
+  text-align: center;
 }

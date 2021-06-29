@@ -13,6 +13,10 @@ export default function MainMenu(props) {
       <h2>Geral</h2>
 
       <div className="link-list">
+        <Link to="/prog" className="link">
+          Programação do Evento
+        </Link>
+
         <Link to="/schedule" className="link">
           Agenda de Apresentações
         </Link>
@@ -33,8 +37,12 @@ export default function MainMenu(props) {
           Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
 
+        <Link to="/authors" className="link">
+          Guia para Autores
+        </Link>
+
         <Link to="/faq" className="link">
-          Dúvidas Frequentes
+          FAQ - Dúvidas Frequentes
         </Link>
       </div>
     </div>

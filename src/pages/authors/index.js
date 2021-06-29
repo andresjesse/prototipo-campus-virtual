@@ -2,12 +2,11 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 import TopMenu from "../../components/topmenu";
-import ScheduleTable from "../../components/schedule-table";
 import Footer from "../../components/footer";
 
 import "./styles.css";
 
-export default function CityTour(props) {
+export default function Authors(props) {
   const history = useHistory();
 
   return (
@@ -15,12 +14,10 @@ export default function CityTour(props) {
       <div className="components-overlay">
         <TopMenu
           icon="arrow"
-          title="AGENDA"
+          title="AUTORES"
           onClick={() => history.push("/")}
         />
-
-        <ScheduleTable />
-
+        Authors Guide
         <Footer />
       </div>
     </div>

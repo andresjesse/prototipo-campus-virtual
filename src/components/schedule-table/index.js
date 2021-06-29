@@ -187,9 +187,16 @@ export default function ScheduleTable(props) {
     []
   );
 
+  if (data.length > 0)
+    return (
+      <div className="table-container global-shadow">
+        <Table columns={columns} data={data} />
+      </div>
+    );
+
   return (
     <div className="table-container global-shadow">
-      <Table columns={columns} data={data} />
+      <h2>a agenda será disponibilizada em breve...</h2>
     </div>
   );
 }
