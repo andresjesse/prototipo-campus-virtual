@@ -11,6 +11,17 @@
   color: #707070;
 }
 
+.modal-contents .link {
+  font-size: 1.2em;
+  color: grey;
+  padding: 8px 0;
+}
+
+.modal-contents .link-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-contents .times {
   font-size: 1.2em;
   color: grey;

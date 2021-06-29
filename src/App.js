@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import CityTour from "./pages/citytour";
 import Schedule from "./pages/schedule";
 import About from "./pages/about";
+import FAQ from "./pages/faq";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
           </Route>
           <Route exact path="/schedule">
             <Schedule />
+          </Route>
+          <Route exact path="/faq">
+            <FAQ />
           </Route>
           <Route path="/">
             <Home />

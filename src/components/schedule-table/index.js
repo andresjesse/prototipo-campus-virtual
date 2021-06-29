@@ -9,7 +9,7 @@ import externalURLs from "../../services/external-urls";
 import DefaultColumnFilter from "./DefaultColumnFilter";
 import SelectColumnFilter from "./SelectColumnFilter";
 
-import icConference from '../../assets/icons/ic-google-meet.svg'
+import icConference from "../../assets/icons/ic-google-meet.svg";
 
 function Table({ columns, data }) {
   const defaultColumn = React.useMemo(
@@ -65,7 +65,7 @@ function Table({ columns, data }) {
   // Render the UI for your table
   return (
     <>
-      <table {...getTableProps()} border={1}>
+      <table {...getTableProps()}>
         <thead>
           {headerGroups.map((group) => (
             <tr {...group.getHeaderGroupProps()}>
@@ -153,14 +153,16 @@ export default function ScheduleTable(props) {
       {
         Header: "Título",
         accessor: "title",
-        Cell: cellInfo => (
-          <a href={
-            externalURLs[cellInfo.row.original.room]
-          }>
-            <img src={icConference} alt="icone conferencia" className="ic-conference"/>
+        Cell: (cellInfo) => (
+          <a href={externalURLs[cellInfo.row.original.room]}>
+            <img
+              src={icConference}
+              alt="icone conferencia"
+              className="ic-conference"
+            />
             {cellInfo.row.original.title}
           </a>
-        )
+        ),
       },
       {
         Header: "Data",

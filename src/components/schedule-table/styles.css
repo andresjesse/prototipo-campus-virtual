@@ -52,9 +52,8 @@ table input {
   margin: 16px;
 }
 
-
 table a {
-  color: blue
+  color: blue;
 }
 
 table .ic-conference {

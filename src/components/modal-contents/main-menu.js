@@ -1,8 +1,9 @@
 import React from "react";
-
-import externalURLs from "../../services/external-urls";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
+
+import externalURLs from "../../services/external-urls";
 
 export default function MainMenu(props) {
   return (
@@ -11,22 +12,31 @@ export default function MainMenu(props) {
 
       <h2>Geral</h2>
 
-      <a href="/schedule">
-        <p>Agenda de Apresentações</p>
-      </a>
+      <div className="link-list">
+        <Link to="/schedule" className="link">
+          Agenda de Apresentações
+        </Link>
 
-      <a href={externalURLs["even3-base"]}>
-        <p>Programação Geral</p>
-      </a>
+        <Link to="/about" className="link">
+          Informações Gerais
+        </Link>
 
-      <h2>Área do Participante</h2>
+        <Link to="/citytour" className="link">
+          City Tour
+        </Link>
+      </div>
 
-      <a href="/schedule">
-        <p>Agenda de Apresentações</p>
-      </a>
+      <h2>Participante</h2>
 
-      <p>[[Link para Programação Do Evento]]</p>
-      <p>[[Informações Gerais]]</p>
+      <div className="link-list">
+        <a href={externalURLs["evin-base"]} className="link">
+          Portal de Eventos Científicos da UTFPR (EVIN)
+        </a>
+
+        <Link to="/faq" className="link">
+          Dúvidas Frequentes
+        </Link>
+      </div>
     </div>
   );
 }
