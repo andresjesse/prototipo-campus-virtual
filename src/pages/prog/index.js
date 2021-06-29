@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 import TopMenu from "../../components/topmenu";
+import ProgMain from "../../components/prog-main";
 import Footer from "../../components/footer";
 
 import "./styles.css";
@@ -17,7 +18,9 @@ export default function Prog(props) {
           title="PROGRAMAÇÃO"
           onClick={() => history.push("/")}
         />
-        Prog
+
+        <ProgMain />
+
         <Footer />
       </div>
     </div>
