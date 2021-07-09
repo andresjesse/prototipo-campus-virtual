@@ -9,8 +9,8 @@ import photo from "./anim-photo.png";
 import basket from "./anim-basket.png";
 import citytour from "./anim-citytour.png";
 
-const minTimeMillis = 2000;
-const maxTimeMillis = 5000;
+const minTimeMillis = 1000; //2000
+const maxTimeMillis = 3000; //5000
 
 const animFrameTimeMs = 50;
 

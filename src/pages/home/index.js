@@ -18,7 +18,7 @@ export default function Home(props) {
       <div className="components-overlay">
         <TopMenu
           icon="default"
-          title="SEI/SICITE 2021"
+          title="SEI-SICITE 2021"
           onClick={() => modal.show(modalContents["main-menu"])}
         />
 
