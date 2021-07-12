@@ -2,12 +2,12 @@ import React from "react";
 
 export default function BlocoD(props) {
   return (
-    <>
-      <h1>Nosso Câmpus</h1>
+    <div className="video-container">
+      <h1>Nosso Campus</h1>
 
-      <video className="photo-container" controls>
+      <video className="video" controls>
         <source src="./videos/geral.mp4" type="video/mp4" />
       </video>
-    </>
+    </div>
   );
 }

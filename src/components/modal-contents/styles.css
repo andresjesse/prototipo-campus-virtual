@@ -42,6 +42,25 @@
   cursor: pointer;
 }
 
+.video-container {
+  margin-top: -32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.modal.content span {
+  color: grey;
+  font-size: 16pt;
+  margin-bottom: 32px;
+}
+
 .photo-container {
   width: 100%;
   background-color: white;
