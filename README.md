@@ -74,3 +74,7 @@ $ convert -append \*.png out.png
 ### Main Procedures
 
 - Update schedule: replace services/schedule.js (empty array will render a wait message)
+
+revisar todo o CSS modal, remover div "modal-contents", deixar so "content"
+diminuir o tamanho do video
+tentar acertar o Height dos 3 container principais: topmenu, content, footer

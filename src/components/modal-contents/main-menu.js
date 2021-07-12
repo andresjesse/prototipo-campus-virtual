@@ -7,7 +7,7 @@ import externalURLs from "../../services/external-urls";
 
 export default function MainMenu(props) {
   return (
-    <div className="modal-contents">
+    <>
       <h1>Menu Principal</h1>
 
       <h2>Geral</h2>
@@ -28,6 +28,12 @@ export default function MainMenu(props) {
         <Link to="/citytour" className="link">
           City Tour
         </Link>
+        <Link to="/citytour" className="link">
+          City Tour
+        </Link>
+        <Link to="/citytour" className="link">
+          City Tour
+        </Link>
       </div>
 
       <h2>Participante</h2>
@@ -45,6 +51,6 @@ export default function MainMenu(props) {
           FAQ - Dúvidas Frequentes
         </Link>
       </div>
-    </div>
+    </>
   );
 }

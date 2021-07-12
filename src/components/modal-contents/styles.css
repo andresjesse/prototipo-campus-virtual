@@ -1,4 +1,4 @@
-.modal-contents {
+/* .modal-contents {
   overflow: auto;
 }
 
@@ -11,57 +11,49 @@
   color: #707070;
 }
 
-.modal-contents .link {
-  font-size: 1.2em;
-  color: grey;
-  padding: 8px 0;
-}
+ */
 
-.modal-contents .link-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-contents .times {
-  font-size: 1.2em;
-  color: grey;
-  grid-template-columns: 33% 33% 33%;
-  display: grid;
-}
-
-.modal-contents .seeOnEven3 {
-  background-color: #44b83f;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5em;
-  width: 100%;
-  border-radius: 8px;
-  border-style: none;
-  height: 48px;
-  margin-top: 32px;
-  cursor: pointer;
-}
-
-.video-container {
-  margin-top: -32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-.video {
-  width: 100%;
-  border-radius: 16px;
-}
-
-.modal.content span {
+.modal .content span {
   color: grey;
   font-size: 16pt;
   margin-bottom: 32px;
 }
 
-.photo-container {
+.modal .content h1 {
+  font-size: 1.8em;
+}
+
+.modal .content h2 {
+  font-size: 1.5em;
+  color: #707070;
+}
+
+.modal .content .link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .content .link {
+  font-size: 1.2em;
+  color: grey;
+  padding: 8px 0;
+}
+
+/* .video-container {
+  margin-top: -32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+} */
+
+.video {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+/* .photo-container {
   width: 100%;
   background-color: white;
   border-radius: 16px;
@@ -118,4 +110,4 @@
     width: 24px;
     right: -8px;
   }
-}
+} */

@@ -2,9 +2,7 @@
   width: 720px;
   background-color: white;
   border-radius: 16px;
-  flex-direction: column;
   transition: 0.5s;
-  display: flex;
   height: 70%;
   pointer-events: auto;
   opacity: 1;
@@ -33,9 +31,11 @@
 
 .modal.content {
   width: 90%;
-  height: 90%;
+  height: 100%;
   margin: auto;
   background-color: transparent;
+  overflow: auto;
+  margin-top: -32px;
 }
 
 @media only screen and (max-width: 600px) {
