@@ -10,7 +10,8 @@ const schedule = [
   },
   {
     id: 2,
-    title: "Fantasia",
+    title:
+      "Long Title Test Long Title Test Long Title Test Long Title Test Long Title Test Long Title Test",
     date: "08/08/2020",
     hour: "17:56",
     area: "Business Development",

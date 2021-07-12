@@ -1,6 +1,8 @@
 .table-container {
   width: 90%;
-  height: 70%;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   background-color: white;
   border-radius: 16px;
@@ -30,7 +32,7 @@ table {
 th,
 td {
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.36rem;
   border-bottom: 1px solid rgb(137 133 121 / 50%);
   border-right: 1px solid rgb(137 133 121 / 50%);
 }

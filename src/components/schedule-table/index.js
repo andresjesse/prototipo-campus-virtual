@@ -70,7 +70,11 @@ function Table({ columns, data }) {
           {headerGroups.map((group) => (
             <tr {...group.getHeaderGroupProps()}>
               {group.headers.map((column) => (
-                <th {...column.getHeaderProps()}>
+                <th
+                  {...column.getHeaderProps({
+                    style: { width: column.width },
+                  })}
+                >
                   {column.render("Header")}
                   <div>{column.canFilter ? column.render("Filter") : null}</div>
                 </th>
@@ -149,6 +153,7 @@ export default function ScheduleTable(props) {
       {
         Header: "ID",
         accessor: "id",
+        width: 60,
       },
       {
         Header: "Título",
@@ -163,16 +168,19 @@ export default function ScheduleTable(props) {
             {cellInfo.row.original.title}
           </a>
         ),
+        width: 700,
       },
       {
         Header: "Data",
         accessor: "date",
         Filter: SelectColumnFilter,
+        width: 100,
       },
       {
         Header: "Hora",
         accessor: "hour",
         Filter: SelectColumnFilter,
+        width: 90,
       },
       {
         Header: "Modalidade",
@@ -182,6 +190,7 @@ export default function ScheduleTable(props) {
         Header: "Evento",
         accessor: "event",
         Filter: SelectColumnFilter,
+        width: 100,
       },
     ],
     []
