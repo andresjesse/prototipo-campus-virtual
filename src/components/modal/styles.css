@@ -3,7 +3,11 @@
   background-color: white;
   border-radius: 16px;
   transition: 0.5s;
-  height: 70%;
+
+  overflow: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
   pointer-events: auto;
   opacity: 1;
   position: relative;
@@ -33,9 +37,8 @@
   overflow: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .modal {
     width: 90%;
-    height: 65%;
   }
 }
