@@ -37,7 +37,7 @@ const schedule = [
   },
   {
     id: 5,
-    title: "Marihuana",
+    title: "Nobody Lives Forever 2",
     date: "20/01/2021",
     hour: "12:28",
     area: "Support",
