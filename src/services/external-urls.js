@@ -1,5 +1,4 @@
 const externalURLs = {
-  "even3-base": "https://www.even3.com.br/bct2021/",
   //rooms
   "sala-1": "https://meet.google.com/xco-fbfi-pfy",
   "sala-2": "https://meet.google.com/xco-fbfi-pfy",

@@ -28,12 +28,6 @@ export default function MainMenu(props) {
         <Link to="/citytour" className="link">
           City Tour
         </Link>
-        <Link to="/citytour" className="link">
-          City Tour
-        </Link>
-        <Link to="/citytour" className="link">
-          City Tour
-        </Link>
       </div>
 
       <h2>Participante</h2>
