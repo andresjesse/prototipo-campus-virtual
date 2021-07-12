@@ -35,6 +35,7 @@
   width: 90%;
   height: 90%;
   margin: auto;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
