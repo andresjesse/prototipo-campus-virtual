@@ -1,0 +1,57 @@
+.iframe-container {
+  max-width: 800px;
+  position: relative;
+}
+
+.drive-iframe {
+  width: 800px;
+  height: 1500px;
+}
+
+.docs-icon-container {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  transition: 0.5s;
+  color: transparent;
+  cursor: pointer;
+}
+
+.docs-icon-container:hover {
+  color: grey;
+}
+
+.docs-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.iframe-container-alternate {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .iframe-container {
+    display: none;
+  }
+
+  .iframe-container-alternate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+  }
+
+  .iframe-container-alternate span {
+    margin: 24px;
+  }
+
+  .docs-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
