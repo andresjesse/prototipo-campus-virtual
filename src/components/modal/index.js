@@ -35,16 +35,14 @@ export default function Modal(props) {
   if (modal.isVisible)
     return (
       <div className="modal global-shadow">
-        <div className="modal header">
-          <img
-            src={icClose}
-            className="modal ic-close"
-            alt="ícone para fechar modal"
-            onClick={() => modal.hide()}
-          />
-        </div>
-
         <div className="modal content">{modal.content}</div>
+
+        <img
+          src={icClose}
+          className="modal ic-close"
+          alt="ícone para fechar modal"
+          onClick={() => modal.hide()}
+        />
       </div>
     );
 
