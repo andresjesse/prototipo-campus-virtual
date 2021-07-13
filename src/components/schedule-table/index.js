@@ -39,7 +39,7 @@ function Table({ columns, data }) {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
+    //rows,
     prepareRow,
     page,
     canPreviousPage,

@@ -34,21 +34,20 @@ export default function MainMenu(props) {
           City Tour
         </Link>
 
-        <a
-          href="#"
+        <div
           className="link"
           onClick={() => modal.show(modalContents["stand"])}
         >
           Projetos
-        </a>
+        </div>
 
-        <a
+        <div
           href="#"
           className="link"
           onClick={() => modal.show(modalContents["sponsor"])}
         >
           Apoiadores
-        </a>
+        </div>
       </div>
 
       <h2>Participante</h2>

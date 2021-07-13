@@ -12,10 +12,19 @@ export default function DriveIframe(props) {
       <div className="big-container iframe-container global-shadow">
         <div className="docs-icon-container" onClick={() => window.open(url)}>
           <span>Ver em tela cheia</span>
-          <img src={docsIcon} className="docs-icon" />
+          <img
+            src={docsIcon}
+            className="docs-icon"
+            alt="ícone do google docs"
+          />
         </div>
 
-        <iframe frameborder="0" className="drive-iframe" src={url}></iframe>
+        <iframe
+          frameBorder="0"
+          className="drive-iframe"
+          src={url}
+          title="drive"
+        ></iframe>
       </div>
 
       <div
@@ -26,7 +35,7 @@ export default function DriveIframe(props) {
           Parece que você está vendo esta página a partir de um celular,
           recomendamos ver em tela cheia:
         </span>
-        <img src={docsIcon} className="docs-icon" />
+        <img src={docsIcon} className="docs-icon" alt="ícone do google docs" />
       </div>
     </>
   );

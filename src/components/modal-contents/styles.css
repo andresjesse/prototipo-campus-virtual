@@ -22,6 +22,8 @@
   font-size: 1.2em;
   color: grey;
   padding: 8px 0;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .video {

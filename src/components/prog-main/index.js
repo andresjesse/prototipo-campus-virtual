@@ -21,12 +21,12 @@ export default function ProgMain(props) {
           <tr>
             <td className="tg-8d8j">8h</td>
             <td className="tg-7zrl"></td>
-            <td className="tg-26d4" rowspan="5">
+            <td className="tg-26d4" rowSpan="5">
               MINICURSO
             </td>
             <td className="tg-cly1"></td>
             <td className="tg-cly1"></td>
-            <td className="tg-26d4" rowspan="5">
+            <td className="tg-26d4" rowSpan="5">
               MINICURSO
             </td>
           </tr>
@@ -38,11 +38,11 @@ export default function ProgMain(props) {
           </tr>
           <tr>
             <td className="tg-8d8j">10h</td>
-            <td className="tg-9bfl" rowspan="2">
+            <td className="tg-9bfl" rowSpan="2">
               PALESTRA
             </td>
             <td className="tg-cly1"></td>
-            <td className="tg-adee" rowspan="3">
+            <td className="tg-adee" rowSpan="3">
               SESSÕES DE APRESENTAÇÃO <br />
               <br />
               <br />
@@ -50,7 +50,7 @@ export default function ProgMain(props) {
           </tr>
           <tr>
             <td className="tg-8d8j">11h</td>
-            <td className="tg-02pm" rowspan="2">
+            <td className="tg-02pm" rowSpan="2">
               MESA/PALESTRA
             </td>
           </tr>
@@ -68,27 +68,27 @@ export default function ProgMain(props) {
           </tr>
           <tr>
             <td className="tg-8d8j">13h30</td>
-            <td className="tg-adee" rowspan="5">
+            <td className="tg-adee" rowSpan="5">
               SESSÕES DE APRESENTAÇÃO <br />
               <br />
               <br />
             </td>
-            <td className="tg-adee" rowspan="5">
+            <td className="tg-adee" rowSpan="5">
               SESSÕES DE APRESENTAÇÃO <br />
               <br />
               <br />
             </td>
-            <td className="tg-adee" rowspan="5">
+            <td className="tg-adee" rowSpan="5">
               SESSÕES DE APRESENTAÇÃO <br />
               <br />
               <br />
             </td>
-            <td className="tg-adee" rowspan="5">
+            <td className="tg-adee" rowSpan="5">
               SESSÕES DE APRESENTAÇÃO <br />
               <br />
               <br />
             </td>
-            <td className="tg-02pm" rowspan="3">
+            <td className="tg-02pm" rowSpan="3">
               MESA/PALESTRA
             </td>
           </tr>
@@ -100,7 +100,7 @@ export default function ProgMain(props) {
           </tr>
           <tr>
             <td className="tg-8d8j">16h30</td>
-            <td className="tg-ecof" rowspan="2">
+            <td className="tg-ecof" rowSpan="2">
               ATIVIDADE CULTURAL
             </td>
           </tr>
@@ -130,13 +130,13 @@ export default function ProgMain(props) {
             <td className="tg-fn3j">
               <span style={{ backgroundColor: "#38761D" }}>ABERTURA</span>
             </td>
-            <td className="tg-g3cq" rowspan="4">
+            <td className="tg-g3cq" rowSpan="4">
               MINICURSO
             </td>
-            <td className="tg-adee" rowspan="3">
+            <td className="tg-adee" rowSpan="3">
               SESSÕES DE APRESENTAÇÃO{" "}
             </td>
-            <td className="tg-g3cq" rowspan="4">
+            <td className="tg-g3cq" rowSpan="4">
               MINICURSO
             </td>
             <td className="tg-rcp7">
