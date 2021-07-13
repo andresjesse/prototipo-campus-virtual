@@ -78,8 +78,24 @@
 
 .map-overlay.bus {
   background-image: url(./overlay-bus.png);
-  width: 89px;
-  height: 65px;
-  left: 257px;
-  top: 451px;
+  width: 98px;
+  height: 76px;
+  left: 252px;
+  top: 445px;
+}
+
+.map-overlay.stand {
+  background-image: url(./overlay-stand.png);
+  width: 133px;
+  height: 112px;
+  left: 404px;
+  top: 511px;
+}
+
+.map-overlay.sponsor {
+  background-image: url(./overlay-sponsor.png);
+  width: 122px;
+  height: 80px;
+  left: 958px;
+  top: 362px;
 }

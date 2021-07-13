@@ -89,3 +89,13 @@
   left: 290px;
   top: 407px;
 }
+
+.pin-container.stand {
+  left: 440px;
+  top: 490px;
+}
+
+.pin-container.sponsor {
+  left: 1003px;
+  top: 315px;
+}

@@ -12,10 +12,10 @@ import uteco from "./anim-uteco.png";
 import stand from "./anim-stand.png";
 import sponsor from "./anim-sponsor.png";
 
-const minTimeMillis = 1000; //2000
-const maxTimeMillis = 3000; //5000
+// const minTimeMillis = 1000; //2000
+// const maxTimeMillis = 3000; //5000
 
-const animFrameTimeMs = 50;
+// const animFrameTimeMs = 50;
 
 const anims = {
   walk1,
@@ -29,6 +29,8 @@ const anims = {
 
 export default function MapOverlayAnim(props) {
   const [frame, setFrame] = React.useState(0);
+
+  const { minTimeMillis, maxTimeMillis, animFrameTimeMs } = props;
 
   const tickAnimation = () => {
     setFrame((frame + 1) % props.frames);

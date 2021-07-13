@@ -44,6 +44,9 @@ export default function Map(props) {
           left={777}
           top={669}
           frames={69}
+          minTimeMillis={3000}
+          maxTimeMillis={5000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
@@ -53,6 +56,9 @@ export default function Map(props) {
           left={633}
           top={918}
           frames={156}
+          minTimeMillis={1000}
+          maxTimeMillis={3000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
@@ -62,6 +68,9 @@ export default function Map(props) {
           left={1076}
           top={178}
           frames={140}
+          minTimeMillis={0}
+          maxTimeMillis={1000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
@@ -71,6 +80,9 @@ export default function Map(props) {
           left={249}
           top={477}
           frames={90}
+          minTimeMillis={1000}
+          maxTimeMillis={3000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
@@ -80,15 +92,21 @@ export default function Map(props) {
           left={459}
           top={573}
           frames={90}
+          minTimeMillis={1000}
+          maxTimeMillis={3000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
           anim="stand"
-          width={25}
-          height={30}
-          left={493}
-          top={565}
+          width={23}
+          height={28}
+          left={494}
+          top={566}
           frames={90}
+          minTimeMillis={2000}
+          maxTimeMillis={4000}
+          animFrameTimeMs={50}
         />
 
         <MapOverlayAnim
@@ -98,6 +116,9 @@ export default function Map(props) {
           left={978}
           top={381}
           frames={4}
+          minTimeMillis={0}
+          maxTimeMillis={0}
+          animFrameTimeMs={2000}
         />
 
         <MapOverlay
@@ -162,6 +183,20 @@ export default function Map(props) {
           onClick={() => history.push("/citytour")}
         />
 
+        <MapOverlay
+          building="stand"
+          onMouseEnter={() => setHover("stand")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["stand"])}
+        />
+
+        <MapOverlay
+          building="sponsor"
+          onMouseEnter={() => setHover("sponsor")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => modal.show(modalContents["sponsor"])}
+        />
+
         <MapPin
           letter="B"
           text="Bloco B"
@@ -221,6 +256,20 @@ export default function Map(props) {
           text="City Tour"
           building="bus"
           isActive={hover === "bus"}
+        />
+
+        <MapPin
+          letter="*"
+          text="Projetos"
+          building="stand"
+          isActive={hover === "stand"}
+        />
+
+        <MapPin
+          letter="*"
+          text="Apoiadores"
+          building="sponsor"
+          isActive={hover === "sponsor"}
         />
       </div>
 
