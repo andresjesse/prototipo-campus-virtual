@@ -8,6 +8,9 @@ import walk1 from "./anim-walk1.png";
 import photo from "./anim-photo.png";
 import basket from "./anim-basket.png";
 import citytour from "./anim-citytour.png";
+import uteco from "./anim-uteco.png";
+import stand from "./anim-stand.png";
+import sponsor from "./anim-sponsor.png";
 
 const minTimeMillis = 1000; //2000
 const maxTimeMillis = 3000; //5000
@@ -19,6 +22,9 @@ const anims = {
   photo,
   basket,
   citytour,
+  uteco,
+  stand,
+  sponsor,
 };
 
 export default function MapOverlayAnim(props) {

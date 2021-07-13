@@ -73,6 +73,33 @@ export default function Map(props) {
           frames={90}
         />
 
+        <MapOverlayAnim
+          anim="uteco"
+          width={25}
+          height={27}
+          left={459}
+          top={573}
+          frames={90}
+        />
+
+        <MapOverlayAnim
+          anim="stand"
+          width={25}
+          height={30}
+          left={493}
+          top={565}
+          frames={90}
+        />
+
+        <MapOverlayAnim
+          anim="sponsor"
+          width={82}
+          height={44}
+          left={978}
+          top={381}
+          frames={4}
+        />
+
         <MapOverlay
           building="block-b"
           onMouseEnter={() => setHover("block-b")}
