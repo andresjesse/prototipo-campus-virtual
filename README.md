@@ -74,3 +74,5 @@ $ convert -append \*.png out.png
 ### Main Procedures
 
 - Update schedule: replace services/schedule.js (empty array will render a wait message)
+
+- Continuar em components/prog-main (row)

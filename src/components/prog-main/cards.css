@@ -1,0 +1,59 @@
+.highlights-container {
+  margin: 16px;
+}
+
+/* Tabs */
+
+.highlights-container .tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.highlights-container .tab {
+  height: 32px;
+  width: 100px;
+  border: 0;
+  margin: 4px;
+  border-radius: 8px;
+  background-color: #e2e2e1;
+  cursor: pointer;
+}
+
+.highlights-container .active {
+  background-color: #d0e49e;
+}
+
+/* Highlights */
+
+.highlights-container .times {
+  width: 55px;
+  padding: 8px;
+  background-color: #d0e49e;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: 24px;
+}
+
+.highlights-container .row {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.highlights-container .row .photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: white;
+  margin-right: 16px;
+
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.highlights-container .row .activity-info {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}

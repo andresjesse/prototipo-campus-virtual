@@ -2,10 +2,108 @@ import React from "react";
 
 import "./styles.css";
 import "./tablesgenerator.css";
+import "./cards.css";
+
+const days = [
+  {
+    day: "08/11",
+    weekDay: "Segunda-Feira",
+    prog: [
+      {
+        from: "8h",
+        to: "9h",
+        activities: [
+          {
+            author: "Dr. Fulano de Tal (UTFPR)",
+            title:
+              "Título da palestra: uma aventura pela programação com JavaScript ES6 e React",
+            abstract:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            photo: "test",
+            link: "http://www.youtube.com",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    day: "09/11",
+    weekDay: "Terça-Feira",
+  },
+  {
+    day: "10/11",
+    weekDay: "Quarta-Feira",
+  },
+  {
+    day: "11/11",
+    weekDay: "Quinta-Feira",
+  },
+  {
+    day: "12/11",
+    weekDay: "Sexta-Feira",
+  },
+];
+
+const Row = ({ activity }) => {
+  return (
+    <div className="row">
+      {activity.photo && <div className="photo"></div>}
+
+      <div className="activity-info">
+        <span>{activity.author}</span>
+        <span>{activity.title}</span>
+      </div>
+    </div>
+  );
+};
+
+const ProgTime = ({ prog }) => {
+  return (
+    <>
+      <div className="times">
+        <span>{prog.from}</span>-<span>{prog.to}</span>
+      </div>
+
+      {prog.activities.map((activity, index) => (
+        <Row key={index} activity={activity} />
+      ))}
+    </>
+  );
+};
+
+const Highlights = function () {
+  const [day, setDay] = React.useState(0);
+
+  return (
+    <div className="highlights-container">
+      <div className="tabs">
+        {days.map((d, index) => {
+          return (
+            <button
+              key={index}
+              className={`tab ${index === day ? "active" : ""}`}
+              onClick={() => setDay(index)}
+            >
+              {d.day}
+            </button>
+          );
+        })}
+      </div>
+
+      {days[day].prog.map((p, index) => {
+        return <ProgTime key={index} prog={p} />;
+      })}
+    </div>
+  );
+};
+
+//-------- END Highlights
 
 export default function ProgMain(props) {
   return (
     <div className="big-container global-shadow">
+      <Highlights />
+
       <table className="tg">
         <thead>
           <tr>
