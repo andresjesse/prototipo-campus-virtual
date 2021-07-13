@@ -13,7 +13,7 @@ export default function Authors(props) {
   const history = useHistory();
 
   return (
-    <div className="schedule">
+    <div className="drive-container">
       <div className="components-overlay">
         <TopMenu
           icon="arrow"
