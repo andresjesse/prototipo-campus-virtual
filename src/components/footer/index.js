@@ -12,7 +12,7 @@ export default function Footer(props) {
         <div className="title-top">
           Universidade Tecnológica Federal do Paraná UTFPR
         </div>
-        <div className="title-bottom">Câmpus Virtual - Guarapuava</div>
+        <div className="title-bottom">Campus Virtual - Guarapuava</div>
       </div>
     </div>
   );
