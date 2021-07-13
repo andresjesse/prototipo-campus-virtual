@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 import "./styles.css";
 
+import { ModalContext } from "../modal";
+import modalContents from "../modal-contents";
+
 import externalURLs from "../../services/external-urls";
 
 export default function MainMenu(props) {
+  const modal = React.useContext(ModalContext);
+
   return (
     <>
       <h1>Menu Principal</h1>
@@ -28,6 +33,22 @@ export default function MainMenu(props) {
         <Link to="/citytour" className="link">
           City Tour
         </Link>
+
+        <a
+          href="#"
+          className="link"
+          onClick={() => modal.show(modalContents["stand"])}
+        >
+          Projetos
+        </a>
+
+        <a
+          href="#"
+          className="link"
+          onClick={() => modal.show(modalContents["sponsor"])}
+        >
+          Apoiadores
+        </a>
       </div>
 
       <h2>Participante</h2>
