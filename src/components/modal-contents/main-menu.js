@@ -26,7 +26,7 @@ export default function MainMenu(props) {
           Agenda de Apresentações
         </Link>
 
-        <Link to="/about" className="link">
+        <Link to="/info" className="link">
           Informações Gerais
         </Link>
 

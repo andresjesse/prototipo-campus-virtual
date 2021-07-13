@@ -21,6 +21,9 @@ const externalURLs = {
 
   "drive-faq":
     "https://docs.google.com/document/d/e/2PACX-1vSi5LcB022Yh1eNnVCPf25BMtpFAExiV_e2PXxmRn6nUvS6HMrle0RujZ3eB_2koAA-cB3mbBLPvFXm/pub?embedded=true",
+
+  "drive-instrucoes-gerais":
+    "https://docs.google.com/document/d/e/2PACX-1vSIgNrG472Flg2WFwNs0r5zc0pzCAG7EubVekWs3M7xS9Ouu3H9I-kUwnQi07UWpKocFEUncrBIkJqC/pub?embedded=true",
 };
 
 export default externalURLs;
