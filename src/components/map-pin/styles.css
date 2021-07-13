@@ -1,7 +1,7 @@
 .pin-container {
   position: absolute;
-  cursor: pointer;
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .pin {
