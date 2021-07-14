@@ -55,9 +55,10 @@ const progHighlights = [
           {
             author: "Sessões de apresentações",
             title: "Consulte a nossa agenda de apresentações",
-            abstract: "",
+            abstract: null,
             photo: presentations,
             link: "/schedule",
+            isPresentation: true,
           },
         ],
       },
