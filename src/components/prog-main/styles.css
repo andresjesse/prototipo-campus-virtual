@@ -91,12 +91,28 @@
   font-weight: bold;
 }
 
+.abstract-modal-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 .abstract-modal {
   max-width: 720px;
   max-height: 500px;
-  height: 90%;
-  width: 90%;
-  background-color: grey;
+  overflow: auto;
+  background-color: white;
+  border-radius: 16px;
+  padding: 5%;
   position: absolute;
 }
 
