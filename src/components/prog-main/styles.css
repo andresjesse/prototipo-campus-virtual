@@ -1,6 +1,7 @@
 .big-container {
   width: 90%;
   height: 70%;
+  max-width: 1000px;
 
   background-color: white;
   border-radius: 16px;

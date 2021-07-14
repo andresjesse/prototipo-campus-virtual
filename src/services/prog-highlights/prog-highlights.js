@@ -57,7 +57,7 @@ const progHighlights = [
             title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: presentations,
-            link: "/schedule",
+            link: "schedule",
             isPresentation: true,
           },
         ],
