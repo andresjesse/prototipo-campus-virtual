@@ -27,33 +27,47 @@
 /* Highlights */
 
 .highlights-container .times {
-  width: 55px;
+  width: 90px;
   padding: 8px;
   background-color: #d0e49e;
   border-bottom-right-radius: 16px;
   border-top-right-radius: 16px;
   margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.highlights-container .times img {
+  width: 16px;
+  height: 16px;
 }
 
 .highlights-container .row {
   display: flex;
   margin-top: 24px;
-  align-items: center;
+  font-size: 11pt;
 }
 
 .highlights-container .row .photo {
   width: 64px;
+  min-width: 64px;
   height: 64px;
   border-radius: 32px;
   background-color: white;
   margin-right: 16px;
+  object-fit: cover;
 
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
 }
 
 .highlights-container .row .activity-info {
   display: flex;
   flex-direction: column;
-  align-items: space-around;
+  justify-content: space-around;
+}
+
+.highlights-container .row .activity-info a {
+  color: #395b94;
 }

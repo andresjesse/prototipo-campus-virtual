@@ -1,57 +1,24 @@
 import React from "react";
 
+import progHighlights from "../../services/prog-highlights/prog-highlights";
+
+import icClock from "../../assets/icons/ic-clock.png";
+
 import "./styles.css";
 import "./tablesgenerator.css";
 import "./cards.css";
 
-const days = [
-  {
-    day: "08/11",
-    weekDay: "Segunda-Feira",
-    prog: [
-      {
-        from: "8h",
-        to: "9h",
-        activities: [
-          {
-            author: "Dr. Fulano de Tal (UTFPR)",
-            title:
-              "Título da palestra: uma aventura pela programação com JavaScript ES6 e React",
-            abstract:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            photo: "test",
-            link: "http://www.youtube.com",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    day: "09/11",
-    weekDay: "Terça-Feira",
-  },
-  {
-    day: "10/11",
-    weekDay: "Quarta-Feira",
-  },
-  {
-    day: "11/11",
-    weekDay: "Quinta-Feira",
-  },
-  {
-    day: "12/11",
-    weekDay: "Sexta-Feira",
-  },
-];
-
-const Row = ({ activity }) => {
+const Activity = ({ activity }) => {
   return (
     <div className="row">
-      {activity.photo && <div className="photo"></div>}
+      <img src={activity.photo} alt="foto do palestrante" className="photo" />
 
       <div className="activity-info">
         <span>{activity.author}</span>
-        <span>{activity.title}</span>
+        <b>
+          <span>{activity.title}</span>
+        </b>
+        <a href={activity.link}>{activity.link}</a>
       </div>
     </div>
   );
@@ -61,11 +28,12 @@ const ProgTime = ({ prog }) => {
   return (
     <>
       <div className="times">
+        <img src={icClock} alt="ícone relógio" />
         <span>{prog.from}</span>-<span>{prog.to}</span>
       </div>
 
       {prog.activities.map((activity, index) => (
-        <Row key={index} activity={activity} />
+        <Activity key={index} activity={activity} />
       ))}
     </>
   );
@@ -77,7 +45,7 @@ const Highlights = function () {
   return (
     <div className="highlights-container">
       <div className="tabs">
-        {days.map((d, index) => {
+        {progHighlights.map((d, index) => {
           return (
             <button
               key={index}
@@ -90,7 +58,7 @@ const Highlights = function () {
         })}
       </div>
 
-      {days[day].prog.map((p, index) => {
+      {progHighlights[day].prog.map((p, index) => {
         return <ProgTime key={index} prog={p} />;
       })}
     </div>

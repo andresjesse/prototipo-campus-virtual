@@ -6,6 +6,9 @@ import welcome from "./welcome.png";
 
 import icClose from "../../assets/icons/ic-close.png";
 
+// time (in ms) to auto-hide this welcome banner
+const SHOW_TIME = 3000;
+
 export default function WelcomePanel() {
   const [isShown, setShown] = React.useState(true);
   const [opacity, setOpacity] = React.useState(1);
@@ -15,7 +18,7 @@ export default function WelcomePanel() {
       setShown(false);
     } else {
       sessionStorage.setItem("showWelcome", "true");
-      setTimeout(() => close(), 3000);
+      setTimeout(() => close(), SHOW_TIME);
     }
   }, []);
 
