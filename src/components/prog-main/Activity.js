@@ -24,13 +24,21 @@ const Activity = function ({ activity }) {
           {activity.title}
         </span>
 
-        <a
-          href={activity.link}
-          target={activity.isPresentation === true ? "_self" : "_blank"}
-          rel="noreferrer"
-        >
-          {activity.isPresentation === true ? "Ir para Agenda" : activity.link}
-        </a>
+        <div className="abstract-link">
+          <a
+            href={activity.link}
+            target={activity.isPresentation === true ? "_self" : "_blank"}
+            rel="noreferrer"
+          >
+            {activity.isPresentation === true
+              ? "Ir para Agenda"
+              : activity.link}
+          </a>
+
+          {activity.abstract != null && (
+            <span onClick={showAbstract}>Ver resumo</span>
+          )}
+        </div>
       </div>
     </div>
   );

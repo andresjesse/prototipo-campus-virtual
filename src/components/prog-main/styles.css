@@ -91,6 +91,17 @@
   font-weight: bold;
 }
 
+.highlights-container .row .activity-info .abstract-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.highlights-container .row .activity-info .abstract-link span {
+  color: grey;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
 .abstract-modal-container {
   height: 100%;
   width: 100%;
