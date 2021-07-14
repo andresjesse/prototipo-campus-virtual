@@ -131,4 +131,12 @@
   .highlights-container .row .photo {
     margin-left: 0;
   }
+
+  .highlights-container .row .activity-info .abstract-link {
+    flex-direction: column;
+  }
+
+  .highlights-container .row .activity-info .abstract-link span {
+    margin-left: 0;
+  }
 }
