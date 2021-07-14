@@ -75,4 +75,14 @@ $ convert -append \*.png out.png
 
 - Update schedule: replace services/schedule.js (empty array will render a wait message)
 
-- Continuar em components/prog-main (row)
+- Update sponsors: replace map-overlay-anim, change frames={} in map/index.js, update modal-contents/sponsor.js
+
+- Update prog: replace services/prog-highlights (abstract can be null, isPresentation=true for sessions, put photos in the same folder)
+
+Pendências:
+
+- Videos dos Blocos
+- Vídeo dos Projeos
+- Título, Descrição e Foto dos apoiadores
+
+- Web/Drive: FAQ, Informações Gerais, Guia para Autores
