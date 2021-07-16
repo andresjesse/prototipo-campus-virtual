@@ -22,12 +22,23 @@
   font-size: 1.2em;
   color: grey;
   padding: 8px 0;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.modal .content .link svg {
+  margin-right: 8px;
 }
 
 .video {
   width: 98%;
   border-radius: 16px;
   margin-bottom: 32px;
+}
+
+.ic-evin {
+  height: 17px;
+  margin-right: 8px;
 }

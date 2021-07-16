@@ -1,6 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import {
+  AiOutlineSchedule,
+  AiOutlineClockCircle,
+  AiOutlineInfoCircle,
+  AiOutlineCar,
+  AiOutlineFileText,
+  AiOutlineQuestionCircle,
+} from "react-icons/ai";
+import { BiWrench } from "react-icons/bi";
+import { FaRegHandshake } from "react-icons/fa";
+
+import icEVIN from "../../assets/icons/icEVIN.png";
+
 import "./styles.css";
 
 import { ModalContext } from "../modal";
@@ -19,26 +32,26 @@ export default function MainMenu(props) {
 
       <div className="link-list">
         <Link to="/prog" className="link">
-          Programação do Evento
+          <AiOutlineSchedule /> Programação do Evento
         </Link>
 
         <Link to="/schedule" className="link">
-          Agenda de Apresentações
+          <AiOutlineClockCircle /> Agenda de Apresentações
         </Link>
 
         <Link to="/info" className="link">
-          Informações Gerais
+          <AiOutlineInfoCircle /> Informações Gerais
         </Link>
 
         <Link to="/citytour" className="link">
-          City Tour
+          <AiOutlineCar /> City Tour
         </Link>
 
         <div
           className="link"
           onClick={() => modal.show(modalContents["stand"])}
         >
-          Projetos
+          <BiWrench /> Projetos
         </div>
 
         <div
@@ -46,6 +59,7 @@ export default function MainMenu(props) {
           className="link"
           onClick={() => modal.show(modalContents["sponsor"])}
         >
+          <FaRegHandshake />
           Apoiadores
         </div>
       </div>
@@ -59,14 +73,17 @@ export default function MainMenu(props) {
           target="_blank"
           rel="noreferrer"
         >
-          Portal de Eventos Científicos da UTFPR (EVIN)
+          <img src={icEVIN} className="ic-evin" /> Portal de Eventos Científicos
+          da UTFPR (EVIN)
         </a>
 
         <Link to="/authors" className="link">
+          <AiOutlineFileText />
           Guia para Autores
         </Link>
 
         <Link to="/faq" className="link">
+          <AiOutlineQuestionCircle />
           FAQ - Dúvidas Frequentes
         </Link>
       </div>
