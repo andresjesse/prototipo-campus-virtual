@@ -53,7 +53,12 @@ export default function MainMenu(props) {
       <h2>Participante</h2>
 
       <div className="link-list">
-        <a href={externalURLs["evin-base"]} className="link">
+        <a
+          href={externalURLs["evin-base"]}
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
           Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
 
