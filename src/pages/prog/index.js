@@ -12,6 +12,11 @@ export default function Prog(props) {
 
   return (
     <div className="schedule">
+      <div
+        className="modal-fullscreen-background"
+        onClick={() => history.push("/")}
+      ></div>
+
       <div className="components-overlay">
         <TopMenu
           icon="arrow"

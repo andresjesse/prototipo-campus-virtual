@@ -14,6 +14,11 @@ export default function Authors(props) {
 
   return (
     <div className="drive-container">
+      <div
+        className="modal-fullscreen-background"
+        onClick={() => history.push("/")}
+      ></div>
+
       <div className="components-overlay">
         <TopMenu
           icon="arrow"

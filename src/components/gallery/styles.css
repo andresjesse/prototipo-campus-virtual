@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .gallery-container .photo-frame {
@@ -104,7 +107,7 @@
   top: 0;
   right: 0;
   background-color: white;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 
 @media only screen and (max-width: 720px) {

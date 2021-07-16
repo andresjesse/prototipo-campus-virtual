@@ -14,6 +14,11 @@ export default function FAQ(props) {
 
   return (
     <div className="drive-container">
+      <div
+        className="modal-fullscreen-background"
+        onClick={() => history.push("/")}
+      ></div>
+
       <div className="components-overlay">
         <TopMenu icon="arrow" title="FAQ" onClick={() => history.push("/")} />
 

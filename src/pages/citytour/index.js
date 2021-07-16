@@ -61,6 +61,11 @@ export default function CityTour(props) {
 
   return (
     <div className="city-tour">
+      <div
+        className="modal-fullscreen-background"
+        onClick={() => history.push("/")}
+      ></div>
+
       <div className="components-overlay">
         <TopMenu
           icon="arrow"
