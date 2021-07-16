@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProgTime from "./ProgTime";
+import EmptyHighlights from "./EmptyHighlights";
 
 import progHighlights from "../../services/prog-highlights/prog-highlights";
 
@@ -15,6 +16,8 @@ const Highlights = function () {
       return <ProgTime key={index} prog={p} />;
     });
   };
+
+  if (progHighlights.length == 0) return <EmptyHighlights />;
 
   return (
     <div className="highlights-container">
