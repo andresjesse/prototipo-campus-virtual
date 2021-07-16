@@ -221,7 +221,9 @@ export default function ScheduleTable(props) {
 
   return (
     <div className="table-container global-shadow">
-      <h2>a agenda será disponibilizada em breve...</h2>
+      <div className="temp-content">
+        nossa agenda será disponibilizada em breve, aguarde...
+      </div>
 
       <img
         src={icClose}

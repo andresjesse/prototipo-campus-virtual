@@ -1,5 +1,6 @@
 .table-container {
   width: 90%;
+  height: 90%;
 
   margin-top: 8px;
   margin-bottom: 8px;
@@ -88,6 +89,16 @@ table .ic-conference {
   color: #707070;
   align-self: center;
   text-align: center;
+}
+
+.temp-content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
 }
 
 @media only screen and (max-width: 720px) {
