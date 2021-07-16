@@ -35,6 +35,7 @@
   margin: auto;
   background-color: transparent;
   overflow: auto;
+  border-radius: 0;
 }
 
 .modal-fullscreen-background {

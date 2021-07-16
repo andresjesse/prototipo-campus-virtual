@@ -1,6 +1,8 @@
 .big-container {
   width: 90%;
-  height: 70%;
+  /* height: 70%; */
+  margin-top: 8px;
+  margin-bottom: 8px;
   max-width: 1000px;
 
   background-color: white;
