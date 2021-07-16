@@ -84,5 +84,3 @@ Pendências:
 - Videos dos Blocos
 - Vídeo dos Projeos
 - Título, Descrição e Foto dos apoiadores
-
-- Web/Drive: FAQ, Informações Gerais, Guia para Autores

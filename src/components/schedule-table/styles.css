@@ -12,6 +12,20 @@
 
   pointer-events: auto;
   overflow: auto;
+
+  position: relative;
+}
+
+.table-container .ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-radius: 16px;
 }
 
 .table-container .table-container .filters {
@@ -74,4 +88,10 @@ table .ic-conference {
   color: #707070;
   align-self: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .table-container .ic-close {
+    margin: 2px;
+  }
 }

@@ -10,7 +10,7 @@
 
 .docs-icon-container {
   position: absolute;
-  top: 32px;
+  top: 64px;
   right: 32px;
   display: flex;
   align-items: center;
@@ -33,6 +33,22 @@
   display: none;
 }
 
+.iframe-container .ic-close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  margin: 8px;
+  background-color: transparent;
+}
+
+.iframe-container-alternate .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .iframe-container {
     display: none;
@@ -44,6 +60,7 @@
     justify-content: center;
     text-align: center;
     color: grey;
+    position: relative;
   }
 
   .iframe-container-alternate span {
@@ -53,5 +70,15 @@
   .docs-icon {
     width: 64px;
     height: 64px;
+  }
+
+  .iframe-container-alternate .ic-close {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
   }
 }

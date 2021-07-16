@@ -11,10 +11,24 @@
 
   pointer-events: auto;
   overflow: auto;
+
+  position: relative;
 }
 
 .highlights-container {
   margin: 16px;
+}
+
+.big-container .ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-radius: 16px;
 }
 
 /* Tabs */
@@ -139,5 +153,9 @@
 
   .highlights-container .row .activity-info .abstract-link span {
     margin-left: 0;
+  }
+
+  .highlights-container .tabs {
+    margin-top: 24px;
   }
 }

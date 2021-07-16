@@ -1,5 +1,6 @@
 import React from "react";
 import { useTable, useFilters, usePagination } from "react-table";
+import { useHistory } from "react-router-dom";
 
 import "./styles.css";
 
@@ -10,6 +11,7 @@ import DefaultColumnFilter from "./DefaultColumnFilter";
 import SelectColumnFilter from "./SelectColumnFilter";
 
 import icConference from "../../assets/icons/ic-google-meet.svg";
+import icClose from "../../assets/icons/ic-close.png";
 
 function Table({ columns, data }) {
   const defaultColumn = React.useMemo(
@@ -201,16 +203,32 @@ export default function ScheduleTable(props) {
     []
   );
 
+  const history = useHistory();
+
   if (data.length > 0)
     return (
       <div className="table-container global-shadow">
         <Table columns={columns} data={data} />
+
+        <img
+          src={icClose}
+          className="ic-close"
+          alt="ícone para fechar modal"
+          onClick={() => history.push("/")}
+        />
       </div>
     );
 
   return (
     <div className="table-container global-shadow">
       <h2>a agenda será disponibilizada em breve...</h2>
+
+      <img
+        src={icClose}
+        className="ic-close"
+        alt="ícone para fechar modal"
+        onClick={() => history.push("/")}
+      />
     </div>
   );
 }

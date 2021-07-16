@@ -95,6 +95,18 @@
   transform: scaleX(-1);
 }
 
+.gallery-container .ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 16px;
+}
+
 @media only screen and (max-width: 720px) {
   .gallery-container {
     width: 90%;

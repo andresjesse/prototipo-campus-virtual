@@ -1,7 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import icArrow from "../../assets/icons/ic-arrow.png";
 import icInstagram from "./ic-instagram.png";
+import icClose from "../../assets/icons/ic-close.png";
 
 import "./styles.css";
 
@@ -9,6 +11,8 @@ export default function Gallery(props) {
   const [currentPhoto, setCurrentPhoto] = React.useState(0);
 
   const { photos } = props;
+
+  const history = useHistory();
 
   return (
     <div className="gallery-container global-shadow">
@@ -45,6 +49,13 @@ export default function Gallery(props) {
         alt="icone flecha a direita"
         className="bt-right global-shadow"
         onClick={() => setCurrentPhoto((currentPhoto + 1) % photos.length)}
+      />
+
+      <img
+        src={icClose}
+        className="ic-close"
+        alt="ícone para fechar modal"
+        onClick={() => history.push("/")}
       />
     </div>
   );
