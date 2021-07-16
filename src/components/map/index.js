@@ -1,6 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import { AiOutlineCar } from "react-icons/ai";
+import { BiWrench } from "react-icons/bi";
+import { FaRegHandshake } from "react-icons/fa";
+
 import ScrollContainer from "react-indiana-drag-scroll";
 
 import MapOverlay from "../map-overlay";
@@ -252,21 +256,21 @@ export default function Map(props) {
         />
 
         <MapPin
-          letter="*"
+          letter={<AiOutlineCar />}
           text="City Tour"
           building="bus"
           isActive={hover === "bus"}
         />
 
         <MapPin
-          letter="*"
+          letter={<BiWrench />}
           text="Projetos"
           building="stand"
           isActive={hover === "stand"}
         />
 
         <MapPin
-          letter="*"
+          letter={<FaRegHandshake />}
           text="Apoiadores"
           building="sponsor"
           isActive={hover === "sponsor"}
