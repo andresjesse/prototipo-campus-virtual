@@ -35,3 +35,16 @@ code {
     zoom: calc(var(--screen-y) / 1080);
   }
 }
+
+/* Fixes for Ultra-Wide 1080p monitors */
+@media only screen and (min-height: 1080px) and (min-width: 1920px) {
+  html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .components-overlay {
+    max-width: 1920px !important;
+  }
+}
