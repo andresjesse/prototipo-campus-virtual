@@ -83,7 +83,6 @@ Pendências:
 
 - Videos dos Blocos
 - Vídeo dos Projeos
-- Título, Descrição e Foto dos apoiadores
 
 #---
 
@@ -96,16 +95,14 @@ Pendências:
 
 OK - Mudar X/Y inicial pra aparecer todos os Pins;
 
-- Main menu:
-
-OK  - remover "Informações Gerais"
+OK  - remover "Informações Gerais" (Main menu)
   - Criar um novo H2 "Instruções"
 
     - Os links abrem pagina/modal
 
 OK - Participante vai ser o primeiro item -> renomear para "Menu Principal" (remover do topo);
 
-    - EVIM,
+OK  - EVIM,
     - FAQ + Existem 4 tutoriais prontos, deixar eles como links principais;
       - Alterar estilo do FAQ
     - https://eventos.utfpr.edu.br//index/index/about
@@ -114,8 +111,8 @@ OK - Informações Gerais (sai) -> Entra modal Contato (Email oficial)
 
 OK - Geral vai pro final: City tour, apoiadores, projetos para o final do menu (outro título)
 
-- Adicionar a imagem do cronograma (inkscape)
+OK - Adicionar a imagem do cronograma (inkscape)
+OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
-  - Botão flutuante? testar;
-
--
+- Revisar Textos da pagina "/prog"
+- atualizar datas do cronograma svg

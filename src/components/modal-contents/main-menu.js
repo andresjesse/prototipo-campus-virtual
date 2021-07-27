@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineSchedule,
   AiOutlineClockCircle,
+  AiOutlineCalendar,
   AiOutlineCar,
   AiOutlineFileText,
   AiOutlineQuestionCircle,
@@ -38,6 +39,14 @@ export default function MainMenu(props) {
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
           Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
+
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["calendar-svg"])}
+        >
+          <AiOutlineCalendar />
+          Datas Importantes
+        </div>
       </div>
 
       <h2>Participante</h2>

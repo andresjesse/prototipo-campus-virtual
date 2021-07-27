@@ -12,6 +12,7 @@ import BlocoR from "./bloco-r";
 import Stand from "./stand";
 import Sponsor from "./sponsor";
 import Contact from "./contact";
+import CalendarSVG from "./calendar-svg";
 
 const modalContents = {
   "main-menu": <MainMenu />,
@@ -26,6 +27,7 @@ const modalContents = {
   stand: <Stand />,
   sponsor: <Sponsor />,
   contact: <Contact />,
+  "calendar-svg": <CalendarSVG />,
 };
 
 export default modalContents;
