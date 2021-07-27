@@ -6,12 +6,27 @@ import { ModalContainer } from "./components/modal";
 import Home from "./pages/home";
 import CityTour from "./pages/citytour";
 import Schedule from "./pages/schedule";
+
 import Prog from "./pages/prog";
 import Info from "./pages/info";
 import FAQ from "./pages/faq";
 import Authors from "./pages/authors";
 
 export default function App() {
+  const updateScreenSizeCSS = () => {
+    document.documentElement.style.setProperty("--screen-x", window.innerWidth);
+
+    document.documentElement.style.setProperty(
+      "--screen-y",
+      window.innerHeight
+    );
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", updateScreenSizeCSS);
+    updateScreenSizeCSS();
+  }, []);
+
   return (
     <ModalContainer>
       <Router>

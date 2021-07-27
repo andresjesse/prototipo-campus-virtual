@@ -6,7 +6,7 @@ export default function BlocoD(props) {
       <h1>Bloco D (video Exemplo)</h1>
 
       <video className="video" controls>
-        <source src="./videos/geral.mp4" type="video/mp4" />
+        <source src="./videos/Bloco-D.mp4" type="video/mp4" />
       </video>
     </>
   );

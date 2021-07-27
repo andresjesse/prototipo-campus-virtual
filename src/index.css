@@ -27,3 +27,11 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Auto-Zoom for high-res screens */
+@media only screen and (min-height: 1080px) {
+  html {
+    zoom: 1; /* fallback */
+    zoom: calc(var(--screen-y) / 1080);
+  }
+}
