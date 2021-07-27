@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineSchedule,
   AiOutlineClockCircle,
-  AiOutlineInfoCircle,
   AiOutlineCar,
   AiOutlineFileText,
   AiOutlineQuestionCircle,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
@@ -26,45 +26,7 @@ export default function MainMenu(props) {
 
   return (
     <>
-      <h1>Menu Principal</h1>
-
-      <h2>Geral</h2>
-
-      <div className="link-list">
-        <Link to="/prog" className="link">
-          <AiOutlineSchedule /> Programação do Evento
-        </Link>
-
-        <Link to="/schedule" className="link">
-          <AiOutlineClockCircle /> Agenda de Apresentações
-        </Link>
-
-        <Link to="/info" className="link">
-          <AiOutlineInfoCircle /> Informações Gerais
-        </Link>
-
-        <Link to="/citytour" className="link">
-          <AiOutlineCar /> City Tour
-        </Link>
-
-        <div
-          className="link"
-          onClick={() => modal.show(modalContents["stand"])}
-        >
-          <BiWrench /> Projetos
-        </div>
-
-        <div
-          href="#"
-          className="link"
-          onClick={() => modal.show(modalContents["sponsor"])}
-        >
-          <FaRegHandshake />
-          Apoiadores
-        </div>
-      </div>
-
-      <h2>Participante</h2>
+      <h2>Menu Principal</h2>
 
       <div className="link-list">
         <a
@@ -73,10 +35,14 @@ export default function MainMenu(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={icEVIN} className="ic-evin" /> Portal de Eventos Científicos
-          da UTFPR (EVIN)
+          <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
+          Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
+      </div>
 
+      <h2>Participante</h2>
+
+      <div className="link-list">
         <Link to="/authors" className="link">
           <AiOutlineFileText />
           Guia para Autores
@@ -86,6 +52,45 @@ export default function MainMenu(props) {
           <AiOutlineQuestionCircle />
           FAQ - Dúvidas Frequentes
         </Link>
+
+        <Link to="/prog" className="link">
+          <AiOutlineSchedule /> Programação do Evento
+        </Link>
+
+        <Link to="/schedule" className="link">
+          <AiOutlineClockCircle /> Agenda de Apresentações
+        </Link>
+      </div>
+
+      <h2>Geral</h2>
+
+      <div className="link-list">
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["stand"])}
+        >
+          <BiWrench /> Projetos
+        </div>
+
+        <Link to="/citytour" className="link">
+          <AiOutlineCar /> City Tour
+        </Link>
+
+        <div
+          href="#"
+          className="link"
+          onClick={() => modal.show(modalContents["sponsor"])}
+        >
+          <FaRegHandshake />
+          Apoiadores
+        </div>
+
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["contact"])}
+        >
+          <AiOutlineMail /> Contato
+        </div>
       </div>
     </>
   );

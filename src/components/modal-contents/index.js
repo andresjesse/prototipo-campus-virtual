@@ -11,6 +11,7 @@ import BlocoR from "./bloco-r";
 
 import Stand from "./stand";
 import Sponsor from "./sponsor";
+import Contact from "./contact";
 
 const modalContents = {
   "main-menu": <MainMenu />,
@@ -24,6 +25,7 @@ const modalContents = {
   "block-r": <BlocoR />,
   stand: <Stand />,
   sponsor: <Sponsor />,
+  contact: <Contact />,
 };
 
 export default modalContents;

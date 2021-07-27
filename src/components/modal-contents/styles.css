@@ -32,6 +32,10 @@
   margin-right: 8px;
 }
 
+.modal .content > *:last-child {
+  margin-bottom: 20px;
+}
+
 .video {
   width: 98%;
   border-radius: 16px;

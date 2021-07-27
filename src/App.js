@@ -8,7 +8,6 @@ import CityTour from "./pages/citytour";
 import Schedule from "./pages/schedule";
 
 import Prog from "./pages/prog";
-import Info from "./pages/info";
 import FAQ from "./pages/faq";
 import Authors from "./pages/authors";
 
@@ -31,9 +30,6 @@ export default function App() {
     <ModalContainer>
       <Router>
         <Switch>
-          <Route exact path="/info">
-            <Info />
-          </Route>
           <Route exact path="/citytour">
             <CityTour />
           </Route>

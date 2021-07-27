@@ -17,7 +17,7 @@ const Highlights = function () {
     });
   };
 
-  if (progHighlights.length == 0) return <EmptyHighlights />;
+  if (progHighlights.length === 0) return <EmptyHighlights />;
 
   return (
     <div className="highlights-container">
