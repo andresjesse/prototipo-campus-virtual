@@ -79,12 +79,20 @@ $ convert -append \*.png out.png
 
 - Update prog: replace services/prog-highlights (abstract can be null, isPresentation=true for sessions, put photos in the same folder)
 
+#---
+
 Pendências:
 
-- Videos dos Blocos
-- Vídeo dos Projeos
-
-#---
+- Videos
+	OK - BlocoA 
+	OK - BlocoB
+	- BlocoC
+	OK - BlocoD
+	- BlocoE
+	- BlocoF
+	- BlocoH
+	- BlocoR
+	- Projeos
 
 - Apoiadores:
 
@@ -116,3 +124,6 @@ OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
 - Revisar Textos da pagina "/prog"
 - atualizar datas do cronograma svg
+
+- omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
+	- ou colocar a imagem "em construção"
