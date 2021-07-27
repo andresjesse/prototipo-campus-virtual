@@ -28,7 +28,7 @@ export default function Map(props) {
   // set initial scroll position
   React.useEffect(() => {
     if (container.current) {
-      container.current.scrollTo(150, 1080);
+      container.current.scrollTo(360 + window.innerWidth / 1080, 250);
     }
   }, []);
 

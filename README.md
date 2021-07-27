@@ -84,3 +84,37 @@ Pendências:
 - Videos dos Blocos
 - Vídeo dos Projeos
 - Título, Descrição e Foto dos apoiadores
+
+#---
+
+- Apoiadores:
+
+  - link na logo grande (em uma modal com rolagem);
+  - UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, Bosch, Vale do Genoma
+    - Adriano vai enviar as logos;
+  - Criar como cards com fundo branco, icone cursor;
+
+- Mudar X/Y inicial pra aparecer todos os Pins;
+
+- Main menu:
+
+  - remover "Informações Gerais"
+  - Criar um novo H2 "Instruções"
+
+    - Os links abrem pagina/modal
+
+  - Participante vai ser o primeiro item -> renomear para "Menu Principal" (remover do topo);
+
+    - EVIM,
+    - FAQ + Existem 4 tutoriais prontos, deixar eles como links principais;
+      - Alterar estilo do FAQ
+    - https://eventos.utfpr.edu.br//index/index/about
+
+  - Informações Gerais (sai) -> Entra modal Contato (Email oficial)
+
+  - GEral vai pro final: City tour, apoiadores, projetos para o final do menu (outro título)
+
+  - Adicionar a imagem do cronograma (inkscape)
+    - Botão flutuante? testar;
+
+-
