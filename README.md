@@ -83,7 +83,7 @@ $ convert -append \*.png out.png
 
 Pendências:
 
-- Videos
+OK - Videos
 	OK - BlocoA 
 	OK - BlocoB
 	OK - BlocoC
@@ -92,13 +92,13 @@ Pendências:
 	OK - BlocoF
 	OK - BlocoH
 	OK - BlocoR
-	- Projeos
+	OK - Projeos
 
 
 OK  - link na logo grande (em uma modal com rolagem);
 - Apoiadores: 
-    OK- UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, 
-    - Bosch, Vale do Genoma
+    OK- UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, Bosch, 
+    - Vale do Genoma
 
 OK  - remover "Informações Gerais" (Main menu)
 OK  - Criar um novo H2 "Instruções"

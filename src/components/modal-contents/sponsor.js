@@ -2,6 +2,7 @@ import utfpr from "./sponsor-logos/utfpr.svg";
 import parana from "./sponsor-logos/parana.svg";
 import fundacaoAraucaria from "./sponsor-logos/fundacao-araucaria.svg";
 import cnpq from "./sponsor-logos/cnpq.svg";
+import bosch from "./sponsor-logos/bosch.svg";
 
 import "./sponsor.css";
 
@@ -33,6 +34,8 @@ const Sponsor = () => (
       logo={parana}
       url="https://www.parana.pr.gov.br/"
     />
+
+    <Card title="Bosch" logo={bosch} url="https://www.bosch.com.br/" />
   </div>
 );
 
