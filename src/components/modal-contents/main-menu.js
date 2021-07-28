@@ -24,6 +24,15 @@ import modalContents from "../modal-contents";
 
 import externalURLs from "../../services/external-urls";
 
+/*
+ 
+Links omitidos no lançamento:
+  - agenda; <-- ver aplicacao do TagNew
+  - programação do evento
+  - guia para autores
+ 
+*/
+
 const TagNew = () => (
   <div style={{ color: "red", marginLeft: 8 }}>
     <MdFiberNew />
@@ -57,27 +66,27 @@ export default function MainMenu(props) {
         </div>
       </div>
 
-      <h2>Participante</h2>
+      <h2>Instruções</h2>
 
       <div className="link-list">
-        <Link to="/authors" className="link">
+        {/* <Link to="/authors" className="link">
           <AiOutlineFileText />
           Guia para Autores
-        </Link>
+        </Link> */}
 
         <Link to="/faq" className="link">
           <AiOutlineQuestionCircle />
           FAQ - Dúvidas Frequentes
         </Link>
 
-        <Link to="/prog" className="link">
+        {/* <Link to="/prog" className="link">
           <AiOutlineSchedule /> Programação do Evento
-        </Link>
+        </Link> */}
 
-        <Link to="/schedule" className="link">
+        {/* <Link to="/schedule" className="link">
           <AiOutlineClockCircle /> Agenda de Apresentações
           <TagNew />
-        </Link>
+        </Link> */}
       </div>
 
       <h2>Geral</h2>

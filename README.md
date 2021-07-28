@@ -123,5 +123,4 @@ OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 OK - atualizar datas do cronograma svg
 
 - omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
-	- ou colocar a imagem "em construção"
 	- ou ainda usar a TagNew
