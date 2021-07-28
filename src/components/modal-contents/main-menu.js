@@ -13,6 +13,8 @@ import {
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
 
+import { MdFiberNew } from "react-icons/md";
+
 import icEVIN from "../../assets/icons/icEVIN.png";
 
 import "./styles.css";
@@ -21,6 +23,12 @@ import { ModalContext } from "../modal";
 import modalContents from "../modal-contents";
 
 import externalURLs from "../../services/external-urls";
+
+const TagNew = () => (
+  <div style={{ color: "red", marginLeft: 8 }}>
+    <MdFiberNew />
+  </div>
+);
 
 export default function MainMenu(props) {
   const modal = React.useContext(ModalContext);
@@ -68,6 +76,7 @@ export default function MainMenu(props) {
 
         <Link to="/schedule" className="link">
           <AiOutlineClockCircle /> Agenda de Apresentações
+          <TagNew />
         </Link>
       </div>
 

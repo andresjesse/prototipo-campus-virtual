@@ -1,0 +1,11 @@
+.sponsor-container .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor-container img {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5%;
+  border-radius: 16px;
+}

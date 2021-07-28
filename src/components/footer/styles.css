@@ -13,6 +13,7 @@
 .footer .logo {
   width: 80px;
   margin: 16px;
+  margin-left: 0;
 }
 
 .footer .title-container {
@@ -41,10 +42,12 @@
   .footer .logo {
     width: 60px;
     margin: 6px;
+    margin-left: 16px;
   }
 
   .footer .title-container {
     margin: 6px;
+    margin-right: 16px;
   }
 
   .footer .title-top {

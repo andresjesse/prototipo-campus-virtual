@@ -94,12 +94,11 @@ Pendências:
 	- BlocoR
 	- Projeos
 
-- Apoiadores:
 
-  - link na logo grande (em uma modal com rolagem);
-  - UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, Bosch, Vale do Genoma
+OK  - link na logo grande (em uma modal com rolagem);
+- Apoiadores: UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, Bosch, Vale do Genoma
     - Adriano vai enviar as logos;
-  - Criar como cards com fundo branco, icone cursor;
+OK  - Criar como cards com fundo branco, icone cursor;
 
 OK - Mudar X/Y inicial pra aparecer todos os Pins;
 
@@ -127,3 +126,4 @@ OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
 - omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
 	- ou colocar a imagem "em construção"
+	- ou ainda usar a TagNew
