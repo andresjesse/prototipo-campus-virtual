@@ -3,6 +3,7 @@ import parana from "./sponsor-logos/parana.svg";
 import fundacaoAraucaria from "./sponsor-logos/fundacao-araucaria.svg";
 import cnpq from "./sponsor-logos/cnpq.svg";
 import bosch from "./sponsor-logos/bosch.svg";
+import valeDoGenoma from "./sponsor-logos/vale-do-genoma.svg";
 
 import "./sponsor.css";
 
@@ -36,6 +37,8 @@ const Sponsor = () => (
     />
 
     <Card title="Bosch" logo={bosch} url="https://www.bosch.com.br/" />
+
+    <Card title="Vale do Genoma" logo={valeDoGenoma} url="#" />
   </div>
 );
 
