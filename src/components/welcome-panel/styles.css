@@ -14,7 +14,7 @@
 
 .welcome-panel {
   width: 720px;
-  height: 350px;
+  height: 400px;
   background-color: white;
   border-radius: 32px;
   display: flex;
@@ -26,6 +26,50 @@
 
 .welcome-panel img {
   width: 90%;
+}
+
+/** TUTORIAL */
+
+.welcome-panel .tutorial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-panel .tutorial-container > * {
+  margin: 2px;
+}
+
+.welcome-panel .tutorial-container .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-panel .tutorial-container .arrow {
+  width: 32px;
+  height: 32px;
+
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 8px;
+  align-self: center;
+
+  cursor: pointer;
+}
+
+.welcome-panel .tutorial-container .arrow-right {
+  transform: scaleX(-1);
+}
+
+.welcome-panel .tutorial-container .card-img {
+  height: 300px;
+  object-fit: contain;
+}
+
+.welcome-panel h3 {
+  font-size: 16pt;
+  color: grey;
 }
 
 @media only screen and (max-width: 720px) {

@@ -86,9 +86,9 @@ Pendências:
 - Videos
 	OK - BlocoA 
 	OK - BlocoB
-	OK - BlocoC
+	REPLACE - BlocoC
 	OK - BlocoD
-	OK - BlocoE
+	REPLACE - BlocoE
 	- BlocoF
 	- BlocoH
 	- BlocoR
