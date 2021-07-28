@@ -86,12 +86,12 @@ Pendências:
 - Videos
 	OK - BlocoA 
 	OK - BlocoB
-	REPLACE - BlocoC
+	OK - BlocoC
 	OK - BlocoD
-	REPLACE - BlocoE
-	- BlocoF
-	- BlocoH
-	- BlocoR
+	OK - BlocoE
+	OK - BlocoF
+	OK - BlocoH
+	OK - BlocoR
 	- Projeos
 
 
@@ -120,7 +120,7 @@ OK - Adicionar a imagem do cronograma (inkscape)
 OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
 
-- atualizar datas do cronograma svg
+OK - atualizar datas do cronograma svg
 
 - omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
 	- ou colocar a imagem "em construção"
