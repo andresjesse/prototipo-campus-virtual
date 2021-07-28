@@ -119,7 +119,7 @@ export default function Map(props) {
           height={44}
           left={978}
           top={381}
-          frames={4}
+          frames={6}
           minTimeMillis={0}
           maxTimeMillis={0}
           animFrameTimeMs={2000}

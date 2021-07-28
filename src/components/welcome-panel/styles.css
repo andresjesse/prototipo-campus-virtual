@@ -38,6 +38,7 @@
 
 .welcome-panel .tutorial-container > * {
   margin: 2px;
+  text-align: center;
 }
 
 .welcome-panel .tutorial-container .cards {
@@ -75,5 +76,17 @@
 @media only screen and (max-width: 720px) {
   .welcome-panel {
     width: 90%;
+  }
+
+  .welcome-panel .tutorial-container .arrow {
+    position: absolute;
+    align-self: flex-end;
+    left: 64px;
+  }
+
+  .welcome-panel .tutorial-container .arrow-right {
+    position: absolute;
+    left: auto;
+    right: 64px;
   }
 }

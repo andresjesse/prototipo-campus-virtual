@@ -96,11 +96,9 @@ Pendências:
 
 
 OK  - link na logo grande (em uma modal com rolagem);
-- Apoiadores: UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, Bosch, Vale do Genoma
-    - Adriano vai enviar as logos;
-OK  - Criar como cards com fundo branco, icone cursor;
-
-OK - Mudar X/Y inicial pra aparecer todos os Pins;
+- Apoiadores: 
+    OK- UTFPR, CNPQ, Fundacao Auraucaria, Governo do Parana, 
+    - Bosch, Vale do Genoma
 
 OK  - remover "Informações Gerais" (Main menu)
   - Criar um novo H2 "Instruções"
@@ -121,7 +119,7 @@ OK - Geral vai pro final: City tour, apoiadores, projetos para o final do menu (
 OK - Adicionar a imagem do cronograma (inkscape)
 OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
-- Revisar Textos da pagina "/prog"
+
 - atualizar datas do cronograma svg
 
 - omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
