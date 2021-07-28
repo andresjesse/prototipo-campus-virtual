@@ -7,6 +7,7 @@ import {
   AiOutlineCalendar,
   AiOutlineCar,
   AiOutlineFileText,
+  AiOutlineFilePdf,
   AiOutlineQuestionCircle,
   AiOutlineMail,
 } from "react-icons/ai";
@@ -72,6 +73,29 @@ export default function MainMenu(props) {
         {/* <Link to="/authors" className="link">
           <AiOutlineFileText />
           Guia para Autores
+        </Link> */}
+
+        <Link to="/pdf?f=EVIN_tutorial_submissao.pdf" className="link">
+          <AiOutlineFilePdf />
+          Tutorial para a Submissão de Trabalhos
+        </Link>
+
+        <Link
+          to="/pdf?f=EVIN_tutorial_preenchimento_metadados.pdf"
+          className="link"
+        >
+          <AiOutlineFilePdf />
+          Tutorial para Preenchimento de Metadados
+        </Link>
+
+        {/* <Link to="/pdf?f=EVIN_tutorial_correcao_submissao.pdf" className="link">
+          <AiOutlineFilePdf />
+          Tutorial para a Devolução de Correção às Submissões
+        </Link>
+
+        <Link to="/pdf?f=EVIN_tutorial_avaliacao.pdf" className="link">
+          <AiOutlineFilePdf />
+          Tutorial para a Avaliação de Trabalhos
         </Link> */}
 
         <Link to="/faq" className="link">

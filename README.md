@@ -101,16 +101,14 @@ OK  - link na logo grande (em uma modal com rolagem);
     - Bosch, Vale do Genoma
 
 OK  - remover "Informações Gerais" (Main menu)
-  - Criar um novo H2 "Instruções"
-
-    - Os links abrem pagina/modal
+OK  - Criar um novo H2 "Instruções"
+OK    - Os links abrem pagina/modal (pdfviewer)
 
 OK - Participante vai ser o primeiro item -> renomear para "Menu Principal" (remover do topo);
 
 OK  - EVIM,
-    - FAQ + Existem 4 tutoriais prontos, deixar eles como links principais;
+OK    - FAQ + Existem 4 tutoriais prontos, deixar eles como links principais; https://eventos.utfpr.edu.br//index/index/about
       - Alterar estilo do FAQ
-    - https://eventos.utfpr.edu.br//index/index/about
 
 OK - Informações Gerais (sai) -> Entra modal Contato (Email oficial)
 
@@ -122,5 +120,5 @@ OK  - >> fiz uma opção no menu principal. Botão flutuante? testar;
 
 OK - atualizar datas do cronograma svg
 
-- omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
-	- ou ainda usar a TagNew
+OK - omitir páginas "programação do evento" e "agenda de apresentações" (deixar fácil de retomá-las quando chegar a hora).
+OK	- ou ainda usar a TagNew

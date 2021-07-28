@@ -10,6 +10,7 @@ import Schedule from "./pages/schedule";
 import Prog from "./pages/prog";
 import FAQ from "./pages/faq";
 import Authors from "./pages/authors";
+import PDFViewer from "./pages/pdfviewer";
 
 export default function App() {
   const updateScreenSizeCSS = () => {
@@ -44,6 +45,9 @@ export default function App() {
           </Route>
           <Route exact path="/authors">
             <Authors />
+          </Route>
+          <Route exact path="/pdf">
+            <PDFViewer />
           </Route>
           <Route path="/">
             <Home />
