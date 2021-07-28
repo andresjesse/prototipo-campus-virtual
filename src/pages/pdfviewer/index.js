@@ -5,8 +5,6 @@ import TopMenu from "../../components/topmenu";
 import PDFIframe from "../../components/pdf-iframe";
 import Footer from "../../components/footer";
 
-import externalURLs from "../../services/external-urls";
-
 import "./styles.css";
 
 export default function Authors(props) {
