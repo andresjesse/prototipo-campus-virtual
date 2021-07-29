@@ -10,6 +10,14 @@ import icClose from "../../assets/icons/ic-close.png";
 // time (in ms) to auto-hide this welcome banner
 const SHOW_TIME = 3000;
 
+const Content = ({ tutorial, close }) => {
+  if (tutorial) {
+    return <Tutorial onFinish={close} />;
+  }
+
+  return <img src={welcome} alt="banner"></img>;
+};
+
 export default function WelcomePanel() {
   const [isShown, setShown] = React.useState(true);
   const [opacity, setOpacity] = React.useState(1);
@@ -46,23 +54,20 @@ export default function WelcomePanel() {
     localStorage.setItem("skipTutorial", "true");
   };
 
-  const Content = () => {
-    if (tutorial) return <Tutorial />;
-    return <img src={welcome} alt="banner"></img>;
-  };
-
   if (!isShown) return <div />;
 
   return (
     <div className="welcome-container" style={{ opacity }}>
+      <div className="modal-fullscreen-background" onClick={close}></div>
+
       <div className="welcome-panel global-shadow">
-        <Content />
+        <Content close={close} tutorial={tutorial} />
 
         <img
           src={icClose}
           className="modal ic-close"
           alt="ícone para fechar modal"
-          onClick={() => close()}
+          onClick={close}
         />
       </div>
     </div>

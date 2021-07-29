@@ -4,12 +4,13 @@ import card1 from "./tutorial-card1.png";
 import card2 from "./tutorial-card2.png";
 import card3 from "./tutorial-card3.png";
 import card4 from "./tutorial-card4.png";
+import card5 from "./tutorial-card5.png";
 
 import icArrow from "../../assets/icons/ic-arrow.png";
 
-const cards = [card1, card2, card3, card4];
+const cards = [card1, card2, card3, card4, card5];
 
-const Tutorial = function () {
+const Tutorial = function (props) {
   const [card, setCard] = React.useState(0);
 
   return (
@@ -22,19 +23,29 @@ const Tutorial = function () {
           src={icArrow}
           alt="arrow left"
           className="arrow global-shadow"
+          style={{ opacity: card > 0 ? 1 : 0.5 }}
           onClick={() => {
             if (card > 0) setCard(card - 1);
-            else setCard(cards.length - 1);
           }}
         />
 
-        <img src={cards[card]} alt="card tutorial" className="card-img" />
+        <img
+          src={cards[card]}
+          alt="card tutorial"
+          className="card-img"
+          onClick={() => {
+            if (card == cards.length - 1) props.onFinish();
+          }}
+        />
 
         <img
           src={icArrow}
           alt="arrow left"
           className="arrow arrow-right global-shadow"
-          onClick={() => setCard((card + 1) % cards.length)}
+          onClick={() => {
+            if (card < cards.length - 1) setCard(card + 1);
+            else props.onFinish();
+          }}
         />
       </div>
     </div>

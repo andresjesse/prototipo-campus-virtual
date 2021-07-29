@@ -10,6 +10,8 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: 1s;
+
+  pointer-events: auto;
 }
 
 .welcome-panel {
