@@ -10,7 +10,7 @@ import basket from "./anim-basket.png";
 import citytour from "./anim-citytour.png";
 import uteco from "./anim-uteco.png";
 import stand from "./anim-stand.png";
-import sponsor from "./anim-sponsor.png";
+import sponsor from "./anim-sponsor.svg";
 
 // const minTimeMillis = 1000; //2000
 // const maxTimeMillis = 3000; //5000
