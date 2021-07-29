@@ -55,7 +55,17 @@ export default function MainMenu(props) {
           rel="noreferrer"
         >
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
-          Portal de Eventos Científicos da UTFPR (EVIN)
+          Faça sua Inscrição (EVIN)
+        </a>
+
+        <a
+          href={externalURLs["evin-base"]}
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
+          Submissão de Trabalhos (EVIN)
         </a>
 
         <div
@@ -64,6 +74,26 @@ export default function MainMenu(props) {
         >
           <AiOutlineCalendar />
           Datas Importantes
+        </div>
+      </div>
+
+      <h2>Templates</h2>
+
+      <div className="link-list">
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["templates-sei"])}
+        >
+          <AiOutlineFileText />
+          SEI
+        </div>
+
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["templates-sicite"])}
+        >
+          <AiOutlineFileText />
+          SICITE
         </div>
       </div>
 

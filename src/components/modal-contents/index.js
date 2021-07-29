@@ -14,6 +14,9 @@ import Sponsor from "./sponsor";
 import Contact from "./contact";
 import CalendarSVG from "./calendar-svg";
 
+import TemplatesSEI from "./templates-sei";
+import TemplatesSICITE from "./templates-sicite";
+
 const modalContents = {
   "main-menu": <MainMenu />,
   "block-a": <BlocoA />,
@@ -28,6 +31,8 @@ const modalContents = {
   sponsor: <Sponsor />,
   contact: <Contact />,
   "calendar-svg": <CalendarSVG />,
+  "templates-sei": <TemplatesSEI />,
+  "templates-sicite": <TemplatesSICITE />,
 };
 
 export default modalContents;

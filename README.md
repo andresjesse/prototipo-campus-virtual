@@ -79,4 +79,25 @@ $ convert -append \*.png out.png
 
 - Update prog: replace services/prog-highlights (abstract can be null, isPresentation=true for sessions, put photos in the same folder)
 
+###
 
+OK LINK DO EVIN -> Faça sua Inscrição (EVIN)
+OK - Submissão de Trabalhos (EVIN)
+
+OK Sub-Menu "Templates"
+
+OK - LINK Modal> "SEI"
+OK - LINK Modal> "SICITE"
+
+OK Templates
+OK -- SEI
+OK-- SICITE
+
+OK Modal Templates SEI:
+OK -- Extensão: Word, ODT.
+OK -- Inovação: Word, ODT.
+
+OK Modal Templates SICITE:
+OK -- Word, ODT, Latex
+
+-- Checklist Pré-Submissão?? não foi definido como fazer.
