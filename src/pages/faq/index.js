@@ -20,7 +20,11 @@ export default function FAQ(props) {
       ></div>
 
       <div className="components-overlay">
-        <TopMenu icon="arrow" title="FAQ" onClick={() => history.push("/")} />
+        <TopMenu
+          icon="arrow"
+          title="Instruções"
+          onClick={() => history.push("/")}
+        />
 
         <DriveIframe url={externalURLs["drive-faq"]} />
 

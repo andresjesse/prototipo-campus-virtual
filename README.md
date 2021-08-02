@@ -116,8 +116,7 @@ OK -- Word, ODT, Latex
 > > > (Tutorial para Preenchimento de Metadados) Usar link do DRIVE iframe
 > > > (Cadastro de Avaliadores) Usar link do DRIVE iframe (antes do FAQ)
 > > > No Título do Menu, usar "Instruções" (para todos os docs deste bloco)
-> > >
-> > > > FAQ -> Instruções (esta no mesmo bloco)
+OK > > > > FAQ -> Instruções (esta no mesmo bloco)
 
 OK -- Logo Vale do Genoma, qual usar?
 OK > > > > adicionar SBB
