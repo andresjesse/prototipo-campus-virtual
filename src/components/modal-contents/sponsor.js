@@ -3,7 +3,9 @@ import parana from "./sponsor-logos/parana.svg";
 import fundacaoAraucaria from "./sponsor-logos/fundacao-araucaria.svg";
 import cnpq from "./sponsor-logos/cnpq.svg";
 import bosch from "./sponsor-logos/bosch.svg";
-import valeDoGenoma from "./sponsor-logos/vale-do-genoma.svg";
+import valeDoGenoma from "./sponsor-logos/vale-do-genoma.png";
+import ipec from "./sponsor-logos/ipec.png";
+import sbb from "./sponsor-logos/sbb.jpg";
 
 import "./sponsor.css";
 
@@ -39,6 +41,18 @@ const Sponsor = () => (
     <Card title="Bosch" logo={bosch} url="https://www.bosch.com.br/" />
 
     <Card title="Vale do Genoma" logo={valeDoGenoma} url="#" />
+
+    <Card
+      title="Institudo para Pesquisa do Câncer"
+      logo={ipec}
+      url="https://ipec.org.br/"
+    />
+
+    <Card
+      title="Sociedade Brasileira de Bioética"
+      logo={sbb}
+      url="https://www.sbbioetica.org.br/Quem-somos/PR"
+    />
   </div>
 );
 

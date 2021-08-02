@@ -8,6 +8,8 @@
   margin: 10px;
   padding: 5%;
   border-radius: 16px;
+  max-height: 150px;
+  object-fit: contain;
 }
 
 .sponsor-container h2 {

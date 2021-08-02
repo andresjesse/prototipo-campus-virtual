@@ -101,3 +101,31 @@ OK Modal Templates SICITE:
 OK -- Word, ODT, Latex
 
 -- Checklist Pré-Submissão?? não foi definido como fazer.
+
+> > > [DEPOIS] Documento para Download. "Checklist para Submissão" + Ícone
+
+-- Templates;
+
+> > > [DEPOIS] RESOLVER DEPOIS
+
+-- Substituir PDFs Adriano;
+
+> > > (Tutorial de Submissão) Usar link do DRIVE iframe
+> > > (Tutorial para Preenchimento de Metadados) Usar link do DRIVE iframe
+> > > (Cadastro de Avaliadores) Usar link do DRIVE iframe (antes do FAQ)
+> > > No Título do Menu, usar "Instruções" (para todos os docs deste bloco)
+> > >
+> > > > FAQ -> Instruções (esta no mesmo bloco)
+
+-- Logo Vale do Genoma, qual usar?
+
+> > > > adicionar SBB
+> > > > IPEC
+
+-- Remover autenticação nginx
+
+> > Adicionar Pin:
+> > -- Bloco P
+> > -- RU -> Restaurante Universitário
+
+Incluir Chatbot (com ícone do whatsapp) na Form de contato.
