@@ -36,6 +36,8 @@
 .contact .social {
   display: flex;
   font-size: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact .social > * {

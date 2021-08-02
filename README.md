@@ -123,10 +123,10 @@ OK -- Logo Vale do Genoma, qual usar?
 OK > > > > adicionar SBB
 OK > > > > IPEC
 
+OK > > Adicionar Pin:
+OK > > -- Bloco P
+OK > > -- RU -> Restaurante Universitário
+
+OK Incluir Chatbot (com ícone do whatsapp) na Form de contato.
+
 -- Remover autenticação nginx
-
-> > Adicionar Pin:
-> > -- Bloco P
-> > -- RU -> Restaurante Universitário
-
-Incluir Chatbot (com ícone do whatsapp) na Form de contato.

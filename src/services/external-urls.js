@@ -3,6 +3,7 @@ const externalURLs = {
   "contact-youtube": "https://www.youtube.com/utfprgp",
   "contact-facebook": "https://www.facebook.com/UTFPRgp",
   "contact-instagram": "https://www.instagram.com/utfprgp",
+  "contact-whatsapp-bot": "https://wa.me/554291325328",
 
   //Salas (TEMP! Substituir)
   "sala-1": "https://meet.google.com/xco-fbfi-pfy",

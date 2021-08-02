@@ -5,6 +5,7 @@ import {
   AiOutlineYoutube,
   AiOutlineFacebook,
   AiOutlineInstagram,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
 
 import externalURLs from "../../services/external-urls";
@@ -44,6 +45,14 @@ const Contact = () => (
         rel="noreferrer"
       >
         <AiOutlineInstagram />
+      </a>
+
+      <a
+        href={externalURLs["contact-whatsapp-bot"]}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <AiOutlineWhatsApp />
       </a>
     </div>
   </div>
