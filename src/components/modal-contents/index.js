@@ -8,6 +8,8 @@ import BlocoE from "./bloco-e";
 import BlocoF from "./bloco-f";
 import BlocoH from "./bloco-h";
 import BlocoR from "./bloco-r";
+import BlocoP from "./bloco-p";
+import RU from "./ru";
 
 import Stand from "./stand";
 import Sponsor from "./sponsor";
@@ -27,6 +29,8 @@ const modalContents = {
   "block-f": <BlocoF />,
   "block-h": <BlocoH />,
   "block-r": <BlocoR />,
+  "block-p": <BlocoP />,
+  ru: <RU />,
   stand: <Stand />,
   sponsor: <Sponsor />,
   contact: <Contact />,

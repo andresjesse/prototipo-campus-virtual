@@ -185,14 +185,14 @@ export default function Map(props) {
           building="block-p"
           onMouseEnter={() => setHover("block-p")}
           onMouseLeave={() => setHover("")}
-          onClick={() => {}}
+          onClick={() => modal.show(modalContents["block-p"])}
         />
 
         <MapOverlay
           building="ru"
           onMouseEnter={() => setHover("ru")}
           onMouseLeave={() => setHover("")}
-          onClick={() => {}}
+          onClick={() => modal.show(modalContents["ru"])}
         />
 
         <MapOverlay

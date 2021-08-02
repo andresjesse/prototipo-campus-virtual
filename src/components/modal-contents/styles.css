@@ -42,6 +42,12 @@
   margin-bottom: 32px;
 }
 
+.single-image {
+  width: 98%;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
 .ic-evin {
   height: 17px;
   margin-right: 8px;
