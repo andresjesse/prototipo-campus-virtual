@@ -100,6 +100,8 @@ OK -- Inovação: Word, ODT.
 OK Modal Templates SICITE:
 OK -- Word, ODT, Latex
 
+
+
 -- Checklist Pré-Submissão?? não foi definido como fazer.
 
 > > > [DEPOIS] Documento para Download. "Checklist para Submissão" + Ícone
@@ -117,10 +119,9 @@ OK -- Word, ODT, Latex
 > > >
 > > > > FAQ -> Instruções (esta no mesmo bloco)
 
--- Logo Vale do Genoma, qual usar?
-
-> > > > adicionar SBB
-> > > > IPEC
+OK -- Logo Vale do Genoma, qual usar?
+OK > > > > adicionar SBB
+OK > > > > IPEC
 
 -- Remover autenticação nginx
 
