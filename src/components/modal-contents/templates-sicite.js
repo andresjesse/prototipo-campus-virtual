@@ -18,11 +18,23 @@ const TemplatesSICITE = () => (
     <h1>Templates SICITE</h1>
 
     <div className="row">
-      <Card url="#" logo={icWord} title="Word" />
+      <Card
+        url="/templates/Template_SICITE_2021_FINAL_WORD.docx"
+        logo={icWord}
+        title="Word"
+      />
 
-      <Card url="#" logo={icODT} title="OpenDocument" />
+      <Card
+        url="/templates/Template_SICITE_2021_FINAL_WRITER.odt"
+        logo={icODT}
+        title="OpenDocument"
+      />
 
-      <Card url="#" logo={icLatex} title="LaTeX" />
+      <Card
+        url="/templates/Template_SEI-SICITE_2021-UTFPR-GP.tar.gz"
+        logo={icLatex}
+        title="LaTeX"
+      />
     </div>
   </div>
 );

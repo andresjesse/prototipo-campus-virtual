@@ -110,12 +110,12 @@ OK -- Word, ODT, Latex
 
 > > > [DEPOIS] RESOLVER DEPOIS
 
--- Substituir PDFs Adriano;
+OK -- Substituir PDFs Adriano;
 
-> > > (Tutorial de Submissão) Usar link do DRIVE iframe
-> > > (Tutorial para Preenchimento de Metadados) Usar link do DRIVE iframe
-> > > (Cadastro de Avaliadores) Usar link do DRIVE iframe (antes do FAQ)
-> > > No Título do Menu, usar "Instruções" (para todos os docs deste bloco)
+OK > > > (Tutorial de Submissão) Usar link do DRIVE iframe
+OK > > > (Tutorial para Preenchimento de Metadados) Usar link do DRIVE iframe
+OK > > > (Cadastro de Avaliadores) Usar link do DRIVE iframe (antes do FAQ)
+OK > > > No Título do Menu, usar "Instruções" (para todos os docs deste bloco)
 OK > > > > FAQ -> Instruções (esta no mesmo bloco)
 
 OK -- Logo Vale do Genoma, qual usar?
