@@ -111,7 +111,7 @@ OK ---- Checklist para Submissão	SICITE_Checklist_Submissao.docx
 
 -- Templates SEI:
 OK ---- Word Extensão;		Template_SEI_2021_EXT_WORD.docx
----- ODT Extensão		Template_SEI_2021_EXT_WRITER.odt
+OK ---- ODT Extensão		Template_SEI_2021_EXT_WRITER.odt
 ---- Word Inovação;		Template_SEI_2021_INOV_WORD.docx
 ---- ODT Inovação.		Template_SEI_2021_INOV_WRITER.odt
 

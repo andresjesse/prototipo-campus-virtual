@@ -24,7 +24,11 @@ const TemplatesSEI = () => (
         title="Word"
       />
 
-      <Card url="#" logo={icODT} title="OpenDocument" />
+      <Card
+        url="/templates/Template_SEI_2021_EXT_WRITER.odt"
+        logo={icODT}
+        title="OpenDocument"
+      />
     </div>
 
     <h2>Inovação</h2>
