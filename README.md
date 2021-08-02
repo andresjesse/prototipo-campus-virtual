@@ -100,15 +100,20 @@ OK -- Inovação: Word, ODT.
 OK Modal Templates SICITE:
 OK -- Word, ODT, Latex
 
+-- 
 
 
--- Checklist Pré-Submissão?? não foi definido como fazer.
+-- Templates SICITE:
+OK ---- Latex;
+---- Word	Template_SICITE_2021_FINAL_WORD.docx
+---- ODT	Template_SICITE_2021_FINAL_WRITER.odt
+OK ---- Checklist para Submissão	SICITE_Checklist_Submissao.docx
 
-> > > [DEPOIS] Documento para Download. "Checklist para Submissão" + Ícone
-
--- Templates;
-
-> > > [DEPOIS] RESOLVER DEPOIS
+-- Templates SEI:
+OK ---- Word Extensão;		Template_SEI_2021_EXT_WORD.docx
+---- ODT Extensão		Template_SEI_2021_EXT_WRITER.odt
+---- Word Inovação;		Template_SEI_2021_INOV_WORD.docx
+---- ODT Inovação.		Template_SEI_2021_INOV_WRITER.odt
 
 OK -- Substituir PDFs Adriano;
 

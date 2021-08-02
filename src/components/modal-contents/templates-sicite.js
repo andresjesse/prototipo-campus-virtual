@@ -3,6 +3,7 @@ import "./templates.css";
 import icWord from "../../assets/icons/ic-microsoft-word.svg";
 import icODT from "../../assets/icons/ic-odt.svg";
 import icLatex from "../../assets/icons/ic-latex.svg";
+import icChecklist from "../../assets/icons/ic-checklist.png";
 
 const Card = ({ title, logo, url }) => (
   <div className="card global-shadow">
@@ -34,6 +35,14 @@ const TemplatesSICITE = () => (
         url="/templates/Template_SEI-SICITE_2021-UTFPR-GP.tar.gz"
         logo={icLatex}
         title="LaTeX"
+      />
+    </div>
+
+    <div className="row">
+      <Card
+        url="/templates/SICITE_Checklist_Submissao.docx"
+        logo={icChecklist}
+        title="Checklist para Submissão"
       />
     </div>
   </div>
