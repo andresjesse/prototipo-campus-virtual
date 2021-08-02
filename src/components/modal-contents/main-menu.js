@@ -100,33 +100,20 @@ export default function MainMenu(props) {
       <h2>Instruções</h2>
 
       <div className="link-list">
-        {/* <Link to="/authors" className="link">
+        <Link to="/tutorial-submissao" className="link">
           <AiOutlineFileText />
-          Guia para Autores
-        </Link> */}
-
-        <Link to="/pdf?f=EVIN_tutorial_submissao.pdf" className="link">
-          <AiOutlineFilePdf />
           Tutorial para a Submissão de Trabalhos
         </Link>
 
-        <Link
-          to="/pdf?f=EVIN_tutorial_preenchimento_metadados.pdf"
-          className="link"
-        >
-          <AiOutlineFilePdf />
+        <Link to="/tutorial-metadados" className="link">
+          <AiOutlineFileText />
           Tutorial para Preenchimento de Metadados
         </Link>
 
-        {/* <Link to="/pdf?f=EVIN_tutorial_correcao_submissao.pdf" className="link">
-          <AiOutlineFilePdf />
-          Tutorial para a Devolução de Correção às Submissões
+        <Link to="/cadastro-avaliadores" className="link">
+          <AiOutlineFileText />
+          Cadastro de Avaliadores
         </Link>
-
-        <Link to="/pdf?f=EVIN_tutorial_avaliacao.pdf" className="link">
-          <AiOutlineFilePdf />
-          Tutorial para a Avaliação de Trabalhos
-        </Link> */}
 
         <Link to="/faq" className="link">
           <AiOutlineQuestionCircle />
