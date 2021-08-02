@@ -105,8 +105,8 @@ OK -- Word, ODT, Latex
 
 -- Templates SICITE:
 OK ---- Latex;
----- Word	Template_SICITE_2021_FINAL_WORD.docx
----- ODT	Template_SICITE_2021_FINAL_WRITER.odt
+OK ---- Word	Template_SICITE_2021_FINAL_WORD.docx
+OK ---- ODT	Template_SICITE_2021_FINAL_WRITER.odt
 OK ---- Checklist para Submissão	SICITE_Checklist_Submissao.docx
 
 -- Templates SEI:
