@@ -85,6 +85,16 @@
   top: 690px;
 }
 
+.pin-container.block-p {
+  left: 510px;
+  top: 290px;
+}
+
+.pin-container.ru {
+  left: 860px;
+  top: 240px;
+}
+
 .pin-container.bus {
   left: 290px;
   top: 407px;

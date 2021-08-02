@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { AiOutlineCar } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
+import { IoFastFoodOutline } from "react-icons/io5";
 
 import ScrollContainer from "react-indiana-drag-scroll";
 
@@ -181,6 +182,20 @@ export default function Map(props) {
         />
 
         <MapOverlay
+          building="block-p"
+          onMouseEnter={() => setHover("block-p")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => {}}
+        />
+
+        <MapOverlay
+          building="ru"
+          onMouseEnter={() => setHover("ru")}
+          onMouseLeave={() => setHover("")}
+          onClick={() => {}}
+        />
+
+        <MapOverlay
           building="bus"
           onMouseEnter={() => setHover("bus")}
           onMouseLeave={() => setHover("")}
@@ -253,6 +268,20 @@ export default function Map(props) {
           text="Bloco R"
           building="block-r"
           isActive={hover === "block-r"}
+        />
+
+        <MapPin
+          letter="P"
+          text="Bloco P"
+          building="block-p"
+          isActive={hover === "block-p"}
+        />
+
+        <MapPin
+          letter={<IoFastFoodOutline />}
+          text="R.U."
+          building="ru"
+          isActive={hover === "ru"}
         />
 
         <MapPin

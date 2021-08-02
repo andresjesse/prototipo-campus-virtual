@@ -76,6 +76,22 @@
   top: 626px;
 }
 
+.map-overlay.block-p {
+  background-image: url(./overlay-bloco-p.png);
+  width: 477px;
+  height: 235px;
+  left: 295px;
+  top: 275px;
+}
+
+.map-overlay.ru {
+  background-image: url(./overlay-ru.png);
+  width: 251px;
+  height: 168px;
+  left: 756px;
+  top: 248px;
+}
+
 .map-overlay.bus {
   background-image: url(./overlay-bus.png);
   width: 98px;
