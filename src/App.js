@@ -9,7 +9,7 @@ import Schedule from "./pages/schedule";
 
 import Prog from "./pages/prog";
 import FAQ from "./pages/faq";
-import Authors from "./pages/authors";
+import TutorialSubmissao from "./pages/tutorial-submissao";
 import PDFViewer from "./pages/pdfviewer";
 
 export default function App() {
@@ -43,8 +43,8 @@ export default function App() {
           <Route exact path="/faq">
             <FAQ />
           </Route>
-          <Route exact path="/authors">
-            <Authors />
+          <Route exact path="/tutorial-submissao">
+            <TutorialSubmissao />
           </Route>
           <Route exact path="/pdf">
             <PDFViewer />
