@@ -10,6 +10,8 @@ import Schedule from "./pages/schedule";
 import Prog from "./pages/prog";
 import FAQ from "./pages/faq";
 import TutorialSubmissao from "./pages/tutorial-submissao";
+import TutorialMetadados from "./pages/tutorial-metadados";
+import CadastroAvaliadores from "./pages/cadastro-avaliadores";
 import PDFViewer from "./pages/pdfviewer";
 
 export default function App() {
@@ -45,6 +47,12 @@ export default function App() {
           </Route>
           <Route exact path="/tutorial-submissao">
             <TutorialSubmissao />
+          </Route>
+          <Route exact path="/tutorial-metadados">
+            <TutorialMetadados />
+          </Route>
+          <Route exact path="/cadastro-avaliadores">
+            <CadastroAvaliadores />
           </Route>
           <Route exact path="/pdf">
             <PDFViewer />
