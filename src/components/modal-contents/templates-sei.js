@@ -33,9 +33,17 @@ const TemplatesSEI = () => (
 
     <h2>Inovação</h2>
     <div className="row">
-      <Card url="#" logo={icWord} title="Word" />
+      <Card
+        url="/templates/Template_SEI_2021_INOV_WORD.docx"
+        logo={icWord}
+        title="Word"
+      />
 
-      <Card url="#" logo={icODT} title="OpenDocument" />
+      <Card
+        url="/templates/Template_SEI_2021_INOV_WRITER.odt"
+        logo={icODT}
+        title="OpenDocument"
+      />
     </div>
   </div>
 );

@@ -43,7 +43,7 @@ const Sponsor = () => (
     <Card title="Vale do Genoma" logo={valeDoGenoma} url="#" />
 
     <Card
-      title="Institudo para Pesquisa do Câncer"
+      title="Instituto para Pesquisa do Câncer"
       logo={ipec}
       url="https://ipec.org.br/"
     />

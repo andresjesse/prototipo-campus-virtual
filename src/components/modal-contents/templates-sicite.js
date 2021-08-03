@@ -32,7 +32,7 @@ const TemplatesSICITE = () => (
       />
 
       <Card
-        url="/templates/Template_SEI-SICITE_2021-UTFPR-GP.tar.gz"
+        url="/templates/Template_SICITE_2021-UTFPR-GP.tar.gz"
         logo={icLatex}
         title="LaTeX"
       />

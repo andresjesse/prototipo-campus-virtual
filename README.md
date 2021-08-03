@@ -79,58 +79,28 @@ $ convert -append \*.png out.png
 
 - Update prog: replace services/prog-highlights (abstract can be null, isPresentation=true for sessions, put photos in the same folder)
 
-###
+- Pre-built pages/components:
 
-OK LINK DO EVIN -> Faça sua Inscrição (EVIN)
-OK - Submissão de Trabalhos (EVIN)
+  - pdfviewer:
 
-OK Sub-Menu "Templates"
+    - Use any route to `/pdf?f=pdf-file.pdf`
+    - pdf-file must be in `/public/pdfs/`
 
-OK - LINK Modal> "SEI"
-OK - LINK Modal> "SICITE"
+  - drive-iframe:
+    - Create a new page, add `<DriveIframe url={externalURLs["drive-url"]} />`
+    - Choose a gDrive file, publish to Web "embedded"
+    - Copy iframe URL, add it to `externalURLs`
 
-OK Templates
-OK -- SEI
-OK-- SICITE
+- Templates SICITE:
 
-OK Modal Templates SEI:
-OK -- Extensão: Word, ODT.
-OK -- Inovação: Word, ODT.
+  - Latex - `Template_SICITE_2021-UTFPR-GP.tar.gz`; updated 02/08/21
+  - Word - `Template_SICITE_2021_FINAL_WORD.docx`; updated 02/08/21
+  - ODT - `Template_SICITE_2021_FINAL_WRITER.odt`; updated 02/08/21
+  - Checklist para Submissão - `SICITE_Checklist_Submissao.docx`; updated 02/08/21
 
-OK Modal Templates SICITE:
-OK -- Word, ODT, Latex
+- Templates SEI:
 
--- 
-
-
--- Templates SICITE:
-OK ---- Latex;
-OK ---- Word	Template_SICITE_2021_FINAL_WORD.docx
-OK ---- ODT	Template_SICITE_2021_FINAL_WRITER.odt
-OK ---- Checklist para Submissão	SICITE_Checklist_Submissao.docx
-
--- Templates SEI:
-OK ---- Word Extensão;		Template_SEI_2021_EXT_WORD.docx
-OK ---- ODT Extensão		Template_SEI_2021_EXT_WRITER.odt
----- Word Inovação;		Template_SEI_2021_INOV_WORD.docx
----- ODT Inovação.		Template_SEI_2021_INOV_WRITER.odt
-
-OK -- Substituir PDFs Adriano;
-
-OK > > > (Tutorial de Submissão) Usar link do DRIVE iframe
-OK > > > (Tutorial para Preenchimento de Metadados) Usar link do DRIVE iframe
-OK > > > (Cadastro de Avaliadores) Usar link do DRIVE iframe (antes do FAQ)
-OK > > > No Título do Menu, usar "Instruções" (para todos os docs deste bloco)
-OK > > > > FAQ -> Instruções (esta no mesmo bloco)
-
-OK -- Logo Vale do Genoma, qual usar?
-OK > > > > adicionar SBB
-OK > > > > IPEC
-
-OK > > Adicionar Pin:
-OK > > -- Bloco P
-OK > > -- RU -> Restaurante Universitário
-
-OK Incluir Chatbot (com ícone do whatsapp) na Form de contato.
-
--- Remover autenticação nginx
+  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 02/08/21
+  - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 02/08/21
+  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`;
+  - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`;
