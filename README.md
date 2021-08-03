@@ -94,16 +94,16 @@ $ convert -append \*.png out.png
 - Templates SICITE:
 
   - Latex - `Template_SICITE_2021-UTFPR-GP.tar.gz`; updated 02/08/21
-  - Word - `Template_SICITE_2021_FINAL_WORD.docx`; updated 02/08/21
-  - ODT - `Template_SICITE_2021_FINAL_WRITER.odt`; updated 02/08/21
-  - Checklist para Submissão - `SICITE_Checklist_Submissao.docx`; updated 02/08/21
+  - Word - `Template_SICITE_2021_FINAL_WORD.docx`; updated 03/08/21
+  - ODT - `Template_SICITE_2021_FINAL_WRITER.odt`; updated 03/08/21
+  - Checklist para Submissão - `SICITE_Checklist_Submissao.docx`; updated 03/08/21
 
 - Templates SEI:
 
-  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 02/08/21
-  - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 02/08/21
-  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`;
-  - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`;
+  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 03/08/21
+  - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 03/08/21
+  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`; updated 03/08/21
+  - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`; updated 03/08/21
 
 - Tag version:
   - `git tag -a v5-production -m 'versao live de lancamento'`
