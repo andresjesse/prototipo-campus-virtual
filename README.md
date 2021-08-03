@@ -104,3 +104,7 @@ $ convert -append \*.png out.png
   - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 02/08/21
   - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`;
   - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`;
+
+- Tag version:
+  - `git tag -a v5-production -m 'versao live de lancamento'`
+  - `git push origin v5-production`
