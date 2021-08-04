@@ -100,9 +100,9 @@ $ convert -append \*.png out.png
 
 - Templates SEI:
 
-  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 03/08/21
+  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 04/08/21
   - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 03/08/21
-  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`; updated 03/08/21
+  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`; updated 04/08/21
   - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`; updated 03/08/21
 
 - Tag version:
