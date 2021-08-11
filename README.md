@@ -94,6 +94,7 @@ $ convert -append \*.png out.png
 - Templates SICITE:
 
   - Latex - `Template_SICITE_2021-UTFPR-GP.tar.gz`; updated 02/08/21
+  - Overleaf - `(link)`; added 11/08/21;
   - Word - `Template_SICITE_2021_FINAL_WORD.docx`; updated 03/08/21
   - ODT - `Template_SICITE_2021_FINAL_WRITER.odt`; updated 03/08/21
   - Checklist para Submissão - `SICITE_Checklist_Submissao.docx`; updated 03/08/21

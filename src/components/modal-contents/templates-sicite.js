@@ -3,6 +3,7 @@ import "./templates.css";
 import icWord from "../../assets/icons/ic-microsoft-word.svg";
 import icODT from "../../assets/icons/ic-odt.svg";
 import icLatex from "../../assets/icons/ic-latex.svg";
+import icOverleaf from "../../assets/icons/ic-overleaf.png";
 import icChecklist from "../../assets/icons/ic-checklist.png";
 
 const Card = ({ title, logo, url }) => (
@@ -30,11 +31,19 @@ const TemplatesSICITE = () => (
         logo={icODT}
         title="OpenDocument"
       />
+    </div>
 
+    <div className="row">
       <Card
         url="/templates/Template_SICITE_2021-UTFPR-GP.tar.gz"
         logo={icLatex}
         title="LaTeX"
+      />
+
+      <Card
+        url="https://www.overleaf.com/latex/templates/template-sei-sicite-2021-utfpr-gp/gvphkcxwqxwn"
+        logo={icOverleaf}
+        title="Overleaf"
       />
     </div>
 
