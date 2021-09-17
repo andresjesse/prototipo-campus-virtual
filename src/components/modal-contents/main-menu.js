@@ -10,6 +10,7 @@ import {
   AiOutlineFilePdf,
   AiOutlineQuestionCircle,
   AiOutlineMail,
+  AiOutlineCheckSquare,
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
@@ -75,6 +76,11 @@ export default function MainMenu(props) {
           <AiOutlineCalendar />
           Datas Importantes
         </div>
+
+        <Link to="/checklist-avaliadores-sicite" className="link">
+          <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
+          <TagNew />
+        </Link>
       </div>
 
       <h2>Templates</h2>
