@@ -66,7 +66,7 @@ export default function MainMenu(props) {
           rel="noreferrer"
         >
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
-          Submissão de Trabalhos (EVIN)
+          Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
 
         <div
