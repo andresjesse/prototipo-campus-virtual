@@ -11,6 +11,8 @@ import Prog from "./pages/prog";
 import FAQ from "./pages/faq";
 import TutorialSubmissao from "./pages/tutorial-submissao";
 import TutorialMetadados from "./pages/tutorial-metadados";
+import TutorialAvaliacao from "./pages/tutorial-avaiacao";
+import TutorialCorrecaoSubmissao from "./pages/tutorial-correcao-submissao";
 import CadastroAvaliadores from "./pages/cadastro-avaliadores";
 import ChecklistAvaliadoresSICITE from "./pages/checklist-avaliadores-sicite";
 import PDFViewer from "./pages/pdfviewer";
@@ -51,6 +53,12 @@ export default function App() {
           </Route>
           <Route exact path="/tutorial-metadados">
             <TutorialMetadados />
+          </Route>
+          <Route exact path="/tutorial-avaliacao">
+            <TutorialAvaliacao />
+          </Route>
+          <Route exact path="/tutorial-correcao-submissao">
+            <TutorialCorrecaoSubmissao />
           </Route>
           <Route exact path="/cadastro-avaliadores">
             <CadastroAvaliadores />

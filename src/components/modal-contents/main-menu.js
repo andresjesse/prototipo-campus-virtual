@@ -83,6 +83,51 @@ export default function MainMenu(props) {
         </Link>
       </div>
 
+      <h2>Instruções</h2>
+
+      <div className="link-list">
+        {/* <Link to="/tutorial-submissao" className="link">
+          <AiOutlineFileText />
+          Tutorial para a Submissão de Trabalhos
+        </Link>
+
+        <Link to="/tutorial-metadados" className="link">
+          <AiOutlineFileText />
+          Tutorial para Preenchimento de Metadados
+        </Link>
+
+        <Link to="/cadastro-avaliadores" className="link">
+          <AiOutlineFileText />
+          Cadastro de Avaliadores
+        </Link> */}
+
+        <Link to="/tutorial-avaliacao" className="link">
+          <AiOutlineFileText />
+          Tutorial de Avaliação
+          <TagNew />
+        </Link>
+
+        <Link to="/tutorial-correcao-submissao" className="link">
+          <AiOutlineFileText />
+          Tutorial de Correção de Submissão
+          <TagNew />
+        </Link>
+
+        <Link to="/faq" className="link">
+          <AiOutlineQuestionCircle />
+          FAQ - Dúvidas Frequentes
+        </Link>
+
+        {/* <Link to="/prog" className="link">
+          <AiOutlineSchedule /> Programação do Evento
+        </Link> */}
+
+        {/* <Link to="/schedule" className="link">
+          <AiOutlineClockCircle /> Agenda de Apresentações
+          <TagNew />
+        </Link> */}
+      </div>
+
       <h2>Templates</h2>
 
       <div className="link-list">
@@ -101,39 +146,6 @@ export default function MainMenu(props) {
           <AiOutlineFileText />
           SICITE
         </div>
-      </div>
-
-      <h2>Instruções</h2>
-
-      <div className="link-list">
-        <Link to="/tutorial-submissao" className="link">
-          <AiOutlineFileText />
-          Tutorial para a Submissão de Trabalhos
-        </Link>
-
-        <Link to="/tutorial-metadados" className="link">
-          <AiOutlineFileText />
-          Tutorial para Preenchimento de Metadados
-        </Link>
-
-        <Link to="/cadastro-avaliadores" className="link">
-          <AiOutlineFileText />
-          Cadastro de Avaliadores
-        </Link>
-
-        <Link to="/faq" className="link">
-          <AiOutlineQuestionCircle />
-          FAQ - Dúvidas Frequentes
-        </Link>
-
-        {/* <Link to="/prog" className="link">
-          <AiOutlineSchedule /> Programação do Evento
-        </Link> */}
-
-        {/* <Link to="/schedule" className="link">
-          <AiOutlineClockCircle /> Agenda de Apresentações
-          <TagNew />
-        </Link> */}
       </div>
 
       <h2>Geral</h2>

@@ -28,6 +28,12 @@ const externalURLs = {
   "drive-tutorial-metadados":
     "https://docs.google.com/document/d/e/2PACX-1vTqG6cIcW1kxsNQppUFaOR9IkLbgAEB-1NILedXT0AwuRDnoYyuuTBjaHlZAV6ovlAfzXiIPfgAoBYf/pub?embedded=true",
 
+  "drive-tutorial-avaliacao":
+    "https://docs.google.com/document/d/e/2PACX-1vQJ0E6unfroVdnoqUl1obEzA4Utw8OMxIjit8eME8qpJn3h-Id17L1HWoFp3JYqoDD7SeFkMofTgEcB/pub?embedded=true",
+
+  "drive-tutorial-correcao-submissao":
+    "https://docs.google.com/document/d/e/2PACX-1vTRMsXnPweJFD0BnJjcKxUdlOHjA72lPralTLahPzOFUj9jpjAcimYCQJUrDvbmLiCuvbI029XjowGS/pub?embedded=true",
+
   "drive-cadastro-avaliadores":
     "https://docs.google.com/document/d/e/2PACX-1vScD8XHMuzOW8b6_idkpCNHFIOny7Ur3ZihnS7b-LL100hvVfLx5B6MpGNgncOr0ThOXvWXybt2ah4R/pub?embedded=true",
 
