@@ -49,6 +49,14 @@ export default function MainMenu(props) {
       <h2>Menu Principal</h2>
 
       <div className="link-list">
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["calendar-svg"])}
+        >
+          <AiOutlineCalendar />
+          Datas Importantes
+        </div>
+
         <a
           href={externalURLs["evin-base"]}
           className="link"
@@ -68,14 +76,6 @@ export default function MainMenu(props) {
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
           Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
-
-        <div
-          className="link"
-          onClick={() => modal.show(modalContents["calendar-svg"])}
-        >
-          <AiOutlineCalendar />
-          Datas Importantes
-        </div>
 
         <Link to="/checklist-avaliadores-sicite" className="link">
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
