@@ -34,6 +34,9 @@ const externalURLs = {
   "drive-tutorial-correcao-submissao":
     "https://docs.google.com/document/d/e/2PACX-1vTRMsXnPweJFD0BnJjcKxUdlOHjA72lPralTLahPzOFUj9jpjAcimYCQJUrDvbmLiCuvbI029XjowGS/pub?embedded=true",
 
+  "drive-tutorial-gravacao-video":
+    "https://docs.google.com/document/d/e/2PACX-1vTqQSF2oPg23AFSn3A10MiopGNg8Xzvb2WakW17RdX9qM50bbW78F6wSPv314HH905UD7fDqweItf7E/pub?embedded=true",
+
   "drive-cadastro-avaliadores":
     "https://docs.google.com/document/d/e/2PACX-1vScD8XHMuzOW8b6_idkpCNHFIOny7Ur3ZihnS7b-LL100hvVfLx5B6MpGNgncOr0ThOXvWXybt2ah4R/pub?embedded=true",
 

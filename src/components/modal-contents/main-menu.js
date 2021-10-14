@@ -79,7 +79,6 @@ export default function MainMenu(props) {
 
         <Link to="/checklist-avaliadores-sicite" className="link">
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
-          <TagNew />
         </Link>
       </div>
 
@@ -101,16 +100,20 @@ export default function MainMenu(props) {
           Cadastro de Avaliadores
         </Link> */}
 
+        <Link to="/tutorial-gravacao-video" className="link">
+          <AiOutlineFileText />
+          Tutorial de Gravação do Vídeo
+          <TagNew />
+        </Link>
+
         <Link to="/tutorial-avaliacao" className="link">
           <AiOutlineFileText />
           Tutorial de Avaliação
-          <TagNew />
         </Link>
 
         <Link to="/tutorial-correcao-submissao" className="link">
           <AiOutlineFileText />
           Tutorial de Correção de Submissão
-          <TagNew />
         </Link>
 
         <Link to="/faq" className="link">
