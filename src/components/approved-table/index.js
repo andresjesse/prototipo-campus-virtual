@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import "./styles.css";
 
 import dataSEI from "../../services/approved-papers-sei";
+import dataSICITE from "../../services/approved-papers-sicite";
 
 import DefaultColumnFilter from "./DefaultColumnFilter";
 import SelectColumnFilter from "./SelectColumnFilter";
@@ -155,16 +156,23 @@ export default function DataTable(props) {
   const mergedData = [];
 
   dataSEI.map((entry) => mergedData.push({ event: "SEI", ...entry }));
+  dataSICITE.map((entry) => mergedData.push({ event: "SICITE", ...entry }));
 
   const data = React.useMemo(() => mergedData, []);
 
   const columns = React.useMemo(
     () => [
-      // {
-      //   Header: "ID",
-      //   accessor: "id",
-      //   width: 60,
-      // },
+      {
+        Header: "ID EVIN",
+        accessor: "id",
+        width: 70,
+      },
+      {
+        Header: "Evento",
+        accessor: "event",
+        Filter: SelectColumnFilter,
+        width: 80,
+      },
       {
         Header: "Título",
         accessor: "title",
@@ -174,12 +182,6 @@ export default function DataTable(props) {
         Header: "Primeiro Autor",
         accessor: "author",
         width: 300,
-      },
-      {
-        Header: "Evento",
-        accessor: "event",
-        Filter: SelectColumnFilter,
-        width: 80,
       },
     ],
     []
