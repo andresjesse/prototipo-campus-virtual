@@ -9,6 +9,7 @@ import Schedule from "./pages/schedule";
 
 import Prog from "./pages/prog";
 import FAQ from "./pages/faq";
+import ApprovedPapers from "./pages/approved-papers";
 import TutorialSubmissao from "./pages/tutorial-submissao";
 import TutorialMetadados from "./pages/tutorial-metadados";
 import TutorialAvaliacao from "./pages/tutorial-avaiacao";
@@ -48,6 +49,9 @@ export default function App() {
           </Route>
           <Route exact path="/faq">
             <FAQ />
+          </Route>
+          <Route exact path="/approved-papers">
+            <ApprovedPapers />
           </Route>
           <Route exact path="/tutorial-submissao">
             <TutorialSubmissao />

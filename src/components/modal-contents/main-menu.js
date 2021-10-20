@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
+import { BsFillFileEarmarkSlidesFill } from "react-icons/bs";
 
 import { MdFiberNew } from "react-icons/md";
 
@@ -79,6 +80,12 @@ export default function MainMenu(props) {
 
         <Link to="/checklist-avaliadores-sicite" className="link">
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
+        </Link>
+
+        <Link to="/approved-papers" className="link">
+          <BsFillFileEarmarkSlidesFill />
+          Trabalhos Aceitos
+          <TagNew />
         </Link>
       </div>
 
