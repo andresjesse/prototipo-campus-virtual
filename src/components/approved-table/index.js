@@ -72,12 +72,13 @@ function Table({ columns, data }) {
               <tr {...group.getHeaderGroupProps()}>
                 {group.headers.map((column) => (
                   <th
+                    className="react-table-header-th"
                     {...column.getHeaderProps({
                       style: { width: column.width },
                     })}
                   >
                     {column.render("Header")}
-                    <div>
+                    <div className="react-table-header-filterdiv">
                       {column.canFilter ? column.render("Filter") : null}
                     </div>
                   </th>
@@ -189,6 +190,8 @@ export default function DataTable(props) {
   if (data.length > 0)
     return (
       <div className="table-container global-shadow">
+        <h2 style={{ marginTop: "8px", marginBottom: 0 }}>Trabalhos Aceitos</h2>
+
         <Table columns={columns} data={data} />
 
         <img

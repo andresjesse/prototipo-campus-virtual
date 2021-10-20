@@ -14,7 +14,7 @@ import {
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
-import { BsFillFileEarmarkSlidesFill } from "react-icons/bs";
+import { BsFileEarmarkSlides } from "react-icons/bs";
 
 import { MdFiberNew } from "react-icons/md";
 
@@ -78,12 +78,12 @@ export default function MainMenu(props) {
           Portal de Eventos Científicos da UTFPR (EVIN)
         </a>
 
-        <Link to="/checklist-avaliadores-sicite" className="link">
+        {/* <Link to="/checklist-avaliadores-sicite" className="link">
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
-        </Link>
+        </Link> */}
 
         <Link to="/approved-papers" className="link">
-          <BsFillFileEarmarkSlidesFill />
+          <BsFileEarmarkSlides />
           Trabalhos Aceitos
           <TagNew />
         </Link>
@@ -113,7 +113,7 @@ export default function MainMenu(props) {
           <TagNew />
         </Link>
 
-        <Link to="/tutorial-avaliacao" className="link">
+        {/* <Link to="/tutorial-avaliacao" className="link">
           <AiOutlineFileText />
           Tutorial de Avaliação
         </Link>
@@ -121,7 +121,7 @@ export default function MainMenu(props) {
         <Link to="/tutorial-correcao-submissao" className="link">
           <AiOutlineFileText />
           Tutorial de Correção de Submissão
-        </Link>
+        </Link> */}
 
         <Link to="/faq" className="link">
           <AiOutlineQuestionCircle />
