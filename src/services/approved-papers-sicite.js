@@ -168,6 +168,14 @@ const data = [
       "Ambientes Inteligentes: o uso de tecnologias de assistentes de voz por pessoas com deficiência",
     author: "Ana Vitória Lachowski Volochtchuk",
   },
+
+  {
+    id: 8796,
+    title:
+      "Análise acústica de contrapisos com resíduos incorporados: RCD e Raspas de Pneus",
+    author: "Valéria Beatriz Wille",
+  },
+
   {
     id: 8008,
     title: "Analise acústica de vozes com e sem edema de Reinke",
@@ -348,6 +356,11 @@ const data = [
     author: "Vicente Paula Santos Filho",
   },
   {
+    id: 8187,
+    title: "Análise dos resíduos gerados na indústria moveleira",
+    author: "Eduarda Dombrowski Kaminski",
+  },
+  {
     id: 7809,
     title:
       "Análise e segmentação de termogramas para identificação de tumores de mama",
@@ -375,6 +388,12 @@ const data = [
     id: 8216,
     title: "Análise exploratória de dados de séries temporais utilizando o R",
     author: "Natália De Santi Pilonetto",
+  },
+  {
+    id: 8713,
+    title:
+      "Análise por DRX da influência da substituição Ni-Co no sistema CoxNi(1-x)Nb2O6",
+    author: "Guilherme Airam Henz Ferreira Dias",
   },
   {
     id: 8246,
@@ -638,6 +657,12 @@ const data = [
     author: "Bruna Clara Romansina",
   },
   {
+    id: 8755,
+    title:
+      "Avaliação da produção de hidrogênio derivado da eletrólise do excedente hidrelétrico brasileiro de energia",
+    author: "Lenrry Ryuji S Nakasone",
+  },
+  {
     id: 8486,
     title:
       "Avaliação da qualidade das águas de riachos urbanos e rurais da região de Maringá-PR.",
@@ -724,6 +749,24 @@ const data = [
     title:
       "Avaliação do desempenho de métodos de análise P-Delta em problemas de estabilidade de pórticos planos",
     author: "Djonathan Weiss",
+  },
+  {
+    id: 8063,
+    title:
+      "Avaliação do efeito citotóxico/antitumoral de extratos aquoso e alcóolico de própolis",
+    author: "Ingrithy Vendruscolo",
+  },
+  {
+    id: 8133,
+    title:
+      "Avaliação do efeito citotóxico/antitumoral do extrato aquoso de carambolas verdes e maduras",
+    author: "Agatha Giovanna Fragoso",
+  },
+  {
+    id: 8213,
+    title:
+      "Avaliação do efeito citotóxico/antitumoral do extrato hidrometanólico de gengibre",
+    author: "Sabrina Ishikawa",
   },
   {
     id: 8120,
@@ -964,6 +1007,12 @@ const data = [
     author: "Aline Oliveira Mattos",
   },
   {
+    id: 8118,
+    title:
+      "Citotoxicidade das águas do Rio Marrecas para células renais de Macaca mullata (in vitro)",
+    author: "Mariana Tonello Biffi",
+  },
+  {
     id: 8536,
     title:
       "Citotoxicidade e genotoxicidade dos corantes alimentares Azul Patente e Verde Rápido associados entre si: aditivos presentes na formulação do aditivo de cor Blue Jeans.",
@@ -1177,6 +1226,12 @@ const data = [
     id: 8389,
     title: "Consórcio de plantas de cobertura na proteção do solo",
     author: "Camila Roberta Pereira",
+  },
+  {
+    id: 8087,
+    title:
+      "Consórcios Bacterianos e Corrosão Microbiologicamente Influenciada: Estado da Arte",
+    author: "Mariana Isabeli Valentim",
   },
   {
     id: 8470,
@@ -2025,6 +2080,12 @@ const data = [
     author: "Gabriel Goulart Spreng",
   },
   {
+    id: 8038,
+    title:
+      "Estudo da qualidade microbiológica de vegetais folhosos e frutas comercializadas na cidade de Medianeira-PR através de diferentes métodos de higienização",
+    author: "Paula Eduarda Madureira Castro De Paula",
+  },
+  {
     id: 8716,
     title:
       "Estudo da separação e purificação de biodiesel com membranas poliméricas de microfiltração",
@@ -2482,6 +2543,12 @@ const data = [
     author: "Ana Paula Cardoso",
   },
   {
+    id: 8365,
+    title:
+      "Influência da secagem em camada de espuma na qualidade de cebola em pó",
+    author: "Antonio Francisco De Lima Junior",
+  },
+  {
     id: 8037,
     title:
       "Influência da temperatura e tempo de reação na acidulação da borra de óleo de milho",
@@ -2773,6 +2840,12 @@ const data = [
     author: "Maria Angélica Miranda",
   },
   {
+    id: 8743,
+    title:
+      "Microcápsulas de Salicilato de Metila para o Tratamento de Doenças Musculoesqueléticas",
+    author: "Nayra Piscoso Saes Lopes",
+  },
+  {
     id: 8436,
     title:
       "Microgel de amido modificado por enxertia com oxido nítrico: uma opção como potencial fármaco",
@@ -2937,6 +3010,11 @@ const data = [
     title:
       "Níveis de suplementação em pastagem de inverno para produção de novilhos Jersey",
     author: "Felipe Trentin",
+  },
+  {
+    id: 8520,
+    title: "O conceito Esperançar relacionado ao Design Gráfico como profissão",
+    author: "Bernardo Rafael Minozzo Carneiro",
   },
   {
     id: 7713,
@@ -3109,6 +3187,14 @@ const data = [
       "Percepção espontânea dos consumidores e não consumidores sobre a cerveja",
     author: "Bianca Piva Andrade",
   },
+
+  {
+    id: 8887,
+    title:
+      "Percepções teórico-críticas de participantes do projeto de pesquisa em tradução",
+    author: "Giovanna Bendia Pereira",
+  },
+
   {
     id: 7914,
     title:
@@ -3667,6 +3753,12 @@ const data = [
     author: "Roberta Pinheiro Santos",
   },
   {
+    id: 8512,
+    title:
+      "Revisão sistemática sobre métodos da síntese de polimerização oxidativa da anilina",
+    author: "Kauany Inaiê Pelizari Kühl",
+  },
+  {
     id: 8814,
     title:
       "Revisão: Acúmulo de rádio-223 nos ossos por meio do radiofármaco Xofigo",
@@ -3746,6 +3838,12 @@ const data = [
     title:
       "Sensoriamento de umidade do solo com sensor capacitivo e comunicação de dados sem fio baseada em tecnologia LoRa",
     author: "Ana Julia Bertonha",
+  },
+  {
+    id: 8630,
+    title:
+      "Sílica mesoporosa tipo MCM-41 amino-funcionalizada como suporte  para a síntese de redes metalorgânicas ZIF-67",
+    author: "Donizeti Leonardo Mancini Tolari",
   },
   {
     id: 8339,
@@ -3859,6 +3957,11 @@ const data = [
     id: 8073,
     title: "Síntese e caracterização de compósito magnético",
     author: "Natalia Moraes",
+  },
+  {
+    id: 8261,
+    title: "Síntese e Caracterização de Nanomateriais de Carbono",
+    author: "Matheus Cardoso De Souza",
   },
   {
     id: 8672,
