@@ -963,7 +963,7 @@ const data = [
   {
     id: 8456,
     title: "Caracterização fenológica do gladíolo no Oeste do Paraná",
-    author: "Veronica Bogado Camporezi",
+    author: "Henrique Oliveira de Lima",
   },
   {
     id: 8310,
@@ -1801,7 +1801,7 @@ const data = [
   {
     id: 8163,
     title: "Duração do ciclo do gladíolo no Oeste do Paraná",
-    author: "Lilian Yukari Yamamoto",
+    author: "Bia Caroline Decarli",
   },
   {
     id: 8952,
@@ -1995,7 +1995,7 @@ const data = [
     id: 8550,
     title:
       "Estádios e horários de colheita: teor e composição química do óleo essencial de mirra",
-    author: "Dalva Paulus",
+    author: "Ariane Andrade Menino",
   },
   {
     id: 7684,
@@ -3173,7 +3173,7 @@ const data = [
     id: 8416,
     title:
       "Parâmetros bioquímicos de frutos de morangos (Fragaria x ananassa Duch.) submetidos a tratamento com diodos emissores de luz.",
-    author: "Edicléia Aparecida Bonini E Silva",
+    author: "Joseane Aparecida de Paula Cardoso",
   },
   {
     id: 8878,
@@ -3767,7 +3767,7 @@ const data = [
   {
     id: 8528,
     title: "Riscos climáticos para o cultivo do gladíolo",
-    author: "Dalva Paulus",
+    author: "Ariane Andrade Menino",
   },
   {
     id: 8835,
