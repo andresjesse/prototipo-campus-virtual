@@ -19,6 +19,8 @@ import CadastroAvaliadores from "./pages/cadastro-avaliadores";
 import ChecklistAvaliadoresSICITE from "./pages/checklist-avaliadores-sicite";
 import PDFViewer from "./pages/pdfviewer";
 
+import BackOffice from "./pages/backoffice";
+
 export default function App() {
   const updateScreenSizeCSS = () => {
     document.documentElement.style.setProperty("--screen-x", window.innerWidth);
@@ -76,6 +78,9 @@ export default function App() {
           </Route>
           <Route exact path="/pdf">
             <PDFViewer />
+          </Route>
+          <Route exact path="/backoffice">
+            <BackOffice />
           </Route>
           <Route path="/">
             <Home />

@@ -4341,6 +4341,41 @@ const data = [
       "Vision Light: Um auxílio na locomoção de deficientes visuais utilizando VLC",
     author: "Maria Caroline Cordeiro",
   },
+
+  {
+    id: 7941,
+    title: "Imobilização covalente em nanocelulose bacteriana",
+    author: "Carolina Stiegler Jurkevicz",
+  },
+  {
+    id: 8460,
+    title:
+      "Tratamento de sementes com um complexo nutricional no crescimento e produtividade da soja",
+    author: "Darlan Felipe Sartori",
+  },
+  {
+    id: 8593,
+    title:
+      "Sobrevivência de eleuteroembriões de Rhamdia quelen (Teleostei)  exposto em extrato botânico com potencial efeito inseticida",
+    author: "Gabriela Matachinski De Souza",
+  },
+  {
+    id: 8128,
+    title:
+      "Toxicidade das águas do Rio Marrecas para o bioindicador Eisenia fetida",
+    author: "Geiciane Locatelli Alves",
+  },
+  {
+    id: 8618,
+    title: "AutoBier: Equipamentos de apoio à brassagem",
+    author: "Rafael Cazarotto",
+  },
+  {
+    id: 8938,
+    title:
+      "Análise da Influência do Resíduo de Polimento Cerâmico em Misturas Solo-Cal",
+    author: "Roberth De Jesus Carvalho",
+  },
 ];
 
 export default data;

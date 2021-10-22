@@ -57,7 +57,9 @@ function Table({ columns, data }) {
       data,
       defaultColumn,
       filterTypes,
-      initialState: { pageSize: 20 },
+      initialState: {
+        pageSize: 20,
+      },
     },
     useFilters,
     usePagination
@@ -157,6 +159,9 @@ export default function DataTable(props) {
 
   dataSEI.map((entry) => mergedData.push({ event: "SEI", ...entry }));
   dataSICITE.map((entry) => mergedData.push({ event: "SICITE", ...entry }));
+
+  // mergedData.sort((a, b) => (a.title > b.title ? 1 : -1));
+  mergedData.sort((a, b) => a.title.localeCompare(b.title));
 
   const data = React.useMemo(() => mergedData, []);
 
