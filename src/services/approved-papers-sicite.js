@@ -1824,7 +1824,7 @@ const data = [
   {
     id: 7939,
     title: "Educação do campo em tempos de pandemia",
-    author: "Línlya Natássia Sachs Camerlengo De Barbosa",
+    author: "Gabriel Angelo Ferreira Frazão",
   },
   {
     id: 8876,
@@ -3807,7 +3807,7 @@ const data = [
   {
     id: 8447,
     title: "Seleção de Genótipos de Artemisia annua L. via BLUP",
-    author: "José Abramo Marchese",
+    author: "Bárbara Nicole Daboit",
   },
   {
     id: 7739,
