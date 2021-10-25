@@ -1,27 +1,34 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
+
+import externalURLs from "../../services/external-urls";
 
 import "./styles.css";
 
 import Papa from "papaparse";
 
-const fetchCSV = () => {
-  const url =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSxnXbuMk_uAMBDa5t6DrqenNIzVW43knBR4Nm0HJ-6SvTvAVmPEa283LzhYHNMttEMitmATzVrYjyF/pub?gid=1610489452&single=true&output=csv";
-
-  const response = fetch(url)
-    .then((response) => response.text())
-    .then((v) => Papa.parse(v))
-    .catch((err) => console.log(err));
-
-  response.then((v) => console.log(v));
-};
-
 export default function Page(props) {
   const history = useHistory();
 
+  const params = new URLSearchParams(useLocation().search);
+
+  const id = params.get("id");
+
   React.useEffect(() => {
-    fetchCSV();
+    const response = fetch(externalURLs["csv-meets"])
+      .then((response) => response.text())
+      .then((data) => Papa.parse(data, { header: true }))
+      .catch((err) => console.log(err));
+
+    response.then((arr) => {
+      console.log(arr);
+      arr.data.forEach((paper) => {
+        if (paper.id === id) {
+          console.log("redirect to:", paper);
+          history.push(paper.meet);
+        }
+      });
+    });
   }, []);
 
   return (

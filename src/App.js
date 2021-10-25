@@ -79,7 +79,7 @@ export default function App() {
           <Route exact path="/pdf">
             <PDFViewer />
           </Route>
-          <Route exact path="/redirect-page">
+          <Route exact path="/redirect">
             <RedirectPage />
           </Route>
           <Route path="/">
