@@ -19,7 +19,7 @@ import CadastroAvaliadores from "./pages/cadastro-avaliadores";
 import ChecklistAvaliadoresSICITE from "./pages/checklist-avaliadores-sicite";
 import PDFViewer from "./pages/pdfviewer";
 
-import BackOffice from "./pages/backoffice";
+import RedirectPage from "./pages/redirect-page";
 
 export default function App() {
   const updateScreenSizeCSS = () => {
@@ -79,8 +79,8 @@ export default function App() {
           <Route exact path="/pdf">
             <PDFViewer />
           </Route>
-          <Route exact path="/backoffice">
-            <BackOffice />
+          <Route exact path="/redirect-page">
+            <RedirectPage />
           </Route>
           <Route path="/">
             <Home />
