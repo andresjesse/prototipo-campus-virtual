@@ -106,3 +106,40 @@ table .ic-conference {
     margin: 2px;
   }
 }
+
+.react-table-header-th {
+  vertical-align: bottom;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.react-table-header-filterdiv input {
+  width: 100%;
+  height: 32px;
+  padding: 8px;
+  border: 0;
+  outline: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #e4e4e4;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-table-header-filterdiv select {
+  width: 100%;
+  height: 32px;
+  padding: 8px;
+  border: 0;
+  outline: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #e4e4e4;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

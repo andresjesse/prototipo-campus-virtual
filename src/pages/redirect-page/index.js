@@ -12,29 +12,30 @@ export default function Page(props) {
 
   const params = new URLSearchParams(useLocation().search);
 
-  const id = params.get("id");
+  const to = params.get("to");
 
-  React.useEffect(() => {
-    const response = fetch(externalURLs["csv-meets"])
-      .then((response) => response.text())
-      .then((data) => Papa.parse(data, { header: true }))
-      .catch((err) => console.log(err));
+  // React.useEffect(() => {
+  //   const response = fetch(externalURLs["csv-meets"])
+  //     .then((response) => response.text())
+  //     .then((data) => Papa.parse(data, { header: true }))
+  //     .catch((err) => console.log(err));
 
-    response.then((arr) => {
-      console.log(arr);
-      arr.data.forEach((paper) => {
-        if (paper.id === id) {
-          console.log("redirect to:", paper);
-          history.push(paper.meet);
-        }
-      });
-    });
-  }, []);
+  //   response.then((arr) => {
+  //     console.log(arr);
+  //     arr.data.forEach((paper) => {
+  //       if (paper.id === id) {
+  //         console.log("redirect to:", paper);
+  //         history.push(paper.meet);
+  //       }
+  //     });
+  //   });
+  // }, []);
 
   return (
     <div className="redirect-container">
       <span className="redirect-message global-shadow">
-        Localizando a sua sala de Reunião Virtual, aguarde...
+        Esta apresentação está agendada para a semana do evento, até lá!
+        {/* Localizando a sua sala de Reunião Virtual, aguarde... */}
       </span>
     </div>
   );

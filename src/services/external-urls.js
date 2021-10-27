@@ -45,6 +45,9 @@ const externalURLs = {
 
   "csv-meets":
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSxnXbuMk_uAMBDa5t6DrqenNIzVW43knBR4Nm0HJ-6SvTvAVmPEa283LzhYHNMttEMitmATzVrYjyF/pub?gid=1610489452&single=true&output=csv",
+
+  "csv-schedule":
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQFh1bo5m69LfzBL2pb8Lj_XVYq7vz2cBwPTyUj1NzJLBz5dexM1d7Fg53CbOTHhYj0dymqjSzs6UOA/pub?gid=1334763517&single=true&output=csv",
 };
 
 export default externalURLs;

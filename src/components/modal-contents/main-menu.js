@@ -87,6 +87,15 @@ export default function MainMenu(props) {
           Trabalhos Aceitos
           <TagNew />
         </Link>
+
+        {/* <Link to="/prog" className="link">
+          <AiOutlineSchedule /> Programação do Evento
+        </Link> */}
+
+        <Link to="/schedule" className="link">
+          <AiOutlineClockCircle /> Agenda de Apresentações
+          <TagNew />
+        </Link>
       </div>
 
       <h2>Instruções</h2>
@@ -127,15 +136,6 @@ export default function MainMenu(props) {
           <AiOutlineQuestionCircle />
           FAQ - Dúvidas Frequentes
         </Link>
-
-        {/* <Link to="/prog" className="link">
-          <AiOutlineSchedule /> Programação do Evento
-        </Link> */}
-
-        {/* <Link to="/schedule" className="link">
-          <AiOutlineClockCircle /> Agenda de Apresentações
-          <TagNew />
-        </Link> */}
       </div>
 
       <h2>Templates</h2>

@@ -1,5 +1,17 @@
 import React from "react";
 
+function sortSet(set) {
+  const entries = [];
+  for (const member of set) {
+    entries.push(member);
+  }
+  set.clear();
+  for (const entry of entries.sort()) {
+    set.add(entry);
+  }
+  return set;
+}
+
 // This is a custom filter UI for selecting
 // a unique option from a list
 export default function SelectColumnFilter({
@@ -12,6 +24,7 @@ export default function SelectColumnFilter({
     preFilteredRows.forEach((row) => {
       options.add(row.values[id]);
     });
+    sortSet(options);
     return [...options.values()];
   }, [id, preFilteredRows]);
 

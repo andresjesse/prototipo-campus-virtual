@@ -2,9 +2,11 @@ import React from "react";
 import { useTable, useFilters, usePagination } from "react-table";
 import { useHistory } from "react-router-dom";
 
+import Papa from "papaparse";
+
 import "./styles.css";
 
-import schedule from "../../services/schedule";
+//import schedule from "../../services/schedule-demo";
 import externalURLs from "../../services/external-urls";
 
 import DefaultColumnFilter from "./DefaultColumnFilter";
@@ -58,7 +60,7 @@ function Table({ columns, data }) {
       data,
       defaultColumn,
       filterTypes,
-      initialState: { pageSize: 10 },
+      initialState: { pageSize: 20 },
     },
     useFilters,
     usePagination
@@ -74,12 +76,13 @@ function Table({ columns, data }) {
               <tr {...group.getHeaderGroupProps()}>
                 {group.headers.map((column) => (
                   <th
+                    className="react-table-header-th"
                     {...column.getHeaderProps({
                       style: { width: column.width },
                     })}
                   >
                     {column.render("Header")}
-                    <div>
+                    <div className="react-table-header-filterdiv">
                       {column.canFilter ? column.render("Filter") : null}
                     </div>
                   </th>
@@ -153,51 +156,79 @@ function Table({ columns, data }) {
 }
 
 export default function ScheduleTable(props) {
-  const data = React.useMemo(() => schedule, []);
+  //const data = React.useMemo(() => schedule, []);
+
+  const [data, setData] = React.useState([]);
+
+  React.useEffect(() => {
+    const response = fetch(externalURLs["csv-schedule"])
+      .then((response) => response.text())
+      .then((data) => Papa.parse(data, { header: true }))
+      .catch((err) => console.log(err));
+
+    response.then((arr) => {
+      // console.log(arr);
+      arr.data.forEach((obj) => {
+        // console.log(obj);
+        obj.horario = obj.horario.split("-")[0];
+
+        if (obj.dia === "#N/A") obj.dia = "indisponível";
+        if (obj.horario === "#N/A") obj.horario = "indisponível";
+      });
+      setData(arr.data);
+    });
+  }, []);
 
   const columns = React.useMemo(
     () => [
       {
-        Header: "ID",
-        accessor: "id",
-        width: 60,
+        Header: "Evento",
+        accessor: "evento",
+        Filter: SelectColumnFilter,
+        width: 80,
       },
       {
-        Header: "Título",
-        accessor: "title",
+        Header: "ID",
+        accessor: "id",
+        width: 70,
+      },
+      {
+        Header: "Título do Trabalho",
+        accessor: "titulo",
         Cell: (cellInfo) => (
-          <a href={externalURLs[cellInfo.row.original.room]}>
+          <a href={cellInfo.row.original.link_virtual}>
             <img
               src={icConference}
               alt="icone conferencia"
               className="ic-conference"
             />
-            {cellInfo.row.original.title}
+            {cellInfo.row.original.titulo}
           </a>
         ),
-        width: 700,
+        width: 400,
+      },
+      {
+        Header: "Primeiro Autor",
+        accessor: "autor",
+        width: 150,
       },
       {
         Header: "Data",
-        accessor: "date",
+        accessor: "dia",
         Filter: SelectColumnFilter,
-        width: 100,
+        width: 50,
       },
       {
         Header: "Hora",
-        accessor: "hour",
+        accessor: "horario",
         Filter: SelectColumnFilter,
-        width: 90,
+        width: 50,
       },
       {
         Header: "Modalidade",
-        accessor: "area",
-      },
-      {
-        Header: "Evento",
-        accessor: "event",
+        accessor: "modalidade",
         Filter: SelectColumnFilter,
-        width: 100,
+        width: 80,
       },
     ],
     []
@@ -221,9 +252,7 @@ export default function ScheduleTable(props) {
 
   return (
     <div className="table-container global-shadow">
-      <div className="temp-content">
-        nossa agenda será disponibilizada em breve, aguarde...
-      </div>
+      <div className="temp-content">Aguarde, carregando...</div>
 
       <img
         src={icClose}
