@@ -143,3 +143,7 @@ table .ic-conference {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.small-font-table {
+  font-size: 11pt;
+}

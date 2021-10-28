@@ -1674,7 +1674,7 @@ const data = [
     id: 8696,
     title:
       "Detecção de anomalias em tráfego de redes por modelos supervisionados de aprendizado de máquina",
-    author: "Luiz Fernando Carvalho",
+    author: "Breno da Silva Lima",
   },
   {
     id: 8062,
@@ -4244,7 +4244,7 @@ const data = [
     id: 8657,
     title:
       "Uso de Inteligência Computacional para detecção de eventos anômalos de redes",
-    author: "Luiz Fernando Carvalho",
+    author: "Guilherme de Almeida do Carmo",
   },
   {
     id: 8788,

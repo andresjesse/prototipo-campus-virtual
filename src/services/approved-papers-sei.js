@@ -819,7 +819,7 @@ const data = [
     id: 8806,
     title:
       "Inteligência Computacional na Solução de Problemas das Engenharias e  Agronomia",
-    author: "Luiz Fernando Carvalho",
+    author: "Adalberto Teixeira Guedes",
   },
   {
     id: 8221,
@@ -1527,7 +1527,7 @@ const data = [
     id: 8751,
     title:
       "Tendências contemporâneas nos materiais de ensino de Língua Inglesa",
-    author: "Marcele Garbin Dagios",
+    author: "Matheus Queiroz Pedro",
   },
   {
     id: 8979,

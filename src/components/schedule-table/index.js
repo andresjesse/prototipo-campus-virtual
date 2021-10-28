@@ -3,6 +3,7 @@ import { useTable, useFilters, usePagination } from "react-table";
 import { useHistory } from "react-router-dom";
 
 import Papa from "papaparse";
+import renameModerador from "../../services/rename-moderador";
 
 import "./styles.css";
 
@@ -69,7 +70,7 @@ function Table({ columns, data }) {
   // Render the UI for your table
   return (
     <>
-      <div className="table-wrap">
+      <div className="table-wrap small-font-table">
         <table {...getTableProps()}>
           <thead>
             {headerGroups.map((group) => (
@@ -172,8 +173,12 @@ export default function ScheduleTable(props) {
         // console.log(obj);
         obj.horario = obj.horario.split("-")[0];
 
-        if (obj.dia === "#N/A") obj.dia = "indisponível";
-        if (obj.horario === "#N/A") obj.horario = "indisponível";
+        if (obj.dia === "#N/A") obj.dia = "Indisponível";
+        if (obj.horario === "#N/A") obj.horario = "Indisponível";
+        if (obj.moderador === "#N/A") obj.moderador = "Indisponível";
+
+        if (obj.moderador in renameModerador)
+          obj.moderador = renameModerador[obj.moderador];
       });
       setData(arr.data);
     });
@@ -185,12 +190,12 @@ export default function ScheduleTable(props) {
         Header: "Evento",
         accessor: "evento",
         Filter: SelectColumnFilter,
-        width: 80,
+        width: "5%",
       },
       {
         Header: "ID",
         accessor: "id",
-        width: 70,
+        width: "5%",
       },
       {
         Header: "Título do Trabalho",
@@ -205,30 +210,36 @@ export default function ScheduleTable(props) {
             {cellInfo.row.original.titulo}
           </a>
         ),
-        width: 400,
+        width: "30%",
       },
       {
         Header: "Primeiro Autor",
         accessor: "autor",
-        width: 150,
+        width: "20%",
       },
       {
         Header: "Data",
         accessor: "dia",
         Filter: SelectColumnFilter,
-        width: 50,
+        width: "5%",
       },
       {
         Header: "Hora",
         accessor: "horario",
         Filter: SelectColumnFilter,
-        width: 50,
+        width: "5%",
       },
       {
         Header: "Modalidade",
         accessor: "modalidade",
         Filter: SelectColumnFilter,
-        width: 80,
+        width: "10%",
+      },
+      {
+        Header: "Moderador",
+        accessor: "moderador",
+        Filter: SelectColumnFilter,
+        width: "10%",
       },
     ],
     []
@@ -239,6 +250,10 @@ export default function ScheduleTable(props) {
   if (data.length > 0)
     return (
       <div className="table-container global-shadow">
+        <h2 style={{ marginTop: "8px", fontSize: "14pt", marginBottom: 0 }}>
+          Apresentações
+        </h2>
+
         <Table columns={columns} data={data} />
 
         <img
