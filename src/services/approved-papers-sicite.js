@@ -2007,7 +2007,7 @@ const data = [
     id: 8678,
     title:
       "Estimativa de velocidade de um motor de indução trifásico utilizando FBG por Tranformada Rápida de Fourier",
-    author: "Rafael Mancuso Paraiso Cavalcanti",
+    author: "Jaqueline Bierende",
   },
   {
     id: 8342,
