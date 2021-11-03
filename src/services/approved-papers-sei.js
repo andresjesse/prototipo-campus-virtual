@@ -84,7 +84,7 @@ const data = [
     id: 7818,
     title:
       "Acionamento para motor de tração de um protótipo de veículo elétrico de alta eficiência energética",
-    author: "Letícia Balbinotti",
+    author: "Eduardo dos Santos Junior",
   },
   {
     id: 8429,
@@ -143,7 +143,7 @@ const data = [
     id: 8322,
     title:
       "Alimentação saudável e benefícios para a imunidade: um incentivo informativo à comunidade por meio de caderno pedagógico.",
-    author: "Natalia de Lima Bueno",
+    author: "Maykon Wilson Ribeiro",
   },
   {
     id: 8698,
@@ -273,7 +273,7 @@ const data = [
     id: 8683,
     title:
       "Empreendedorismo e práticas de inovação para alavancar o desenvolvimento das micro e pequenas empresas",
-    author: "Lindomar Subtil de Oliveira",
+    author: "Danilo Eugênio Gracindo",
   },
   {
     id: 7923,
@@ -375,7 +375,7 @@ const data = [
     id: 7998,
     title:
       "Conectar: Uma platforma colaborativa para tirar a ideia do papel e achar o time ideal",
-    author: "Alinne Cristinne Corrêa Souza",
+    author: "Jeferson Rosa de Souza",
   },
   {
     id: 8702,
@@ -642,7 +642,7 @@ const data = [
   {
     id: 8685,
     title: "Emílias Podcast: Mulheres na Computação - segunda temporada",
-    author: "Adolfo Gustavo Serra Seca Neto",
+    author: "Kathleen Danielly Souza Lins",
   },
   {
     id: 8096,
@@ -746,7 +746,7 @@ const data = [
     id: 8400,
     title:
       "Fundamentos de programação de computadores para alunos do ensino médio: um relato",
-    author: "Jefferson Gustavo Martins",
+    author: "Matheus da Costa Varela",
   },
   {
     id: 8652,
@@ -929,7 +929,7 @@ const data = [
   {
     id: 8791,
     title: "Mostra de ideias inovadoras da UTFPR – Campus Dois Vizinhos",
-    author: "Alfredo de Gouvea",
+    author: "Tifany Karol da Silva",
   },
   {
     id: 8016,
@@ -1317,7 +1317,7 @@ const data = [
     id: 8776,
     title:
       "Propriedades mecânicas do concreto de ultra alto desempenho reforçado por fibras (UHPFRC): Uma revisão de literatura.",
-    author: "Gustavo de Miranda Saleme Gidrao",
+    author: "Giovanna Zaramella",
   },
   {
     id: 8161,
@@ -1334,7 +1334,7 @@ const data = [
   {
     id: 8577,
     title: "Redesign do Uniforme da Guarda Municipal de Londrina",
-    author: "Patricia Aparecida de Almeida Spaine",
+    author: "Raquel Rabelo Andrade",
   },
   {
     id: 8102,
@@ -1509,7 +1509,7 @@ const data = [
   {
     id: 8237,
     title: "Tecnologia digital no cotidiano",
-    author: "Adriana da Silva Fontes",
+    author: "Letícia Fernanda Vecchietti Maciel",
   },
   {
     id: 8040,
@@ -1521,7 +1521,7 @@ const data = [
     id: 7781,
     title:
       "Tempos de investigação e confinamento em escolas municipais e colégios estaduais",
-    author: "Maclovia Correa da Silva",
+    author: "Marcia Regina Rodrigues da Silva Zago",
   },
   {
     id: 8751,
@@ -1533,7 +1533,7 @@ const data = [
     id: 8979,
     title:
       "Trabalhando os sentidos do corpo humano por meio de atividades práticas",
-    author: "Rafaelle Bonzanini Romero",
+    author: "Bruna da Cruz Oliveira",
   },
   {
     id: 8176,
@@ -1600,7 +1600,7 @@ const data = [
     id: 7954,
     title:
       "Uso de ludicidade e tecnologia para alimentação saudável na infância",
-    author: "Cindy Renate Piassetta Xavier Medeiros",
+    author: "Thais Cardoso da Silva",
   },
   {
     id: 8201,

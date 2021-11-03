@@ -14,7 +14,7 @@ const data = [
     id: 8568,
     title:
       "A COVID-19 como recurso didático no ensino de Cálculo Diferencial e Integral",
-    author: "Claudete Cargnin",
+    author: "Betuel Santaneli",
   },
   {
     id: 7931,
@@ -75,7 +75,7 @@ const data = [
     id: 7790,
     title:
       "Ação do óleo essencial de Melaleuca sobre a longevidade de Apis mellifera",
-    author: "Michele Potrich",
+    author: "Yasmin Correa Girardi",
   },
   {
     id: 8078,
@@ -543,7 +543,7 @@ const data = [
     id: 8229,
     title:
       "Arquitetura de Edge AI para Processamento de Big Data em Cooperativas Agroindustriais",
-    author: "Thiago França Naves",
+    author: "Hugo José Teixeira de Freitas",
   },
   {
     id: 7775,
@@ -772,7 +772,7 @@ const data = [
     id: 8120,
     title:
       "Avaliação do Planejamento e Gestão Municipal de Resíduos Sólidos Urbanos em Recife-PE: uma abordagem exploratória",
-    author: "Christian Luiz Da Silva",
+    author: "Pamela Regina De Andrade",
   },
   {
     id: 7942,
@@ -1364,7 +1364,7 @@ const data = [
     id: 8726,
     title:
       "Crescimento inicial de Açoita cavalo (Luehea divaricata Mart. & Zucc.) em condições urbanas",
-    author: "Flávia Gizele Konig Brun",
+    author: "Luiz Guilherme De Almeida Mendes",
   },
   {
     id: 8388,
@@ -1541,7 +1541,7 @@ const data = [
     id: 8711,
     title:
       "Desenvolvimento de Sistemas Robóticos Inteligentes com Paradigma Orientado à Notificações",
-    author: "João Alberto Fabro",
+    author: "Matheus Diniz De Freitas",
   },
   {
     id: 8537,
@@ -1576,7 +1576,7 @@ const data = [
     id: 8975,
     title:
       "Desenvolvimento de um reservatório de água fria para fermentador de bancada",
-    author: "Lyssa Setsuko Sakanaka",
+    author: "Eduardo Watanabe De Oliveira",
   },
   {
     id: 8240,
@@ -1645,7 +1645,7 @@ const data = [
     id: 7742,
     title:
       "Desenvolvimento e controle de posição de um sistema de equilíbrio birrotor",
-    author: "Emerson Ravazzi Pires Da Silva",
+    author: "Andre Kiyoshi Savazaki",
   },
   {
     id: 7745,
@@ -1830,7 +1830,7 @@ const data = [
     id: 8876,
     title:
       "Efeito alelopático de extratos de buva na germinação de espécies invasoras",
-    author: "Edicléia Aparecida Bonini E Silva",
+    author: "Vanusa Rodrigues Da Silva",
   },
   {
     id: 8923,
@@ -2675,7 +2675,7 @@ const data = [
   {
     id: 8849,
     title: "IoT: Desenvolvimento de sistema de controle remoto via internet",
-    author: "Lyssa Setsuko Sakanaka",
+    author: "Giovani Pereira Sella",
   },
   {
     id: 8701,
@@ -2785,13 +2785,13 @@ const data = [
   {
     id: 7901,
     title: "Metabólitos Secundários nas Plantas – Revisão sobre Terpenóides",
-    author: "Adriana Maria Meneghetti",
+    author: "Emilly Vitoria Dos Santos",
   },
   {
     id: 8371,
     title:
       "Metodologia de extração de corante de hibisco para uso como indicador ácido-base",
-    author: "Adriana Maria Meneghetti",
+    author: "Rozalina Aparecida Mina",
   },
   {
     id: 8908,
@@ -2827,7 +2827,7 @@ const data = [
     id: 7791,
     title:
       "Métodos para o Controle de Thaumastocoris peregrinus: uma revisão de literatura",
-    author: "Michele Potrich",
+    author: "Andre Horn Marcelino",
   },
   {
     id: 8156,
@@ -3335,7 +3335,7 @@ const data = [
     id: 7989,
     title:
       "Produção de biodiesel com o uso de catalisadores bifuncionais de Ca/Sn-Al-MCM-41 modificado com EDTA",
-    author: "Márcio Eduardo Berezuk",
+    author: "Caetano Couto Santos Silva",
   },
   {
     id: 8739,
@@ -3625,7 +3625,7 @@ const data = [
     id: 7674,
     title:
       "Reconfigurações de trabalho e carreira em múltiplos contextos sociais na pandemia",
-    author: "Maria Sara De Lima Dias",
+    author: "Paula Caldas Brognoli",
   },
   {
     id: 8588,
@@ -3825,7 +3825,7 @@ const data = [
     id: 8004,
     title:
       "Seleção de metais obtidos de placas de circuitos eletrônicos e aplicação  na síntese de estruturas metalorgânicas",
-    author: "Márcio Eduardo Berezuk",
+    author: "Leonardo Da Silva Araujo",
   },
   {
     id: 7996,
@@ -4250,7 +4250,7 @@ const data = [
     id: 8788,
     title:
       "Uso do kit de desenvolvimento ESP32 para sistema de controle de acesso com WiFi",
-    author: "Mauricio Dos Santos Kaster",
+    author: "Reginaldo Kielt",
   },
   {
     id: 8926,
@@ -4303,7 +4303,7 @@ const data = [
     id: 8822,
     title:
       "Variação do vigor a campo de progênies de Araucaria angustifolia no sudoeste do paraná",
-    author: "Eleandro José Brun",
+    author: "Thauani Gabrieli Gomes Apolinario",
   },
   {
     id: 8898,
@@ -4327,7 +4327,7 @@ const data = [
     id: 8889,
     title:
       "Viabilidade espermática como estratégia de monitoramento de qualidade de rainhas Apis mellifera africanizadas",
-    author: "Fabiana Martins Costa Maia",
+    author: "Eduardo Augusto Antunes Vieira",
   },
   {
     id: 8090,
