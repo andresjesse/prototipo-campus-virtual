@@ -9,6 +9,7 @@ import pTalk from "./talk.jpg";
 import pTalkTable from "./talkTable.jpg";
 
 import pVisit from "./pVisit.jpg";
+import pOverleaf from "./overleaf.jpg";
 
 import pPodcast from "./pPodcast.jpg";
 
@@ -50,9 +51,11 @@ const progHighlights = [
         to: "22h",
         activities: [
           {
-            author: "Abertura",
-            title: "Cerimônia de abertura do SEI-SICITE 2021.",
-            abstract: null,
+            author:
+              "Prof. Dr. Aldo Nelson Bona, Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná.",
+            title: "Abertura do SEI-SICITE 2021: Palestra e Mesa de Debate.",
+            abstract:
+              "<b>Palestra</b></br></br>Prof. Dr. Aldo Nelson Bona</br></br>Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná</br></br><b>Mesa de Debate</b></br></br>Tema: Pesquisa e extensão para um mundo em transformação</br></br>Prof. Dr. Marcos Flavio de Oliveira Schiefler Filho</br>Reitor da UTFPR</br></br>Prof. Dr. Heron Lima</br>Vice-Reitor da UTFPR</br></br>Celso Góes</br>Prefeito de Guarapuava</br></br>Prof.ª Dra. Claudia Regina Xavier</br>Pró-Reitora de Pesquisa e Pós-Graduação da UTFPR</br></br>Prof. Dr. Rubens de Faria</br>Pró-Reitor de Relações Empresariais e Comunitárias da UTFPR",
             photo: pTalk,
             link: "",
             isPresentation: false,
@@ -74,7 +77,8 @@ const progHighlights = [
             title: "Minicurso: Uma aventura tipográfica com LaTeX e Overleaf.",
             abstract:
               "<b>Minicurso: Uma aventura tipográfica com LaTeX e Overleaf</b></br></br>Paulo Cereda</br></br>Este minicurso é uma introdução ao LaTeX, um sistema de tipografia. Na primeira parte da apresentação, aprenderemos a criar nosso primeiro documento, desde os conceitos essenciais até construções mais elaboradas. Veremos as vantagens do uso de LaTeX em documentos acadêmicos - teses, dissertações, relatórios, artigos, etc. Na segunda parte, conheceremos a Overleaf, uma ferramenta online para escrita de documentos LaTeX e como ela pode contribuir para um fluxo de trabalho simplificado e eficiente.</br></br>Paulo é do interior de São Paulo. Entusiasta de software livre, usa LaTeX há mais de 15 anos e é fundador da Island of TeX, uma organização que atua como hub para projetos relacionados a TeX e tipografia. É membro do grupo de usuários TeX do Reino Unido e do conselho do TUG — TeX Users Group. Atua como Community Outreach Coordinator na Overleaf. Pesquisador da área de teoria da computação, fã da Nintendo, movido a Pringles e refrigerante, e colecionador de patos de borracha, Paulo é presença constante na comunidade TeX. </br></br>Lattes: <a href='http://lattes.cnpq.br/9779052569284359' target='_blank'>http://lattes.cnpq.br/9779052569284359</a>. ",
-            photo: imgMinicursoLatex,
+            // photo: imgMinicursoLatex,
+            photo: pOverleaf,
             link: "",
             isPresentation: false,
           },
@@ -124,8 +128,9 @@ const progHighlights = [
             title:
               "Visita Técnica: Instituto para Pesquisa do Câncer de Guarapuava (IPEC).",
             abstract:
-              "<b>Visita Técnica</b></br></br>O Instituto para Pesquisa do Câncer de Guarapuava (IPEC).</br></br>Kamila Chagas Peronni</br></br> <a href='https://ipec.org.br/'>https://ipec.org.br/</a>",
-            photo: imgVisitaIPEC,
+              "<b>Visita Técnica</b></br></br>Local: Instituto para Pesquisa do Câncer de Guarapuava (IPEC).</br></br>Kamila Chagas Peronni, Pesquisadora IPEC.</br></br> <a href='https://ipec.org.br/'>https://ipec.org.br/</a>",
+            //photo: imgVisitaIPEC,
+            photo: pVisit,
             link: "",
             isPresentation: false,
           },
@@ -140,7 +145,7 @@ const progHighlights = [
             title:
               "Mesa Redonda: Transformações tecnológicas e seus desafios bioéticos.",
             abstract:
-              "<b>Mesa Redonda</b></br></br>Sociedade Brasileira de Bioética</br></br>Tema: Transformações tecnológicas e seus desafios bioéticos</br></br><a href='https://www.sbbioetica.org.br/Quem-somos/PR'>https://www.sbbioetica.org.br/Quem-somos/PR</a></br></br>Mediação: Dra. Anna Silvia Rocha Setti - UTFPR</br></br>Palestra 1. A Transformação tecnologia e a Humanidade Prof. Dr. Jelson Roberto de Oliveira - PUCPR</br></br>Palestra 2. Os desafios de uma ética para a civilização tecnológica Prof. Dr. Anor Sganzerla - PUCPR</br>",
+              "<b>Mesa Redonda</b></br></br>Sociedade Brasileira de Bioética</br></br>Tema:</br>Transformações tecnológicas e seus desafios bioéticos</br></br>Mediação:</br>Prof.ª Dra. Anna Silvia Penteado Setti da Rocha (UTFPR)</br></br>Palestra 1:</br>A Transformação tecnologia e a Humanidade</br>Prof. Dr. Jelson Roberto de Oliveira (PUCPR)</br></br>Palestra 2:</br>Os desafios de uma ética para a civilização tecnológica</br>Prof. Dr. Anor Sganzerla (PUCPR)</br></br></br><a href='https://www.sbbioetica.org.br/Quem-somos/PR'>https://www.sbbioetica.org.br/Quem-somos/PR</a></br>",
             photo: pTalkTable,
             link: "",
             isPresentation: false,
