@@ -85,12 +85,12 @@ export default function MainMenu(props) {
         <Link to="/approved-papers" className="link">
           <BsFileEarmarkSlides />
           Trabalhos Aceitos
-          <TagNew />
         </Link>
 
-        {/* <Link to="/prog" className="link">
+        <Link to="/prog" className="link">
           <AiOutlineSchedule /> Programação do Evento
-        </Link> */}
+          <TagNew />
+        </Link>
 
         <Link to="/schedule" className="link">
           <AiOutlineClockCircle /> Agenda de Apresentações
@@ -119,7 +119,6 @@ export default function MainMenu(props) {
         <Link to="/tutorial-gravacao-video" className="link">
           <AiOutlineFileText />
           Tutorial de Gravação do Vídeo
-          <TagNew />
         </Link>
 
         {/* <Link to="/tutorial-avaliacao" className="link">

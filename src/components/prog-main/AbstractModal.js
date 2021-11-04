@@ -14,7 +14,8 @@ const AbstractModal = function () {
   return (
     <div className="abstract-modal-container" onClick={() => close()}>
       <div className="abstract-modal global-shadow" onClick={() => close()}>
-        {ctx.abstract}
+        {/* {ctx.abstract} */}
+        <div dangerouslySetInnerHTML={{ __html: ctx.abstract }} />
 
         <img
           src={icClose}

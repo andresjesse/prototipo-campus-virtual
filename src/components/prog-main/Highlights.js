@@ -3,7 +3,7 @@ import React from "react";
 import ProgTime from "./ProgTime";
 import EmptyHighlights from "./EmptyHighlights";
 
-import progHighlights from "../../services/prog-highlights/prog-highlights-demo";
+import progHighlights from "../../services/prog-highlights/prog-highlights";
 
 const Highlights = function () {
   const [day, setDay] = React.useState(0);
