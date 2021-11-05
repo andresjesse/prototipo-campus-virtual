@@ -277,20 +277,6 @@ const progHighlights = [
     weekDay: "Sexta-Feira",
     prog: [
       {
-        from: "9h",
-        to: "12h",
-        activities: [
-          {
-            author: "",
-            title: "FOREC Fórum Empresarial e Comunitário + Concurso de PICTH",
-            abstract: null,
-            photo: imgPresentation,
-            link: "",
-            isPresentation: false,
-          },
-        ],
-      },
-      {
         from: "14h",
         to: "17h30",
         activities: [
