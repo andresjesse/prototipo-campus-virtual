@@ -1,0 +1,43 @@
+.week-calendar-container {
+  width: 95%;
+  height: 90%;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  background-color: white;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: auto;
+  overflow: auto;
+
+  position: relative;
+}
+
+.week-calendar-container .ic-close {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-radius: 16px;
+}
+
+.week-calendar-container img {
+  width: 98%;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .week-calendar-container img {
+    width: auto;
+  }
+}

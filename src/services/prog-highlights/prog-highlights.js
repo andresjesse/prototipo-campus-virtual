@@ -31,7 +31,7 @@ const progHighlights = [
         activities: [
           {
             author: "Sessões de Apresentação",
-            title: "Consulte a nossa agenda de apresentações.",
+            title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: imgPresentation,
             link: "https://seisicite2021.gp.utfpr.edu.br/schedule",
@@ -45,7 +45,7 @@ const progHighlights = [
         activities: [
           {
             author: "Sessões de Apresentação",
-            title: "Consulte a nossa agenda de apresentações.",
+            title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: imgPresentation,
             link: "https://seisicite2021.gp.utfpr.edu.br/schedule",
@@ -55,12 +55,12 @@ const progHighlights = [
       },
       {
         from: "19h",
-        to: "22h",
+        to: "21h",
         activities: [
           {
             author:
-              "Prof. Dr. Aldo Nelson Bona, Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná.",
-            title: "Abertura do SEI-SICITE 2021: Palestra e Mesa de Debate.",
+              "Prof. Dr. Aldo Nelson Bona, Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná",
+            title: "Abertura do SEI-SICITE 2021: Palestra e Mesa de Debate",
             abstract:
               "<b>Palestra</b></br></br>Prof. Dr. Aldo Nelson Bona</br></br>Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná</br></br><b>Mesa de Debate</b></br></br>Tema: Pesquisa e extensão para um mundo em transformação</br></br>Prof. Dr. Marcos Flavio de Oliveira Schiefler Filho</br>Reitor da UTFPR</br></br>Prof. Dr. Heron Lima</br>Vice-Reitor da UTFPR</br></br>Celso Góes</br>Prefeito de Guarapuava</br></br>Prof.ª Dra. Claudia Regina Xavier</br>Pró-Reitora de Pesquisa e Pós-Graduação da UTFPR</br></br>Prof. Dr. Rubens de Faria</br>Pró-Reitor de Relações Empresariais e Comunitárias da UTFPR",
             photo: imgBona,
@@ -81,7 +81,7 @@ const progHighlights = [
         activities: [
           {
             author: "Paulo Cereda",
-            title: "Minicurso: Uma aventura tipográfica com LaTeX e Overleaf.",
+            title: "Minicurso: Uma aventura tipográfica com LaTeX e Overleaf",
             abstract:
               "<b>Minicurso: Uma aventura tipográfica com LaTeX e Overleaf</b></br></br>Paulo Cereda</br></br>Este minicurso é uma introdução ao LaTeX, um sistema de tipografia. Na primeira parte da apresentação, aprenderemos a criar nosso primeiro documento, desde os conceitos essenciais até construções mais elaboradas. Veremos as vantagens do uso de LaTeX em documentos acadêmicos - teses, dissertações, relatórios, artigos, etc. Na segunda parte, conheceremos a Overleaf, uma ferramenta online para escrita de documentos LaTeX e como ela pode contribuir para um fluxo de trabalho simplificado e eficiente.</br></br>Paulo é do interior de São Paulo. Entusiasta de software livre, usa LaTeX há mais de 15 anos e é fundador da Island of TeX, uma organização que atua como hub para projetos relacionados a TeX e tipografia. É membro do grupo de usuários TeX do Reino Unido e do conselho do TUG — TeX Users Group. Atua como Community Outreach Coordinator na Overleaf. Pesquisador da área de teoria da computação, fã da Nintendo, movido a Pringles e refrigerante, e colecionador de patos de borracha, Paulo é presença constante na comunidade TeX. </br></br>Lattes: <a href='http://lattes.cnpq.br/9779052569284359' target='_blank'>http://lattes.cnpq.br/9779052569284359</a>. ",
             photo: imgMinicursoLatex,
@@ -96,7 +96,7 @@ const progHighlights = [
         activities: [
           {
             author: "Sessões de Apresentação",
-            title: "Consulte a nossa agenda de apresentações.",
+            title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: imgPresentation,
             link: "https://seisicite2021.gp.utfpr.edu.br/schedule",
@@ -106,11 +106,11 @@ const progHighlights = [
       },
       {
         from: "19h",
-        to: "22h",
+        to: "21h",
         activities: [
           {
             author: "BOSCH",
-            title: "Noite BOSCH: Palestras + Oportunidades.",
+            title: "Noite BOSCH: Palestras + Oportunidades",
             abstract:
               "<b>Noite BOSCH: Palestras + Oportunidades</b></br></br>Palestra 1: Bosch Remarkables</br>Gustavo Cercal</br>Eng. Químico - Expert Bosch</br></br>Palestra 2: Da ''IC'' para a Engenharia de Desenvolvimento da Bosch</br>Gustavo Scherpinski</br>Share Aluno</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
             photo: pTalk,
@@ -132,7 +132,7 @@ const progHighlights = [
           {
             author: "Kamila Chagas Peronni",
             title:
-              "Visita Técnica: Instituto para Pesquisa do Câncer de Guarapuava (IPEC).",
+              "Visita Técnica: Instituto para Pesquisa do Câncer de Guarapuava (IPEC)",
             abstract:
               "<b>Visita Técnica</b></br></br>Local: Instituto para Pesquisa do Câncer de Guarapuava (IPEC).</br></br>Kamila Chagas Peronni, Pesquisadora IPEC.</br></br>Mediação: Prof. Dra. Viviane Teleginski</br></br><a href='https://ipec.org.br/'>https://ipec.org.br/</a>",
             photo: imgVisitaIPEC,
@@ -148,7 +148,7 @@ const progHighlights = [
           {
             author: "Sociedade Brasileira de Bioética",
             title:
-              "Mesa Redonda: Transformações tecnológicas e seus desafios bioéticos.",
+              "Mesa Redonda: Transformações tecnológicas e seus desafios bioéticos",
             abstract:
               "<b>Mesa Redonda</b></br></br>Sociedade Brasileira de Bioética</br></br>Tema:</br>Transformações tecnológicas e seus desafios bioéticos</br></br>Mediação:</br>Prof.ª Dra. Anna Silvia Penteado Setti da Rocha (UTFPR)</br></br>Palestra 1:</br>A Transformação tecnologia e a Humanidade</br>Prof. Dr. Jelson Roberto de Oliveira (PUCPR)</br></br>Palestra 2:</br>Os desafios de uma ética para a civilização tecnológica</br>Prof. Dr. Anor Sganzerla (PUCPR)</br></br></br><a href='https://www.sbbioetica.org.br/'>https://www.sbbioetica.org.br/</a></br>",
             photo: imgSBB,
@@ -163,7 +163,7 @@ const progHighlights = [
         activities: [
           {
             author: "Sessões de Apresentação",
-            title: "Consulte a nossa agenda de apresentações.",
+            title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: imgPresentation,
             link: "https://seisicite2021.gp.utfpr.edu.br/schedule",
@@ -177,7 +177,7 @@ const progHighlights = [
         activities: [
           {
             author: "Prof.ª Dra. Marcella Scoczynski",
-            title: "Podcast: Feito por Elas.",
+            title: "Podcast: Feito por Elas",
             abstract:
               "<b>Podcast: Feito por Elas</b></br></br>Desafios da trajetória e do dia a dia de mulheres que trabalham com ciência</br></br>Convidada: Prof.ª Dra. Marcella Scoczynski</br></br>Mediação: Prof.ª Dra. Joice Cristini Kuritza",
             photo: pPodcast,
@@ -193,7 +193,7 @@ const progHighlights = [
           {
             author: "Mesa Redonda",
             title:
-              "Vale do Genoma: um ecossistema de inovação para um mundo em transformação.",
+              "Vale do Genoma: um ecossistema de inovação para um mundo em transformação",
             abstract:
               "<b>Vale do Genoma: um ecossistema de inovação para um mundo em transformação</b></br></br>Palestrante 1: </br>Prof. Dr. David Livingstone Alves Figueiredo</br>Presidente do Instituto para Pesquisa do Câncer de Guarapuava (IPEC)</br></br>Palestrante 2:</br>Dr. Tsen Chung Kang</br>Diretor de Pesquisa e Novos Negócios do Grupo Jacto",
             photo: imgValeGenoma,
@@ -215,7 +215,7 @@ const progHighlights = [
           {
             author: "Nara Haberland",
             title:
-              "Palestra: Uma via de duas mãos - aprendizados do mundo corporativo para alavancar seu projeto de pesquisa.",
+              "Palestra: Uma via de duas mãos - aprendizados do mundo corporativo para alavancar seu projeto de pesquisa",
             abstract:
               "<b>Palestra</b></br></br>Uma via de duas mãos - aprendizados do mundo corporativo para alavancar seu projeto de pesquisa.</br></br>''5 lições sobre o que eu aprendi e que faria diferente durante meu mestrado''</br></br>Nara Haberland",
             photo: pTalk,
@@ -233,7 +233,7 @@ const progHighlights = [
             title:
               "Palestra: CEP on-line: O que preciso fazer para submeter um projeto?",
             abstract:
-              "<b>Palestra</b></br></br>CEP on-line: O que preciso fazer para submeter um projeto?</br></br>Prof.ª Dra. Lyssa Setsuko Sakanaka</br></br>Comitê de Ética em Pesquisa envolvendo Seres Humanos (CEP) da Universidade Tecnológica Federal do Paraná (UTFPR)</br></br>A pesquisa científica é a base de quase todo o conhecimento humano. O Comitê de Ética em Pesquisa Envolvendo Seres Humanos da UTFPR (CEP-UTFPR), como instância de controle social e foco nos princípios morais, regula as pesquisas que envolvem seres humanos visando garantir o respeito e a prevenção de danos. Ciência e ética caminham juntas, em busca do crescente progresso sempre em benefício da humanidade e do planeta. E a importância de ambas nunca esteve em tamanha evidência como nos anos de 2020-2021 em que o mundo se viu assolado pela Pandemia de COVID-19. Diante da situação pandêmica, CEP’s e pesquisadores precisaram se adequar a realidade de desenvolvimento de projetos de maneira remota, lançando mão de ferramentas virtuais e digitais. O objetivo desta conversa é apresentar as diretrizes e um check-list para a submissão de trabalhos que envolvem intervenção com seres humanos ao CEP-UTFPR.",
+              "<b>Palestra</b></br></br>CEP on-line: O que preciso fazer para submeter um projeto?</br></br>Prof.ª Dra. Lyssa Setsuko Sakanaka</br></br>Comitê de Ética em Pesquisa envolvendo Seres Humanos (CEP) da Universidade Tecnológica Federal do Paraná (UTFPR)</br></br>A pesquisa científica é a base de quase todo o conhecimento humano. O Comitê de Ética em Pesquisa Envolvendo Seres Humanos da UTFPR (CEP-UTFPR), como instância de controle social e foco nos princípios morais, regula as pesquisas que envolvem seres humanos visando garantir o respeito e a prevenção de danos. Ciência e ética caminham juntas, em busca do crescente progresso sempre em benefício da humanidade e do planeta. E a importância de ambas nunca esteve em tamanha evidência como nos anos de 2020-2021 em que o mundo se viu assolado pela Pandemia de COVID-19. Diante da situação pandêmica, CEP’s e pesquisadores precisaram se adequar a realidade de desenvolvimento de projetos de maneira remota, lançando mão de ferramentas virtuais e digitais. O objetivo desta conversa é apresentar as diretrizes e um check-list para a submissão de trabalhos que envolvem intervenção com seres humanos ao CEP-UTFPR.</br></br><a href='http://www.utfpr.edu.br/pesquisa-e-pos-graduacao/etica'>http://www.utfpr.edu.br/pesquisa-e-pos-graduacao/etica</a>",
             photo: imgCEP,
             link: "",
             isPresentation: false,
@@ -246,7 +246,7 @@ const progHighlights = [
         activities: [
           {
             author: "Sessões de Apresentação",
-            title: "Consulte a nossa agenda de apresentações.",
+            title: "Consulte a nossa agenda de apresentações",
             abstract: null,
             photo: imgPresentation,
             link: "https://seisicite2021.gp.utfpr.edu.br/schedule",
@@ -255,13 +255,13 @@ const progHighlights = [
         ],
       },
       {
-        from: "18h30",
-        to: "20h",
+        from: "19h",
+        to: "21h",
         activities: [
           {
             author: "BOSCH",
             title:
-              "Painel Alumni: A Transformação que a pesquisa é capaz de gerar.",
+              "Painel Alumni: A Transformação que a pesquisa é capaz de gerar",
             abstract:
               "<b>Painel Alumni: A Transformação que a pesquisa é capaz de gerar</b></br>História de alumnis que transformam pesquisas fora do Brasil</br></br>Romulo Goés</br>Michigan University</br></br>Ernani Choma</br>Harvard University</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
             photo: pTalk,
@@ -282,7 +282,7 @@ const progHighlights = [
         activities: [
           {
             author: "",
-            title: "FOREC Fórum Empresarial e Comunitário + Concurso de PICTH.",
+            title: "FOREC Fórum Empresarial e Comunitário + Concurso de PICTH",
             abstract: null,
             photo: imgPresentation,
             link: "",
@@ -297,7 +297,7 @@ const progHighlights = [
           {
             author: "UTFPR",
             title:
-              "Atividade Cultural / Cerimônia de Encerramento e Premiação dos Melhores Trabalhos.",
+              "Atividade Cultural / Cerimônia de Encerramento e Premiação dos Melhores Trabalhos",
             abstract: null,
             photo: pTalk,
             link: "",

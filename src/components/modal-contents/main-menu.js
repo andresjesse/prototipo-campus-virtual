@@ -50,13 +50,13 @@ export default function MainMenu(props) {
       <h2>Menu Principal</h2>
 
       <div className="link-list">
-        <div
+        {/* <div
           className="link"
           onClick={() => modal.show(modalContents["calendar-svg"])}
         >
           <AiOutlineCalendar />
           Datas Importantes
-        </div>
+        </div> */}
 
         <a
           href={externalURLs["evin-base"]}
@@ -82,19 +82,24 @@ export default function MainMenu(props) {
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
         </Link> */}
 
-        <Link to="/approved-papers" className="link">
-          <BsFileEarmarkSlides />
-          Trabalhos Aceitos
+        <Link to="/week-calendar" className="link">
+          <AiOutlineCalendar /> Cronograma do Evento
+          <TagNew />
         </Link>
 
         <Link to="/prog" className="link">
-          <AiOutlineSchedule /> Programação do Evento
+          <AiOutlineSchedule /> Programação Detalhada
           <TagNew />
         </Link>
 
         <Link to="/schedule" className="link">
           <AiOutlineClockCircle /> Agenda de Apresentações
           <TagNew />
+        </Link>
+
+        <Link to="/approved-papers" className="link">
+          <BsFileEarmarkSlides />
+          Trabalhos Aceitos
         </Link>
       </div>
 

@@ -8,6 +8,7 @@ import CityTour from "./pages/citytour";
 import Schedule from "./pages/schedule";
 
 import Prog from "./pages/prog";
+import WeekCalendar from "./pages/week-calendar";
 import FAQ from "./pages/faq";
 import ApprovedPapers from "./pages/approved-papers";
 import TutorialSubmissao from "./pages/tutorial-submissao";
@@ -48,6 +49,9 @@ export default function App() {
           </Route>
           <Route exact path="/prog">
             <Prog />
+          </Route>
+          <Route exact path="/week-calendar">
+            <WeekCalendar />
           </Route>
           <Route exact path="/faq">
             <FAQ />
