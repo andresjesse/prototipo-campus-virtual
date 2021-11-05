@@ -10,8 +10,8 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 
   pointer-events: auto;
   overflow: auto;
@@ -33,11 +33,25 @@
 
 .week-calendar-container img {
   width: 98%;
-  margin-bottom: 8px;
+  margin: 8px;
 }
 
 @media only screen and (max-width: 600px) {
   .week-calendar-container img {
-    width: auto;
+    width: 1000px;
+  }
+  .week-calendar-container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  .week-calendar-container {
+    width: 1290px;
+    height: auto;
+  }
+
+  .week-calendar-container img {
+    margin: 16px;
   }
 }

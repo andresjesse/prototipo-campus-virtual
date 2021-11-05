@@ -68,7 +68,7 @@ export default function MainMenu(props) {
           Faça sua Inscrição (EVIN)
         </a>
 
-        <a
+        {/* <a
           href={externalURLs["evin-base"]}
           className="link"
           target="_blank"
@@ -76,7 +76,7 @@ export default function MainMenu(props) {
         >
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
           Portal de Eventos Científicos da UTFPR (EVIN)
-        </a>
+        </a> */}
 
         {/* <Link to="/checklist-avaliadores-sicite" className="link">
           <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
@@ -97,10 +97,10 @@ export default function MainMenu(props) {
           <TagNew />
         </Link>
 
-        <Link to="/approved-papers" className="link">
+        {/* <Link to="/approved-papers" className="link">
           <BsFileEarmarkSlides />
           Trabalhos Aceitos
-        </Link>
+        </Link> */}
       </div>
 
       <h2>Instruções</h2>
