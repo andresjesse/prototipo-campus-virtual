@@ -32,7 +32,9 @@ const Activity = function ({ activity }) {
           >
             {activity.isPresentation === true
               ? "Ir para Agenda"
-              : activity.link}
+              : activity.link !== ""
+              ? "Link de Acesso"
+              : ""}
           </a>
 
           {activity.abstract != null && (

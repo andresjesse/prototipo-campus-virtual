@@ -21,10 +21,10 @@ export default function Page(props) {
       .catch((err) => console.log(err));
 
     response.then((arr) => {
-      // console.log(arr);
+      //console.log(arr);
       arr.data.forEach((meet) => {
         if (meet.link_virtual === "/redirect?to=" + to) {
-          // console.log("redirect to:", meet);
+          //console.log("redirect to:", meet);
           window.location.href = meet.meet;
         }
       });
