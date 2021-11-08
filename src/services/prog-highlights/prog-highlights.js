@@ -19,6 +19,9 @@ import imgVisitaIPEC from "./imgs/imgVisitaIPEC.jpg";
 import imgSBB from "./imgs/imgSBB.jpg";
 import imgValeGenoma from "./imgs/imgValeGenoma.jpg";
 import imgCEP from "./imgs/imgCEP.jpg";
+import imgNara from "./imgs/imgNara.jpg";
+import imgBosch1 from "./imgs/imgBosch1.jpg";
+import imgBosch2 from "./imgs/imgBosch2.jpg";
 
 const progHighlights = [
   {
@@ -62,7 +65,7 @@ const progHighlights = [
               "Prof. Dr. Aldo Nelson Bona, Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná",
             title: "Abertura do SEI-SICITE 2021: Palestra e Mesa de Debate",
             abstract:
-              "<b>Palestra</b></br></br>Prof. Dr. Aldo Nelson Bona</br></br>Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná</br></br><b>Mesa de Debate</b></br></br>Tema: Pesquisa e extensão para um mundo em transformação</br></br>Prof. Dr. Marcos Flavio de Oliveira Schiefler Filho</br>Reitor da UTFPR</br></br>Prof. Dr. Heron Lima</br>Vice-Reitor da UTFPR</br></br>Celso Góes</br>Prefeito de Guarapuava</br></br>Prof.ª Dra. Claudia Regina Xavier</br>Pró-Reitora de Pesquisa e Pós-Graduação da UTFPR</br></br>Prof. Dr. Rubens de Faria</br>Pró-Reitor de Relações Empresariais e Comunitárias da UTFPR",
+              "<b>Palestra</b></br></br>Prof. Dr. Aldo Nelson Bona</br></br>Superintendente de Ciência, Tecnologia e Ensino Superior do Paraná</br></br><b>Mesa de Debate</b></br></br>Tema: Pesquisa e extensão para um mundo em transformação</br></br>Prof. Dr. Marcos Flavio de Oliveira Schiefler Filho</br>Reitor da UTFPR</br></br>Prof. Dr. Heron Lima</br>Vice-Reitor da UTFPR</br></br>Celso Góes</br>Prefeito de Guarapuava</br></br>Paulino Lorenzo Jr</br>CEO do Cilla Tech Park</br></br>Prof.ª Dra. Claudia Regina Xavier</br>Pró-Reitora de Pesquisa e Pós-Graduação da UTFPR</br></br>Prof. Dr. Rubens de Faria</br>Pró-Reitor de Relações Empresariais e Comunitárias da UTFPR",
             photo: imgBona,
             link: "/redirect?to=palestra-abertura",
             isPresentation: false,
@@ -112,8 +115,8 @@ const progHighlights = [
             author: "BOSCH",
             title: "Noite BOSCH: Palestras + Oportunidades",
             abstract:
-              "<b>Noite BOSCH: Palestras + Oportunidades</b></br></br>Palestra 1: Bosch Remarkables</br>Gustavo Cercal</br>Eng. Químico - Expert Bosch</br></br>Palestra 2: Da ''IC'' para a Engenharia de Desenvolvimento da Bosch</br>Gustavo Scherpinski</br>Share Aluno</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
-            photo: pTalk,
+              "<b>Noite BOSCH: Palestras + Oportunidades</b></br></br>Mediação:</br>Nara Haberland</br></br><b>Palestra 1 (19:00 às 19:45)</b></br>Bosch - A global líder em Iot que desenvolve Tecnologia para Vida</br>Gustavo Cercal</br>Líder de Projetos na Bosch e Doutorando em Eletroquímica pela UFPR</br></br>Resumo:</br>Venha conhecer a Bosch. A empresa alemã, lider em IoT, que oferece soluções inovadoras para casas e cidades inteligentes, mobilidade e indústria conectadas. Com atuação no Brasil possui diversas formas de interação empresa-universidade.</br></br><b>Palestra 2 (20:00 às 20:45)</b></br>Da ''IC'' para a Engenharia de Desenvolvimento da Bosch</br>Gustavo Scherpinski</br>Engenheiro de Produtos Junior na Bosch e Engenheiro Mecânico pela UTFPR</br></br>Resumo:</br>Tudo começou com um projeto de iniciação científica. É isso mesmo. Venha conhecer a trajetória profissional do Engenheiro de Desenvolvimento que iniciou na Bosch por meio de um projeto de pesquisa.</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
+            photo: imgBosch1,
             link: "/redirect?to=noite-bosch",
             isPresentation: false,
           },
@@ -150,7 +153,7 @@ const progHighlights = [
             title:
               "Mesa Redonda: Transformações tecnológicas e seus desafios bioéticos",
             abstract:
-              "<b>Mesa Redonda</b></br></br>Sociedade Brasileira de Bioética</br></br>Tema:</br>Transformações tecnológicas e seus desafios bioéticos</br></br>Mediação:</br>Prof.ª Dra. Anna Silvia Penteado Setti da Rocha (UTFPR)</br></br>Palestra 1:</br>A Transformação tecnologia e a Humanidade</br>Prof. Dr. Jelson Roberto de Oliveira (PUCPR)</br></br>Palestra 2:</br>Os desafios de uma ética para a civilização tecnológica</br>Prof. Dr. Anor Sganzerla (PUCPR)</br></br></br><a href='https://www.sbbioetica.org.br/'>https://www.sbbioetica.org.br/</a></br>",
+              "<b>Mesa Redonda</b></br></br>Sociedade Brasileira de Bioética</br></br>Tema:</br>Transformações tecnológicas e seus desafios bioéticos</br></br>Mediação:</br>Prof.ª Dra. Anna Silvia Penteado Setti da Rocha (UTFPR)</br></br><b>Palestra 1:</b></br>A Transformação tecnologia e a Humanidade</br>Prof. Dr. Jelson Roberto de Oliveira (PUCPR)</br></br><b>Palestra 2:</b></br>Os desafios de uma ética para a civilização tecnológica</br>Prof. Dr. Anor Sganzerla (PUCPR)</br></br></br><a href='https://www.sbbioetica.org.br/'>https://www.sbbioetica.org.br/</a></br>",
             photo: imgSBB,
             link: "/redirect?to=mesa-sbb",
             isPresentation: false,
@@ -215,10 +218,10 @@ const progHighlights = [
           {
             author: "Nara Haberland",
             title:
-              "Palestra: Uma via de duas mãos - aprendizados do mundo corporativo para alavancar seu projeto de pesquisa",
+              "Palestra: 10 aprendizados do mundo corporativo para alavancar seu projeto de pesquisa",
             abstract:
-              "<b>Palestra</b></br></br>Uma via de duas mãos - aprendizados do mundo corporativo para alavancar seu projeto de pesquisa.</br></br>''5 lições sobre o que eu aprendi e que faria diferente durante meu mestrado''</br></br>Nara Haberland",
-            photo: pTalk,
+              "<b>Palestra</b></br></br>10 aprendizados do mundo corporativo para alavancar seu projeto de pesquisa.</br></br>Nara Haberland</br>Analista de Novos Negócios na Bosch Brasil e Mestre em Engenharia pela UTFPR</br></br>Resumo:</br>Após concluir o mestrado em Engenharia pelo PPGEM/UTFPR e com oito anos de experiência com projetos de inovação na Bosch, Nara reuniu aprendizados e dicas para dar um gás no seu projeto de pesquisa e também para ajudar você a enxergar as oportunidades de correlacionar a pesquisa com o mundo corporativo.",
+            photo: imgNara,
             link: "/redirect?to=palestra-nara",
             isPresentation: false,
           },
@@ -263,8 +266,8 @@ const progHighlights = [
             title:
               "Painel Alumni: A Transformação que a pesquisa é capaz de gerar",
             abstract:
-              "<b>Painel Alumni: A Transformação que a pesquisa é capaz de gerar</b></br>História de alumnis que transformam pesquisas fora do Brasil</br></br>Romulo Goés</br>Michigan University</br></br>Ernani Choma</br>Harvard University</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
-            photo: pTalk,
+              "<b>Painel Alumni: A Transformação que a pesquisa é capaz de gerar</b></br></br>Painel: Como são as pesquisas fora do Brasil? Vivência e Insights de Alumni UTFPR</b></br>              Mediação:</br>Nara Haberland</br>Mestre em Engenharia pela UTFPR e Analista de Novos Negócios na Bosch Brasil</br></br>Palestrante 1: Rômulo Meira Góes</br>Alumni UTFPR, PhD pela Universidade de Michigan em Engenharia Elétrica e Computação e pós-doutorando na Carnegie Mellow University</br></br>Palestrante 2: Alisson Kwiatkowski da Silva</br>Alumni UTFPR, PhD em Engenharia e Ciência de Materiais e Pós-doutorando no Max-Planck-Institut fur Eisenforschung GmbH</br></br>Resumo:</br>Nesse painel você terá oportunidade de conhecer dois alumni UTFPR que estão desenvolvendo pesquisa fora do Brasil, nos Estados Unidos e na Alemanha e que irão compartilhar boas práticas para te inspirar no seu projeto de pesquisa</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
+            photo: imgBosch2,
             link: "/redirect?to=painel-alumni",
             isPresentation: false,
           },
