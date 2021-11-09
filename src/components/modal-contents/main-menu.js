@@ -84,23 +84,30 @@ export default function MainMenu(props) {
 
         <Link to="/week-calendar" className="link">
           <AiOutlineCalendar /> Cronograma do Evento
-          <TagNew />
         </Link>
 
         <Link to="/prog" className="link">
           <AiOutlineSchedule /> Programação Detalhada
-          <TagNew />
         </Link>
 
         <Link to="/schedule" className="link">
           <AiOutlineClockCircle /> Agenda de Apresentações
-          <TagNew />
         </Link>
 
         {/* <Link to="/approved-papers" className="link">
           <BsFileEarmarkSlides />
           Trabalhos Aceitos
+          
         </Link> */}
+
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["anais-eventos"])}
+        >
+          <AiOutlineFilePdf />
+          Anais do SEI-SICITE 2021
+          <TagNew />
+        </div>
       </div>
 
       <h2>Instruções</h2>

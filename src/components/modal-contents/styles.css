@@ -52,3 +52,19 @@
   height: 17px;
   margin-right: 8px;
 }
+
+.anais a {
+  font-size: 1.1em;
+  padding: 8px 0;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 32px;
+
+  color: rgb(64 127 182);
+}
+
+.anais a > *:first-child {
+  margin-right: 8px;
+}

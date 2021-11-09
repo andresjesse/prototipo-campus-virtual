@@ -113,7 +113,7 @@ const progHighlights = [
         activities: [
           {
             author: "BOSCH",
-            title: "Noite BOSCH: Palestras + Oportunidades",
+            title: "Palestras + Oportunidades",
             abstract:
               "<b>Noite BOSCH: Palestras + Oportunidades</b></br></br>Mediação:</br>Nara Haberland</br></br><b>Palestra 1 (19:00 às 19:45)</b></br>Bosch - A global líder em Iot que desenvolve Tecnologia para Vida</br>Gustavo Cercal</br>Líder de Projetos na Bosch e Doutorando em Eletroquímica pela UFPR</br></br>Resumo:</br>Venha conhecer a Bosch. A empresa alemã, lider em IoT, que oferece soluções inovadoras para casas e cidades inteligentes, mobilidade e indústria conectadas. Com atuação no Brasil possui diversas formas de interação empresa-universidade.</br></br><b>Palestra 2 (20:00 às 20:45)</b></br>Da ''IC'' para a Engenharia de Desenvolvimento da Bosch</br>Gustavo Scherpinski</br>Engenheiro de Produtos Junior na Bosch e Engenheiro Mecânico pela UTFPR</br></br>Resumo:</br>Tudo começou com um projeto de iniciação científica. É isso mesmo. Venha conhecer a trajetória profissional do Engenheiro de Desenvolvimento que iniciou na Bosch por meio de um projeto de pesquisa.</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
             photo: imgBosch1,
@@ -262,11 +262,11 @@ const progHighlights = [
         to: "21h",
         activities: [
           {
-            author: "BOSCH",
+            author: "Painel Alumni",
             title:
-              "Painel Alumni: A Transformação que a pesquisa é capaz de gerar",
+              "Como são as pesquisas fora do Brasil? Vivência e Insights de Alumni UTFPR",
             abstract:
-              "<b>Painel Alumni: A Transformação que a pesquisa é capaz de gerar</b></br></br>Painel: Como são as pesquisas fora do Brasil? Vivência e Insights de Alumni UTFPR</b></br>              Mediação:</br>Nara Haberland</br>Mestre em Engenharia pela UTFPR e Analista de Novos Negócios na Bosch Brasil</br></br>Palestrante 1: Rômulo Meira Góes</br>Alumni UTFPR, PhD pela Universidade de Michigan em Engenharia Elétrica e Computação e pós-doutorando na Carnegie Mellow University</br></br>Palestrante 2: Alisson Kwiatkowski da Silva</br>Alumni UTFPR, PhD em Engenharia e Ciência de Materiais e Pós-doutorando no Max-Planck-Institut fur Eisenforschung GmbH</br></br>Resumo:</br>Nesse painel você terá oportunidade de conhecer dois alumni UTFPR que estão desenvolvendo pesquisa fora do Brasil, nos Estados Unidos e na Alemanha e que irão compartilhar boas práticas para te inspirar no seu projeto de pesquisa</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
+              "<b>Painel Alumni: Como são as pesquisas fora do Brasil? Vivência e Insights de Alumni UTFPR</b></br></br>Painel: Como são as pesquisas fora do Brasil? Vivência e Insights de Alumni UTFPR</b></br>              Mediação:</br>Nara Haberland</br>Mestre em Engenharia pela UTFPR e Analista de Novos Negócios na Bosch Brasil</br></br>Palestrante 1: Rômulo Meira Góes</br>Alumni UTFPR, PhD pela Universidade de Michigan em Engenharia Elétrica e Computação e pós-doutorando na Carnegie Mellow University</br></br>Palestrante 2: Alisson Kwiatkowski da Silva</br>Alumni UTFPR, PhD em Engenharia e Ciência de Materiais e Pós-doutorando no Max-Planck-Institut fur Eisenforschung GmbH</br></br>Resumo:</br>Nesse painel você terá oportunidade de conhecer dois alumni UTFPR que estão desenvolvendo pesquisa fora do Brasil, nos Estados Unidos e na Alemanha e que irão compartilhar boas práticas para te inspirar no seu projeto de pesquisa</br></br><a href='https://www.bosch.com.br/'>https://www.bosch.com.br/</a>",
             photo: imgBosch2,
             link: "/redirect?to=painel-alumni",
             isPresentation: false,

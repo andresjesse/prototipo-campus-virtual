@@ -19,6 +19,8 @@ import CalendarSVG from "./calendar-svg";
 import TemplatesSEI from "./templates-sei";
 import TemplatesSICITE from "./templates-sicite";
 
+import AnaisDosEventos from "./anais-eventos";
+
 const modalContents = {
   "main-menu": <MainMenu />,
   "block-a": <BlocoA />,
@@ -37,6 +39,7 @@ const modalContents = {
   "calendar-svg": <CalendarSVG />,
   "templates-sei": <TemplatesSEI />,
   "templates-sicite": <TemplatesSICITE />,
+  "anais-eventos": <AnaisDosEventos />,
 };
 
 export default modalContents;

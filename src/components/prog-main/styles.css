@@ -122,16 +122,18 @@
 .abstract-modal-container {
   height: 100%;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  padding: 50px;
+  box-sizing: border-box;
+  overflow: scroll;
 }
 
 .abstract-modal {
