@@ -20,6 +20,7 @@ import TemplatesSEI from "./templates-sei";
 import TemplatesSICITE from "./templates-sicite";
 
 import AnaisDosEventos from "./anais-eventos";
+import PostEventMessage from "./post-event-message";
 
 const modalContents = {
   "main-menu": <MainMenu />,
@@ -40,6 +41,7 @@ const modalContents = {
   "templates-sei": <TemplatesSEI />,
   "templates-sicite": <TemplatesSICITE />,
   "anais-eventos": <AnaisDosEventos />,
+  "post-event-message": <PostEventMessage />,
 };
 
 export default modalContents;

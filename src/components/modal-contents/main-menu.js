@@ -11,6 +11,7 @@ import {
   AiOutlineQuestionCircle,
   AiOutlineMail,
   AiOutlineCheckSquare,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
@@ -27,15 +28,6 @@ import modalContents from "../modal-contents";
 
 import externalURLs from "../../services/external-urls";
 
-/*
- 
-Links omitidos no lançamento:
-  - agenda; <-- ver aplicacao do TagNew
-  - programação do evento
-  - guia para autores
- 
-*/
-
 const TagNew = () => (
   <div style={{ color: "red", marginLeft: 8 }}>
     <MdFiberNew />
@@ -50,23 +42,13 @@ export default function MainMenu(props) {
       <h2>Menu Principal</h2>
 
       <div className="link-list">
-        {/* <div
+        <div
           className="link"
           onClick={() => modal.show(modalContents["calendar-svg"])}
         >
           <AiOutlineCalendar />
           Datas Importantes
-        </div> */}
-
-        <a
-          href={externalURLs["evin-base"]}
-          className="link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
-          Faça sua Inscrição (EVIN)
-        </a>
+        </div>
 
         {/* <a
           href={externalURLs["evin-base"]}
@@ -75,12 +57,18 @@ export default function MainMenu(props) {
           rel="noreferrer"
         >
           <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
-          Portal de Eventos Científicos da UTFPR (EVIN)
+          Faça sua Inscrição (EVIN)
         </a> */}
 
-        {/* <Link to="/checklist-avaliadores-sicite" className="link">
-          <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
-        </Link> */}
+        <a
+          href={externalURLs["evin-base"]}
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={icEVIN} className="ic-evin" alt="Logo do EVIN" />
+          Portal de Eventos Científicos da UTFPR (EVIN)
+        </a>
 
         <Link to="/week-calendar" className="link">
           <AiOutlineCalendar /> Cronograma do Evento
@@ -94,11 +82,10 @@ export default function MainMenu(props) {
           <AiOutlineClockCircle /> Agenda de Apresentações
         </Link>
 
-        {/* <Link to="/approved-papers" className="link">
+        <Link to="/approved-papers" className="link">
           <BsFileEarmarkSlides />
           Trabalhos Aceitos
-          
-        </Link> */}
+        </Link>
 
         <div
           className="link"
@@ -108,12 +95,25 @@ export default function MainMenu(props) {
           Anais do SEI-SICITE 2021
           <TagNew />
         </div>
+
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["post-event-message"])}
+        >
+          <AiFillGithub />
+          O Campus Virtual é Seu!
+          <TagNew />
+        </div>
       </div>
 
       <h2>Instruções</h2>
 
       <div className="link-list">
-        {/* <Link to="/tutorial-submissao" className="link">
+        <Link to="/checklist-avaliadores-sicite" className="link">
+          <AiOutlineCheckSquare /> Checklist para Avaliadores SICITE
+        </Link>
+
+        <Link to="/tutorial-submissao" className="link">
           <AiOutlineFileText />
           Tutorial para a Submissão de Trabalhos
         </Link>
@@ -126,14 +126,14 @@ export default function MainMenu(props) {
         <Link to="/cadastro-avaliadores" className="link">
           <AiOutlineFileText />
           Cadastro de Avaliadores
-        </Link> */}
+        </Link>
 
         <Link to="/tutorial-gravacao-video" className="link">
           <AiOutlineFileText />
           Tutorial de Gravação do Vídeo
         </Link>
 
-        {/* <Link to="/tutorial-avaliacao" className="link">
+        <Link to="/tutorial-avaliacao" className="link">
           <AiOutlineFileText />
           Tutorial de Avaliação
         </Link>
@@ -141,7 +141,7 @@ export default function MainMenu(props) {
         <Link to="/tutorial-correcao-submissao" className="link">
           <AiOutlineFileText />
           Tutorial de Correção de Submissão
-        </Link> */}
+        </Link>
 
         <Link to="/faq" className="link">
           <AiOutlineQuestionCircle />

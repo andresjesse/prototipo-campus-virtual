@@ -1,111 +1,136 @@
-# Getting Started with Create React App
+# Campus Virtual - SEI-SICITE 2021
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O SEI-SICITE 2021 acabou, mas as conquistas e o aprendizado merecem seguir adiante. O Campus Virtual está agora disponível como Software Livre, podendo ser utilizado e modificado livremente pela comunidade. Em nome de toda a Comissão de TI, registro aqui sinceros agradecimentos a todos que contribuíram para o sucesso deste evento.
 
-## Available Scripts
+A seguir são apresentados os detalhes técnicos para a instalação, modificação, e extensão das funcionalidades do Campus Virtual. Sinta-se livre para adaptá-lo às suas necessidades.
 
-In the project directory, you can run:
+## Licença de Uso
 
-### `yarn start`
+O Campus Virtual é distribuído com a licença MIT (X11):
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+Copyright 2021 Andres Jessé Porfirio
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `yarn test`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
-### `yarn build`
+## Ambiente de Desenvolvimento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O Campus Virtual (CV) é uma aplicação puramente front-end, desenvolvida com ReactJS, uma vez empacotada não requer dependências back-end. Praticamente todo o conteúdo é estático, sendo necessária a alteração do código-fonte para a sua modificação. Existem recursos externos sendo carregados por meio de requisições HTTP, majoritariamente arquivos CSV gerados e hospedados no Google Drive. Ao criar a sua própria versão do CV, você pode utilizar estratégias diferentes para gerenciar o conteúdo dinâmico, tal como um servidor back-end. A estilização é toda feita em CSS sem o uso de frameworks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O CV foi desenvolvido e testado no seguinte ambiente:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Sistema operacional Linux Ubuntu 20.04 LTS
+- NodeJS 14.18.x
+- Gerenciador de pacotes Yarn 1.22.x
+- Editor VSCode
 
-### `yarn eject`
+O deploy da aplicação pode ser feito em qualquer tipo de servidor, inclusive serviços de hospedagem de páginas estáticas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Instalação e Execução
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Instale o NodeJS, preferencialmente via NVM: [https://github.com/nvm-sh/nvm#installing-and-updating](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Instale o gerenciador de pacotes Yarn: [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Instale as dependências do projeto. No ambiente de desenvolvimento (pasta do projeto), execute:
 
-## Learn More
+```
+$ yarn
+$ yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Observação sobre vídeos (.mp4): O CV oficial conta com vários arquivos de vídeo em formato MP4, originamente armazenados na pasta `public/videos/` eles são usados dentro de janelas modais acionadas por cliques nos prédios virtuais e links de menu. Por questão de espaço, esses arquivos não foram incluídos junto com o código-fonte. Como consequência, ao executar o CV localmente os vídeos não são carregados.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Empacotamento do projeto (production build):
 
-### Code Splitting
+```
+$ yarn build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. Nota: os arquivos de vídeo (.mp4) são excluídos dessa build e substitídos por links simbólicos em nosso servidor. Caso encontre problemas em executar a build localmente, altere o comando `"build": "react-scripts build && rm -rf build/videos",` para `"build": "react-scripts build",` no bloco `scripts` do arquivo `package.json`.
 
-### Analyzing the Bundle Size
+7. O resultado do empacotamento é armazenado na pasta `build` e está pronto para deploy.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Entendendo o Projeto
 
-### Making a Progressive Web App
+O ponto de entrada da aplicação é o arquivo `src/App.js`. O gerenciamento de rotas é feito pela biblioteca `react-router-dom`. Em resumo, a estrutura do projeto é a seguinte:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+src/
+    components/   -- componentes react, alguns compostos
+    pages/        -- páginas do router, Home abriga o mapa animado
+    services/     -- recursos externos, dados usados nas páginas
+```
 
-### Advanced Configuration
+## Criando novas Páginas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para criar novas páginas (ou excluir as existentes):
 
-### Deployment
+1. Altere as rotas no arquivo `src/App.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Crie uma subpasta em `src/pages/` e adicione um novo componente (páginas são componentes funcionais do ReactJS)
 
-### `yarn build` fails to minify
+3. Em geral, as páginas possuem uma estrutura base:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+<... containers>
+  <TopMenu/>
 
-$ convert -append \*.png out.png
+  <AlgumComponenteComConteúdo/>
 
-### Main Procedures
+  <Footer/>
+</>
+```
 
-- Update schedule: replace services/schedule.js (empty array will render a wait message)
+## Páginas Especiais
 
-- Update sponsors: replace map-overlay-anim, change frames={} in map/index.js, update modal-contents/sponsor.js
+Algumas páginas foram criadas com comportamentos genéricos, que permitem a parametrização do seu conteúdo, são elas:
 
-- Update prog: replace services/prog-highlights (abstract can be null, isPresentation=true for sessions, put photos in the same folder)
+```
+src/pages/pdfviewer
+  -- carrega um PDF a partir de uma URL e exibe-o embutido no CV
+  -- o arquivo pode ser configurado pela rota, ex: localhost:3000/pdf?f=SEU_ARQUIVO.pdf
 
-- Pre-built pages/components:
+src/pages/faq
+  -- FAQ e tutoriais nada mais são do que arquivos de texto do Google Docs (publicados para Web)
+  -- estas páginas possuem um componente <DriveIframe url={LINK} /> que cria um iframe para um link qualquer
+```
+
+## Alterando o Menu Principal
+
+Muitos dos conteúdos do CV foram criados como janelas modais que se encontram na pasta `src/components/modal-contents`. Para adicionar um novo conteúdo, altere o arquivo `index.js` dessa pasta, adicionando uma chave e um componente. Os conteúdos podem ser exibidos apenas na página Home, que abriga o contexto ModalContext (da Context API). Os conteúdos podem ser exibidos com `modal.show(modalContents["CHAVE"])`.
+
+O menu principal da aplicação é a janela modal do arquivo `src/components/modal-contents/main-menu.js`.
+
+## Modificando o Mapa Virtual
+
+O mapa virtual é o componente responsável pela renderização do fundo (background) e das animações do CV. Existem alguns componentes associados, todos estão nas pastas `src/components/map-*/`. O componente base é o `Map`, dentro dele existem animações (única imagem, múltiplos keyframes) `MapOverlayAnim`, overlays de eventos para prédios `MapOverlay`, e pins de informação `MapPin`. O posicionamento e tamanho de todos esses elementos é feito via CSS, com valores fixos em px. O background também possui tamanho fixo (1920x1080).
+
+Tanto o background quanto as animações foram criadas com o software [Blender](https://www.blender.org/). As animações foram renderizadas como keyframes individuais e posteriormente convertidas com o seguinte comando: `$ convert -append \*.png out.png`. Dentro do projeto do Blender, existem scripts para renderizar as animações como keyframes.
+
+Os arquivos originais (.blend, .svg, etc.) usados na construção dos assets do CV encontram-se disponíveis na pasta `dev-assets/`.
+
+## Processos da Semana do Evento
+
+- Atualização da agenda: substituir services/schedule.js (array vazio renderiza uma mensagem genérica)
+
+- Atualização dos apoiadores: substituir map-overlay-anim, atualizar frames={} em map/index.js, atualizar modal-contents/sponsor.js
+
+- Atualização de prog: substituir services/prog-highlights (abstract pode ser null, isPresentation=true para sessões, deixar fotos na mesma pasta)
+
+- Dicas sobre componentes genéricos:
 
   - pdfviewer:
 
-    - Use any route to `/pdf?f=pdf-file.pdf`
-    - pdf-file must be in `/public/pdfs/`
+    - Usar qualquer rota nos moldes de: `/pdf?f=pdf-file.pdf`
+    - pdf-file deve estar em `/public/pdfs/`
 
   - drive-iframe:
-    - Create a new page, add `<DriveIframe url={externalURLs["drive-url"]} />`
-    - Choose a gDrive file, publish to Web "embedded"
-    - Copy iframe URL, add it to `externalURLs`
-
-- Templates SICITE:
-
-  - Latex - `Template_SICITE_2021-UTFPR-GP.tar.gz`; updated 02/08/21
-  - Overleaf - `(link)`; added 11/08/21;
-  - Word - `Template_SICITE_2021_FINAL_WORD.docx`; updated 03/08/21
-  - ODT - `Template_SICITE_2021_FINAL_WRITER.odt`; updated 03/08/21
-  - Checklist para Submissão - `SICITE_Checklist_Submissao.docx`; updated 03/08/21
-
-- Templates SEI:
-
-  - Word Extensão - `Template_SEI_2021_EXT_WORD.docx`; updated 04/08/21
-  - ODT Extensão - `Template_SEI_2021_EXT_WRITER.odt`; updated 03/08/21
-  - Word Inovação - `Template_SEI_2021_INOV_WORD.docx`; updated 04/08/21
-  - ODT Inovação - `Template_SEI_2021_INOV_WRITER.odt`; updated 03/08/21
-
-- Tag version:
-  - `git tag -a v5-production -m 'versao live de lancamento'`
-  - `git push origin v5-production`
+    - Criar uma nova página, adicionar `<DriveIframe url={externalURLs["drive-url"]} />`
+    - Abrir um doc no Google Drive, publicar para web como "embedded"
+    - Copiar URL do iframe, adicioná-la em `externalURLs`

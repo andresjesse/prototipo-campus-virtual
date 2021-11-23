@@ -9,3 +9,19 @@
   height: 100%;
   pointer-events: none;
 }
+
+.fork-me {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  display: flex;
+  margin: 16px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 720px) {
+  .fork-me {
+    display: none;
+  }
+}
