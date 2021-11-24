@@ -177,7 +177,7 @@ export default function MainMenu(props) {
           className="link"
           onClick={() => modal.show(modalContents["comissoes"])}
         >
-          <FiUsers /> Comissão Organizadora
+          <FiUsers /> Comitê Organizador
         </div>
 
         <div
