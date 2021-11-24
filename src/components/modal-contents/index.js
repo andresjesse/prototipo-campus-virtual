@@ -21,6 +21,7 @@ import TemplatesSICITE from "./templates-sicite";
 
 import AnaisDosEventos from "./anais-eventos";
 import PostEventMessage from "./post-event-message";
+import Comissoes from "./comissoes";
 
 const modalContents = {
   "main-menu": <MainMenu />,
@@ -42,6 +43,7 @@ const modalContents = {
   "templates-sicite": <TemplatesSICITE />,
   "anais-eventos": <AnaisDosEventos />,
   "post-event-message": <PostEventMessage />,
+  comissoes: <Comissoes />,
 };
 
 export default modalContents;

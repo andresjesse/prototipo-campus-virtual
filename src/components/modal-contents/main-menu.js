@@ -16,6 +16,7 @@ import {
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
 import { BsFileEarmarkSlides } from "react-icons/bs";
+import { FiUsers } from "react-icons/fi";
 
 import { MdFiberNew } from "react-icons/md";
 
@@ -172,6 +173,13 @@ export default function MainMenu(props) {
       <h2>Geral</h2>
 
       <div className="link-list">
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["comissoes"])}
+        >
+          <FiUsers /> Comissão Organizadora
+        </div>
+
         <div
           className="link"
           onClick={() => modal.show(modalContents["stand"])}
