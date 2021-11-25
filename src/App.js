@@ -21,6 +21,7 @@ import ChecklistAvaliadoresSICITE from "./pages/checklist-avaliadores-sicite";
 import PDFViewer from "./pages/pdfviewer";
 
 import RedirectPage from "./pages/redirect-page";
+import Awards from "./pages/awards";
 
 export default function App() {
   const updateScreenSizeCSS = () => {
@@ -79,6 +80,9 @@ export default function App() {
           </Route>
           <Route exact path="/checklist-avaliadores-sicite">
             <ChecklistAvaliadoresSICITE />
+          </Route>
+          <Route exact path="/awards">
+            <Awards />
           </Route>
           <Route exact path="/pdf">
             <PDFViewer />

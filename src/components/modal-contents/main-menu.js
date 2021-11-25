@@ -12,6 +12,8 @@ import {
   AiOutlineMail,
   AiOutlineCheckSquare,
   AiFillGithub,
+  AiOutlineYoutube,
+  AiOutlineTrophy,
 } from "react-icons/ai";
 import { BiWrench } from "react-icons/bi";
 import { FaRegHandshake } from "react-icons/fa";
@@ -86,6 +88,12 @@ export default function MainMenu(props) {
         <Link to="/approved-papers" className="link">
           <BsFileEarmarkSlides />
           Trabalhos Aceitos
+        </Link>
+
+        <Link to="/awards" className="link">
+          <AiOutlineTrophy />
+          Trabalhos Premiados
+          <TagNew />
         </Link>
 
         <div
@@ -173,6 +181,23 @@ export default function MainMenu(props) {
       <h2>Geral</h2>
 
       <div className="link-list">
+        <div
+          className="link"
+          onClick={() => modal.show(modalContents["video-teaser"])}
+        >
+          <AiOutlineYoutube /> Vídeo Teaser
+        </div>
+
+        <a
+          href="https://www.youtube.com/watch?v=K6axVh9aTzA&ab_channel=UTFPRGuarapuava"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiOutlineYoutube />
+          Vídeo de Lançamento
+        </a>
+
         <div
           className="link"
           onClick={() => modal.show(modalContents["comissoes"])}
