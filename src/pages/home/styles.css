@@ -25,3 +25,15 @@
     display: none;
   }
 }
+
+.fork-me a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 50;
+  text-align: center;
+  font-size: 11px;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,6 +1,7 @@
 .sponsor-container .card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .sponsor-container img {

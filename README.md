@@ -1,19 +1,18 @@
-# Campus Virtual - SEI-SICITE 2021
+# Campus Virtual - UTFPR GP - Vestibular
 
---
-**Atualização (Vestibular)**: O Campus Virtual vem sendo utilizado para a divulgação do vestibular da UTFPR. A versão atualizada está no branch "vestibular".
---
+Este repositório contém a versão atualizada com Campus Virtual da UTFPR Guarapuava. O Campus Virtual foi originalmente criado para o evento [SEI-SICITE 2021](https://seisicite2021.gp.utfpr.edu.br/), após o evento, o projeto foi revisado e atualizado para prover informações do vetibular do campus Guarapuava.
 
-O SEI-SICITE 2021 acabou, mas as conquistas e o aprendizado merecem seguir adiante. O Campus Virtual está agora disponível como Software Livre, podendo ser utilizado e modificado livremente pela comunidade. Em nome de toda a Comissão de TI, registro aqui sinceros agradecimentos a todos que contribuíram para o sucesso deste evento.
+A saber:
 
-A seguir são apresentados os detalhes técnicos para a instalação, modificação, e extensão das funcionalidades do Campus Virtual. Sinta-se livre para adaptá-lo às suas necessidades.
+- O branch principal (_master_) contém a versão original do Campus Virtual, utilizada no SEI-SICITE 2021. Esta versão é mais completa e possui mais recursos, porém mais antiga (compatível com node 14/16), usa javascript e create-react-app como base;
+- O branch _vestibular_ contém uma versão resumida do sistema original, com menus, ícones e links alterados. Esta versão foi atualizada para versões mais recentes do node e usa typescript e Vite como base.
 
 ## Licença de Uso
 
 O Campus Virtual é distribuído com a licença MIT (X11):
 
 ```
-Copyright 2021 Andres Jessé Porfirio
+Copyright 2025 Andres Jessé Porfirio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -39,8 +38,8 @@ O Campus Virtual (CV) é uma aplicação puramente front-end, desenvolvida com R
 
 O CV foi desenvolvido e testado no seguinte ambiente:
 
-- Sistema operacional Linux Ubuntu 20.04 LTS
-- NodeJS 14.18.x
+- Sistema operacional Linux Ubuntu 24.04 LTS
+- NodeJS 22.18.x LTS
 - Gerenciador de pacotes Yarn 1.22.x
 - Editor VSCode
 
@@ -50,13 +49,13 @@ O deploy da aplicação pode ser feito em qualquer tipo de servidor, inclusive s
 
 1. Instale o NodeJS, preferencialmente via NVM: [https://github.com/nvm-sh/nvm#installing-and-updating](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-2. Instale o gerenciador de pacotes Yarn: [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
+2. Ative o gerenciador de pacotes Yarn: `$ corepack enable`
 
 3. Instale as dependências do projeto. No ambiente de desenvolvimento (pasta do projeto), execute:
 
 ```
 $ yarn
-$ yarn start
+$ yarn dev
 ```
 
 4. Observação sobre vídeos (.mp4): O CV oficial conta com vários arquivos de vídeo em formato MP4, originamente armazenados na pasta `public/videos/` eles são usados dentro de janelas modais acionadas por cliques nos prédios virtuais e links de menu. Por questão de espaço, esses arquivos não foram incluídos junto com o código-fonte. Como consequência, ao executar o CV localmente os vídeos não são carregados.
@@ -67,13 +66,13 @@ $ yarn start
 $ yarn build
 ```
 
-6. Nota: os arquivos de vídeo (.mp4) são excluídos dessa build e substitídos por links simbólicos em nosso servidor. Caso encontre problemas em executar a build localmente, altere o comando `"build": "react-scripts build && rm -rf build/videos",` para `"build": "react-scripts build",` no bloco `scripts` do arquivo `package.json`.
+6. Nota: os arquivos de vídeo (.mp4) são excluídos dessa build e substitídos por links simbólicos em nosso servidor (certifique-se de criar os links ao fazer deploy de novas versões).
 
 7. O resultado do empacotamento é armazenado na pasta `build` e está pronto para deploy.
 
 ## Entendendo o Projeto
 
-O ponto de entrada da aplicação é o arquivo `src/App.js`. O gerenciamento de rotas é feito pela biblioteca `react-router-dom`. Em resumo, a estrutura do projeto é a seguinte:
+O ponto de entrada da aplicação é o arquivo `src/App.tsx`. O gerenciamento de rotas é feito pela biblioteca `react-router`. Em resumo, a estrutura do projeto é a seguinte:
 
 ```
 src/
@@ -86,11 +85,11 @@ src/
 
 Para criar novas páginas (ou excluir as existentes):
 
-1. Altere as rotas no arquivo `src/App.js`
+1. Altere as rotas no arquivo `src/App.tsx`
 
 2. Crie uma subpasta em `src/pages/` e adicione um novo componente (páginas são componentes funcionais do ReactJS)
 
-3. Em geral, as páginas possuem uma estrutura base:
+3. As páginas possuem uma estrutura base:
 
 ```
 <... containers>
@@ -102,25 +101,11 @@ Para criar novas páginas (ou excluir as existentes):
 </>
 ```
 
-## Páginas Especiais
-
-Algumas páginas foram criadas com comportamentos genéricos, que permitem a parametrização do seu conteúdo, são elas:
-
-```
-src/pages/pdfviewer
-  -- carrega um PDF a partir de uma URL e exibe-o embutido no CV
-  -- o arquivo pode ser configurado pela rota, ex: localhost:3000/pdf?f=SEU_ARQUIVO.pdf
-
-src/pages/faq
-  -- FAQ e tutoriais nada mais são do que arquivos de texto do Google Docs (publicados para Web)
-  -- estas páginas possuem um componente <DriveIframe url={LINK} /> que cria um iframe para um link qualquer
-```
-
 ## Alterando o Menu Principal
 
-Muitos dos conteúdos do CV foram criados como janelas modais que se encontram na pasta `src/components/modal-contents`. Para adicionar um novo conteúdo, altere o arquivo `index.js` dessa pasta, adicionando uma chave e um componente. Os conteúdos podem ser exibidos apenas na página Home, que abriga o contexto ModalContext (da Context API). Os conteúdos podem ser exibidos com `modal.show(modalContents["CHAVE"])`.
+Muitos dos conteúdos do CV foram criados como janelas modais que se encontram na pasta `src/components/modal-contents`. Para adicionar um novo conteúdo, altere o arquivo `index.tsx` dessa pasta, adicionando uma chave e um componente. Os conteúdos podem ser exibidos apenas na página Home, que abriga o contexto ModalContext (da Context API). Os conteúdos podem ser exibidos com `modal.show(modalContents["CHAVE"])`.
 
-O menu principal da aplicação é a janela modal do arquivo `src/components/modal-contents/main-menu.js`.
+O menu principal da aplicação é a janela modal do arquivo `src/components/modal-contents/main-menu.tsx`.
 
 ## Modificando o Mapa Virtual
 
@@ -130,22 +115,4 @@ Tanto o background quanto as animações foram criadas com o software [Blender](
 
 Os arquivos originais (.blend, .svg, etc.) usados na construção dos assets do CV encontram-se disponíveis na pasta `dev-assets/`.
 
-## Processos da Semana do Evento
-
-- Atualização da agenda: substituir services/schedule.js (array vazio renderiza uma mensagem genérica)
-
-- Atualização dos apoiadores: substituir map-overlay-anim, atualizar frames={} em map/index.js, atualizar modal-contents/sponsor.js
-
-- Atualização de prog: substituir services/prog-highlights (abstract pode ser null, isPresentation=true para sessões, deixar fotos na mesma pasta)
-
-- Dicas sobre componentes genéricos:
-
-  - pdfviewer:
-
-    - Usar qualquer rota nos moldes de: `/pdf?f=pdf-file.pdf`
-    - pdf-file deve estar em `/public/pdfs/`
-
-  - drive-iframe:
-    - Criar uma nova página, adicionar `<DriveIframe url={externalURLs["drive-url"]} />`
-    - Abrir um doc no Google Drive, publicar para web como "embedded"
-    - Copiar URL do iframe, adicioná-la em `externalURLs`
+A atualização dos banners que aparecem no "outdoor" (sponsors) é feita da seguinte forma: substituir map-overlay-anim, atualizar frames={} em map/index.tsx, atualizar modal-contents/sponsor.tsx
