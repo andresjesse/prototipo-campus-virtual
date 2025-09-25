@@ -1,8 +1,6 @@
 # Campus Virtual - SEI-SICITE 2021
 
---
-**Atualização (Vestibular)**: O Campus Virtual vem sendo utilizado para a divulgação do vestibular da UTFPR. A versão atualizada está no branch "vestibular".
---
+**<span style="color: red;">Atualização (Vestibular)</span>**: O Campus Virtual vem sendo utilizado para a divulgação do vestibular da UTFPR. A versão atualizada está no branch [vestibular](https://github.com/andresjesse/prototipo-campus-virtual/tree/vestibular).
 
 O SEI-SICITE 2021 acabou, mas as conquistas e o aprendizado merecem seguir adiante. O Campus Virtual está agora disponível como Software Livre, podendo ser utilizado e modificado livremente pela comunidade. Em nome de toda a Comissão de TI, registro aqui sinceros agradecimentos a todos que contribuíram para o sucesso deste evento.
 
