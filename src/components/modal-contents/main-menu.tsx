@@ -6,13 +6,14 @@ import {
   AiOutlineMail,
   AiOutlineYoutube,
 } from "react-icons/ai";
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdFiberNew, MdPeopleOutline } from "react-icons/md";
 import { Link } from "react-router";
 
 import "./styles.css";
 
+import { FaRegPenToSquare } from "react-icons/fa6";
 import { LiaBookReaderSolid } from "react-icons/lia";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiChalkboardTeacher, PiTelegramLogoLight } from "react-icons/pi";
@@ -38,10 +39,20 @@ export default function MainMenu() {
           className="link"
           onClick={() => modal.show(modalContents["sponsor"])}
         >
-          <FaArrowDown />
+          <FaArrowRight />
           Estude Aqui!
           <TagNew />
         </div>
+
+        <Link
+          to="https://www.utfpr.edu.br/noticias/geral/estude-na-utfpr/vestibular-utfpr-oferta-mais-de-3-mil-vagas-em-119-cursos-de-graduacao"
+          className="link"
+          target="_blank"
+        >
+          <FaRegPenToSquare size={18} />
+          Vestibular 2026
+          <TagNew />
+        </Link>
 
         <Link
           to="https://acessounico.mec.gov.br/sisu"

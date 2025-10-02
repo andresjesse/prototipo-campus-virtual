@@ -28,12 +28,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
-     inkscape:zoom="0.51528126"
-     inkscape:cx="995.57279"
-     inkscape:cy="707.38066"
+     inkscape:zoom="0.25764063"
+     inkscape:cx="1406.9986"
+     inkscape:cy="-32.991691"
      inkscape:window-width="1920"
      inkscape:window-height="964"
-     inkscape:window-x="0"
+     inkscape:window-x="1600"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
@@ -377,17 +377,6 @@
        r="77.913055"
        gradientTransform="matrix(1,0,0,0.40602728,0,84.858377)"
        gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient972"
-       id="radialGradient954"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.40602728,0,84.858377)"
-       cx="82.981277"
-       cy="142.86578"
-       fx="82.981277"
-       fy="142.86578"
-       r="77.913055" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -801,54 +790,5 @@
            x="181.26944"
            y="378.0517">Evento Online - 8 a 12 de Novembro de 2021</tspan></text>
     </g>
-    <g
-       id="g952"
-       transform="translate(7.1414962,6.870428)">
-      <rect
-         style="fill:url(#radialGradient954);fill-opacity:1;stroke:none;stroke-width:0.793749;stroke-dasharray:0.793749, 0.793749;filter:url(#filter1668)"
-         id="rect944"
-         width="131.82611"
-         height="39.269653"
-         x="17.068228"
-         y="123.23096"
-         ry="8.5702944" />
-      <text
-         xml:space="preserve"
-         style="font-size:9.87778px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;fill:#4d4d4d;fill-opacity:1;stroke-width:0.264583"
-         x="82.896873"
-         y="144.56996"
-         id="text950"><tspan
-           sodipodi:role="line"
-           id="tspan946"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:Ebrima;-inkscape-font-specification:Ebrima;text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.264583"
-           x="82.896873"
-           y="144.56996">Submissão de Trabalhos</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:Ebrima;-inkscape-font-specification:Ebrima;text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.264583"
-           x="82.896873"
-           y="157.07512"
-           id="tspan948">02/08 a <tspan
-   style="font-weight:bold"
-   id="tspan15880">15/09</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:7.29013px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;fill:#4d4d4d;fill-opacity:1;stroke-width:0.264583"
-         x="82.813972"
-         y="132.73126"
-         id="text24104"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.29013px;font-family:Ebrima;-inkscape-font-specification:Ebrima;text-align:center;text-anchor:middle;fill:#808080;fill-opacity:1;stroke-width:0.264583"
-           x="82.813972"
-           y="132.73126"
-           id="tspan24102">PRORROGADO</tspan></text>
-    </g>
-    <path
-       style="fill:none;stroke:#808080;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 66.36647,140.56571 H 113.4493"
-       id="path28539" />
-    <path
-       style="fill:none;stroke:#4d4d4d;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 97.619394,166.05332 H 119.53916"
-       id="path28541" />
   </g>
 </svg>
