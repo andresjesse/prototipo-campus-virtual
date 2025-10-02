@@ -1,18 +1,35 @@
+.sponsor-container h2 {
+  margin-left: 8px;
+}
+
 .sponsor-container .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
 }
 
-.sponsor-container img {
+.sponsor-container .card > img {
+  padding: 0;
+  object-fit: cover;
   cursor: pointer;
-  margin: 10px;
-  padding: 5%;
   border-radius: 16px;
-  max-height: 150px;
-  object-fit: contain;
+  max-height: 350px;
 }
 
-.sponsor-container h2 {
-  margin-left: 8px;
+.sponsor-container .card > img:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+}
+
+.sponsor-container .card > .label {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0px 0px 5px black);
+  text-shadow: 2px 2px black;
+  display: flex;
+  gap: 8px;
 }

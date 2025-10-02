@@ -109,19 +109,35 @@ export default function MainMenu() {
       <h2>Redes Sociais</h2>
 
       <div className="link-list">
-        <Link to={externalURLs["contact-instagram"]} className="link">
+        <Link
+          to={externalURLs["contact-instagram"]}
+          className="link"
+          target="_blank"
+        >
           <AiOutlineInstagram /> Instagram
         </Link>
 
-        <Link to={externalURLs["contact-facebook"]} className="link">
+        <Link
+          to={externalURLs["contact-facebook"]}
+          className="link"
+          target="_blank"
+        >
           <AiOutlineFacebook /> Facebook
         </Link>
 
-        <Link to={externalURLs["contact-youtube"]} className="link">
+        <Link
+          to={externalURLs["contact-youtube"]}
+          className="link"
+          target="_blank"
+        >
           <AiOutlineYoutube /> YouTube
         </Link>
 
-        <Link to={externalURLs["contact-telegram"]} className="link">
+        <Link
+          to={externalURLs["contact-telegram"]}
+          className="link"
+          target="_blank"
+        >
           <PiTelegramLogoLight /> Telegram
         </Link>
       </div>

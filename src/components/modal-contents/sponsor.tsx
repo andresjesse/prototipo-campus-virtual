@@ -1,3 +1,4 @@
+import { IoArrowRedoSharp } from "react-icons/io5";
 import engenhariaCivil from "./sponsor-logos/engenharia-civil.jpg";
 import engenhariaMecanica from "./sponsor-logos/engenharia-mecanica.jpg";
 import engenhariaMecatronica from "./sponsor-logos/engenharia-mecatronica.jpg";
@@ -17,6 +18,11 @@ const Card = ({ title, logo, url }: CardProps) => (
 
     <a href={url} target="_blank" rel="noreferrer" className="card">
       <img src={logo} alt="logo do apoiador" className=" global-shadow" />
+
+      <div className="label global-shadow">
+        Saiba mais
+        <IoArrowRedoSharp color="white" />
+      </div>
     </a>
   </>
 );
